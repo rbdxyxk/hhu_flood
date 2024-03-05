@@ -1,0 +1,5941 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.508499,
+          31.681412
+        ]
+      },
+      "properties": {
+        "编号": "w493",
+        "type": "rsvr",
+        "stnm": "王母观",
+        "stcd": "STCZA69602"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.579721,
+          31.758416
+        ]
+      },
+      "properties": {
+        "编号": "w433",
+        "type": "rsvr",
+        "stnm": "金坛",
+        "stcd": "STCZA69454"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.582574,
+          31.99003
+        ]
+      },
+      "properties": {
+        "编号": "w432",
+        "type": "rsvr",
+        "stnm": "丹阳",
+        "stcd": "STCZA69453"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.416806,
+          31.881602
+        ]
+      },
+      "properties": {
+        "编号": "w492",
+        "type": "rsvr",
+        "stnm": "旧县村",
+        "stcd": "STCZA69601"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.823772,
+          31.956539
+        ]
+      },
+      "properties": {
+        "编号": "w423",
+        "type": "rsvr",
+        "stnm": "东山",
+        "stcd": "STCZA69440"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.902084,
+          31.85397
+        ]
+      },
+      "properties": {
+        "编号": "w460",
+        "type": "rsvr",
+        "stnm": "前捍村",
+        "stcd": "STCZA69490"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.974448,
+          31.768154
+        ]
+      },
+      "properties": {
+        "编号": "w434",
+        "type": "rsvr",
+        "stnm": "常州",
+        "stcd": "STCZA69455"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.307505,
+          31.570785
+        ]
+      },
+      "properties": {
+        "编号": "w500",
+        "type": "rsvr",
+        "stnm": "无锡市",
+        "stcd": "STCZA69641"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.744663,
+          31.637222
+        ]
+      },
+      "properties": {
+        "编号": "w448",
+        "type": "rsvr",
+        "stnm": "常熟",
+        "stcd": "STCZA69475"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.246037,
+          31.755309
+        ]
+      },
+      "properties": {
+        "编号": "w496",
+        "type": "rsvr",
+        "stnm": "青阳",
+        "stcd": "STCZA69620"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.524948,
+          31.726485
+        ]
+      },
+      "properties": {
+        "编号": "w499",
+        "type": "rsvr",
+        "stnm": "陈墅",
+        "stcd": "STCZA69640"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.532791,
+          31.867584
+        ]
+      },
+      "properties": {
+        "编号": "w438",
+        "type": "rsvr",
+        "stnm": "沙洲",
+        "stcd": "STCZA69463"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.300194,
+          31.947887
+        ]
+      },
+      "properties": {
+        "编号": "w359",
+        "type": "rsvr",
+        "stnm": "江阴",
+        "stcd": "STCZA60350"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.237289,
+          31.861696
+        ]
+      },
+      "properties": {
+        "编号": "w412",
+        "type": "rsvr",
+        "stnm": "青龙港",
+        "stcd": "STCZA69429"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.248275,
+          31.945998
+        ]
+      },
+      "properties": {
+        "编号": "w482",
+        "type": "rsvr",
+        "stnm": "常乐闸",
+        "stcd": "STCZA69569"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.884711,
+          34.38965
+        ]
+      },
+      "properties": {
+        "编号": "w310",
+        "type": "rsvr",
+        "stnm": "滩上集",
+        "stcd": "STYZA55910"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.103652,
+          34.067717
+        ]
+      },
+      "properties": {
+        "编号": "w338",
+        "type": "rsvr",
+        "stnm": "邳洪河闸",
+        "stcd": "STYZA55965"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.177969,
+          34.227465
+        ]
+      },
+      "properties": {
+        "编号": "w248",
+        "type": "rsvr",
+        "stnm": "苗圩",
+        "stcd": "STYZA54999"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.176452,
+          34.251076
+        ]
+      },
+      "properties": {
+        "编号": "w246",
+        "type": "rsvr",
+        "stnm": "埝头",
+        "stcd": "STYZA54996"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.053595,
+          34.181632
+        ]
+      },
+      "properties": {
+        "编号": "w337",
+        "type": "rsvr",
+        "stnm": "瑶湾",
+        "stcd": "STYZA55961"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.012058,
+          34.045695
+        ]
+      },
+      "properties": {
+        "编号": "w333",
+        "type": "rsvr",
+        "stnm": "黄河北闸",
+        "stcd": "STYZA55945"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.832988,
+          34.009547
+        ]
+      },
+      "properties": {
+        "编号": "w585",
+        "type": "rsvr",
+        "stnm": "滨海",
+        "stcd": "STHZA53116"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.719394,
+          34.065374
+        ]
+      },
+      "properties": {
+        "编号": "w127",
+        "type": "rsvr",
+        "stnm": "沭阳闸",
+        "stcd": "STHZA53086"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.277964,
+          34.227762
+        ]
+      },
+      "properties": {
+        "编号": "w192",
+        "type": "rsvr",
+        "stnm": "盐河北闸",
+        "stcd": "STYZA54713"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.284899,
+          34.210024
+        ]
+      },
+      "properties": {
+        "编号": "w191",
+        "type": "rsvr",
+        "stnm": "盐河南闸",
+        "stcd": "STYZA54712"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.257052,
+          34.310792
+        ]
+      },
+      "properties": {
+        "编号": "w202",
+        "type": "rsvr",
+        "stnm": "灌云",
+        "stcd": "STYZA54730"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.786255,
+          34.482891
+        ]
+      },
+      "properties": {
+        "编号": "w200",
+        "type": "rsvr",
+        "stnm": "燕尾港",
+        "stcd": "STYZA54727"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.483975,
+          33.015983
+        ]
+      },
+      "properties": {
+        "编号": "W94",
+        "type": "rsvr",
+        "stnm": "盱眙",
+        "stcd": "STHZA53000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.645459,
+          33.341186
+        ]
+      },
+      "properties": {
+        "编号": "W98",
+        "type": "rsvr",
+        "stnm": "尚咀",
+        "stcd": "STHZA53004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.584839,
+          33.180725
+        ]
+      },
+      "properties": {
+        "编号": "W95",
+        "type": "rsvr",
+        "stnm": "老子山",
+        "stcd": "STHZA53001"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.730243,
+          33.100904
+        ]
+      },
+      "properties": {
+        "编号": "W96",
+        "type": "rsvr",
+        "stnm": "蒋坝",
+        "stcd": "STHZA53002"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.829006,
+          33.287304
+        ]
+      },
+      "properties": {
+        "编号": "W97",
+        "type": "rsvr",
+        "stnm": "高良涧",
+        "stcd": "STHZA53003"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.171425,
+          33.271801
+        ]
+      },
+      "properties": {
+        "编号": "W561",
+        "type": "rsvr",
+        "stnm": "山阳",
+        "stcd": "STHZA53053"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.298334,
+          33.239453
+        ]
+      },
+      "properties": {
+        "编号": "W116",
+        "type": "rsvr",
+        "stnm": "宝应",
+        "stcd": "STHZA53045"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.012775,
+          33.035547
+        ]
+      },
+      "properties": {
+        "编号": "W104",
+        "type": "rsvr",
+        "stnm": "金湖",
+        "stcd": "STHZA53012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.468527,
+          33.31886
+        ]
+      },
+      "properties": {
+        "编号": "W571",
+        "type": "rsvr",
+        "stnm": "陆庄",
+        "stcd": "STHZA53070"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.617507,
+          33.315507
+        ]
+      },
+      "properties": {
+        "编号": "W566",
+        "type": "rsvr",
+        "stnm": "射阳镇",
+        "stcd": "STHZA53063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.797502,
+          33.475193
+        ]
+      },
+      "properties": {
+        "编号": "W124",
+        "type": "rsvr",
+        "stnm": "建湖",
+        "stcd": "STHZA53076"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.728684,
+          33.626041
+        ]
+      },
+      "properties": {
+        "编号": "W574",
+        "type": "rsvr",
+        "stnm": "永兴",
+        "stcd": "STHZA53083"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.78286,
+          33.781997
+        ]
+      },
+      "properties": {
+        "编号": "W126",
+        "type": "rsvr",
+        "stnm": "阜宁",
+        "stcd": "STHZA53082"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.614536,
+          33.053397
+        ]
+      },
+      "properties": {
+        "编号": "W637",
+        "type": "rsvr",
+        "stnm": "临泽",
+        "stcd": "STHZA53405"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.830104,
+          32.930566
+        ]
+      },
+      "properties": {
+        "编号": "W123",
+        "type": "rsvr",
+        "stnm": "兴化",
+        "stcd": "STHZA53071"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.966291,
+          32.787102
+        ]
+      },
+      "properties": {
+        "编号": "W639",
+        "type": "rsvr",
+        "stnm": "沈伦",
+        "stcd": "STHZA53491"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.682592,
+          32.671809
+        ]
+      },
+      "properties": {
+        "编号": "W570",
+        "type": "rsvr",
+        "stnm": "樊川",
+        "stcd": "STHZA53067"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.653639,
+          32.818179
+        ]
+      },
+      "properties": {
+        "编号": "W569",
+        "type": "rsvr",
+        "stnm": "三垛",
+        "stcd": "STHZA53066"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.420375,
+          32.788059
+        ]
+      },
+      "properties": {
+        "编号": "W105",
+        "type": "rsvr",
+        "stnm": "高邮（高）",
+        "stcd": "STHZA53014"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.420412,
+          32.787715
+        ]
+      },
+      "properties": {
+        "编号": "W117",
+        "type": "rsvr",
+        "stnm": "高邮（大）",
+        "stcd": "STHZA53047"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.494215,
+          32.538353
+        ]
+      },
+      "properties": {
+        "编号": "W106",
+        "type": "rsvr",
+        "stnm": "六闸",
+        "stcd": "STHZA53015"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.913189,
+          32.475913
+        ]
+      },
+      "properties": {
+        "编号": "W121",
+        "type": "rsvr",
+        "stnm": "泰州",
+        "stcd": "STHZA53060"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.799937,
+          32.212397
+        ]
+      },
+      "properties": {
+        "编号": "W358",
+        "type": "rsvr",
+        "stnm": "扬中",
+        "stcd": "STCZA60345"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.454694,
+          32.220226
+        ]
+      },
+      "properties": {
+        "编号": "W357",
+        "type": "rsvr",
+        "stnm": "镇江",
+        "stcd": "STCZA60340"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.720676,
+          32.072187
+        ]
+      },
+      "properties": {
+        "编号": "W356",
+        "type": "rsvr",
+        "stnm": "南京",
+        "stcd": "STCZA60332"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.885647,
+          32.344579
+        ]
+      },
+      "properties": {
+        "编号": "W392",
+        "type": "rsvr",
+        "stnm": "六合",
+        "stcd": "STCZA69400"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.709147,
+          32.310012
+        ]
+      },
+      "properties": {
+        "编号": "W107",
+        "type": "rsvr",
+        "stnm": "三江营",
+        "stcd": "STHZA53018"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.240278,
+          33.774715
+        ]
+      },
+      "properties": {
+        "编号": "w613",
+        "type": "rsvr",
+        "stnm": "射阳",
+        "stcd": "STHZA53090"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.113992,
+          33.400972
+        ]
+      },
+      "properties": {
+        "编号": "w125",
+        "type": "rsvr",
+        "stnm": "盐城",
+        "stcd": "STHZA53078"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.45955,
+          33.197781
+        ]
+      },
+      "properties": {
+        "编号": "w583",
+        "type": "rsvr",
+        "stnm": "大丰",
+        "stcd": "STHZA53109"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.097174,
+          33.089556
+        ]
+      },
+      "properties": {
+        "编号": "w572",
+        "type": "rsvr",
+        "stnm": "安丰",
+        "stcd": "STHZA53073"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.149331,
+          32.508613
+        ]
+      },
+      "properties": {
+        "编号": "W565",
+        "type": "rsvr",
+        "stnm": "姜埝",
+        "stcd": "STCZA53061"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.692075,
+          32.607307
+        ]
+      },
+      "properties": {
+        "编号": "W582",
+        "type": "rsvr",
+        "stnm": "丁堡河闸",
+        "stcd": "STHZA53105"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.978505,
+          32.223812
+        ]
+      },
+      "properties": {
+        "编号": "W416",
+        "type": "rsvr",
+        "stnm": "石港",
+        "stcd": "STCZA69433"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.07843,
+          32.084521
+        ]
+      },
+      "properties": {
+        "编号": "W417",
+        "type": "rsvr",
+        "stnm": "金沙",
+        "stcd": "STCZA69434"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.260637,
+          32.054277
+        ]
+      },
+      "properties": {
+        "编号": "W481",
+        "type": "rsvr",
+        "stnm": "货隆镇",
+        "stcd": "STCZA69563"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.748833,
+          32.033983
+        ]
+      },
+      "properties": {
+        "编号": "W360",
+        "type": "rsvr",
+        "stnm": "天生港",
+        "stcd": "STCZA60355"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.236483,
+          32.245311
+        ]
+      },
+      "properties": {
+        "编号": "W401",
+        "type": "rsvr",
+        "stnm": "黄桥",
+        "stcd": "STCZA69414"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.391718,
+          32.317234
+        ]
+      },
+      "properties": {
+        "编号": "W616",
+        "type": "rsvr",
+        "stnm": "搬经",
+        "stcd": "STHZA53692"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.713648,
+          32.363771
+        ]
+      },
+      "properties": {
+        "编号": "W415",
+        "type": "rsvr",
+        "stnm": "丁埝",
+        "stcd": "STCZA69432"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.104273,
+          32.340617
+        ]
+      },
+      "properties": {
+        "编号": "W487",
+        "type": "rsvr",
+        "stnm": "倪浒庄",
+        "stcd": "STCPA69578"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.460938,
+          32.554018
+        ]
+      },
+      "properties": {
+        "编号": "W619",
+        "type": "rsvr",
+        "stnm": "海安(串）",
+        "stcd": "STHZA53700"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.448587,
+          32.552993
+        ]
+      },
+      "properties": {
+        "编号": "W122",
+        "type": "rsvr",
+        "stnm": "海安（通）",
+        "stcd": "STHZA53062"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.297994,
+          32.855691
+        ]
+      },
+      "properties": {
+        "编号": "W130",
+        "type": "rsvr",
+        "stnm": "东台",
+        "stcd": "STHZA53110"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.093059,
+          32.650888
+        ]
+      },
+      "properties": {
+        "编号": "W573",
+        "type": "rsvr",
+        "stnm": "溱潼",
+        "stcd": "STHZA53074"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.38513,
+          32.253102
+        ]
+      },
+      "properties": {
+        "编号": "w578",
+        "type": "rsvr",
+        "stnm": "瓜州闸",
+        "stcd": "STHZA53096"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.887017,
+          31.605518
+        ]
+      },
+      "properties": {
+        "编号": "w495",
+        "type": "rsvr",
+        "stnm": "坊前",
+        "stcd": "STCZA69608"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.296176,
+          33.990285
+        ]
+      },
+      "properties": {
+        "编号": "w189",
+        "type": "rsvr",
+        "stnm": "六塘河闸",
+        "stcd": "STYZA54708"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.113915,
+          34.385622
+        ]
+      },
+      "properties": {
+        "编号": "w183",
+        "type": "rsvr",
+        "stnm": "华沂",
+        "stcd": "STYZA54700"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.662311,
+          32.486837
+        ]
+      },
+      "properties": {
+        "编号": "W564",
+        "type": "rsvr",
+        "stnm": "宜北闸",
+        "stcd": "STHZA53059"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.485998,
+          31.845398
+        ]
+      },
+      "properties": {
+        "编号": "w381",
+        "type": "rsvr",
+        "stnm": "驷马山",
+        "stcd": "STCHA69300"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.923605,
+          31.974589
+        ]
+      },
+      "properties": {
+        "编号": "w489",
+        "type": "rsvr",
+        "stnm": "魏村闸",
+        "stcd": "STCHA69598"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.922637,
+          31.974664
+        ]
+      },
+      "properties": {
+        "编号": "w491",
+        "type": "rsvr",
+        "stnm": "魏村抽水站",
+        "stcd": "STCHA69600"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.981151,
+          31.948359
+        ]
+      },
+      "properties": {
+        "编号": "w490",
+        "type": "rsvr",
+        "stnm": "圩塘闸",
+        "stcd": "STCHA69599"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.663506,
+          31.961699
+        ]
+      },
+      "properties": {
+        "编号": "w421",
+        "type": "rsvr",
+        "stnm": "秦淮新河闸",
+        "stcd": "STCHA69438"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.661335,
+          31.958575
+        ]
+      },
+      "properties": {
+        "编号": "w424",
+        "type": "rsvr",
+        "stnm": "秦淮新河站",
+        "stcd": "STCHA69441"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.751716,
+          31.76778
+        ]
+      },
+      "properties": {
+        "编号": "w544",
+        "type": "rsvr",
+        "stnm": "红星水库",
+        "stcd": "STCHA69990"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.804132,
+          31.670106
+        ]
+      },
+      "properties": {
+        "编号": "w546",
+        "type": "rsvr",
+        "stnm": "赵村水库",
+        "stcd": "STCHA69992"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.979499,
+          31.642712
+        ]
+      },
+      "properties": {
+        "编号": "w425",
+        "type": "rsvr",
+        "stnm": "天生桥闸",
+        "stcd": "STCHA69442"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.06085,
+          31.636525
+        ]
+      },
+      "properties": {
+        "编号": "w531",
+        "type": "rsvr",
+        "stnm": "中山水库",
+        "stcd": "STCHA69924"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.116173,
+          31.699868
+        ]
+      },
+      "properties": {
+        "编号": "w529",
+        "type": "rsvr",
+        "stnm": "方便水库",
+        "stcd": "STCHA69920"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.051497,
+          31.722829
+        ]
+      },
+      "properties": {
+        "编号": "w533",
+        "type": "rsvr",
+        "stnm": "卧龙山水库",
+        "stcd": "STCHA69928"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.187287,
+          31.597592
+        ]
+      },
+      "properties": {
+        "编号": "w530",
+        "type": "rsvr",
+        "stnm": "老鸦坝水库",
+        "stcd": "STCHA69922"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.102993,
+          31.560543
+        ]
+      },
+      "properties": {
+        "编号": "w534",
+        "type": "rsvr",
+        "stnm": "姚家水库",
+        "stcd": "STCHA69930"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.318786,
+          31.883028
+        ]
+      },
+      "properties": {
+        "编号": "w540",
+        "type": "rsvr",
+        "stnm": "墓东水库",
+        "stcd": "STCHA69956"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.342082,
+          31.73457
+        ]
+      },
+      "properties": {
+        "编号": "w542",
+        "type": "rsvr",
+        "stnm": "茅东水库",
+        "stcd": "STCHA69970"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.370895,
+          31.584286
+        ]
+      },
+      "properties": {
+        "编号": "w525",
+        "type": "rsvr",
+        "stnm": "塘马水库",
+        "stcd": "STCHA69904"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.065406,
+          31.868475
+        ]
+      },
+      "properties": {
+        "编号": "w426",
+        "type": "rsvr",
+        "stnm": "赤山闸",
+        "stcd": "STCHA69446"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.190759,
+          31.86794
+        ]
+      },
+      "properties": {
+        "编号": "w535",
+        "type": "rsvr",
+        "stnm": "二圣桥水库",
+        "stcd": "STCHA69940"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.192641,
+          31.971387
+        ]
+      },
+      "properties": {
+        "编号": "w537",
+        "type": "rsvr",
+        "stnm": "句容水库",
+        "stcd": "STCHA69944"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.25333,
+          31.811815
+        ]
+      },
+      "properties": {
+        "编号": "w539",
+        "type": "rsvr",
+        "stnm": "茅山水库",
+        "stcd": "STCHA69950"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.407107,
+          31.964465
+        ]
+      },
+      "properties": {
+        "编号": "w435",
+        "type": "rsvr",
+        "stnm": "张家港闸",
+        "stcd": "STCHA69460"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.660944,
+          31.981245
+        ]
+      },
+      "properties": {
+        "编号": "w439",
+        "type": "rsvr",
+        "stnm": "十一圩港闸",
+        "stcd": "STCHA69464"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.252086,
+          31.913816
+        ]
+      },
+      "properties": {
+        "编号": "w436",
+        "type": "rsvr",
+        "stnm": "工农闸",
+        "stcd": "STCHA69461"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.063627,
+          31.806225
+        ]
+      },
+      "properties": {
+        "编号": "w405",
+        "type": "rsvr",
+        "stnm": "新江海河闸",
+        "stcd": "STCHA69420"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.034579,
+          31.712324
+        ]
+      },
+      "properties": {
+        "编号": "w441",
+        "type": "rsvr",
+        "stnm": "白茆闸",
+        "stcd": "STCHA69466"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.919758,
+          31.747799
+        ]
+      },
+      "properties": {
+        "编号": "w440",
+        "type": "rsvr",
+        "stnm": "浒浦闸",
+        "stcd": "STCHA69465"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.205106,
+          31.607598
+        ]
+      },
+      "properties": {
+        "编号": "w442",
+        "type": "rsvr",
+        "stnm": "七浦闸",
+        "stcd": "STCHA69467"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.246122,
+          31.585538
+        ]
+      },
+      "properties": {
+        "编号": "w443",
+        "type": "rsvr",
+        "stnm": "杨林闸",
+        "stcd": "STCHA69468"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.809936,
+          31.772086
+        ]
+      },
+      "properties": {
+        "编号": "w437",
+        "type": "rsvr",
+        "stnm": "望虞闸",
+        "stcd": "STCHA69462"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.042444,
+          35.031602
+        ]
+      },
+      "properties": {
+        "编号": "w231",
+        "type": "rsvr",
+        "stnm": "八条路水库",
+        "stcd": "STYHA54904"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.98408,
+          34.872864
+        ]
+      },
+      "properties": {
+        "编号": "w273",
+        "type": "rsvr",
+        "stnm": "二级坝二闸",
+        "stcd": "STYHA55259"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.906612,
+          34.743367
+        ]
+      },
+      "properties": {
+        "编号": "w304",
+        "type": "rsvr",
+        "stnm": "沛城",
+        "stcd": "STYHA55902"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.588776,
+          34.793831
+        ]
+      },
+      "properties": {
+        "编号": "w303",
+        "type": "rsvr",
+        "stnm": "李楼闸",
+        "stcd": "STYHA55901"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.97149,
+          34.869885
+        ]
+      },
+      "properties": {
+        "编号": "w274",
+        "type": "rsvr",
+        "stnm": "二级坝三闸",
+        "stcd": "STYHA55261"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.157797,
+          34.244773
+        ]
+      },
+      "properties": {
+        "编号": "w140",
+        "type": "rsvr",
+        "stnm": "云龙水库",
+        "stcd": "STHHA53929"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.169779,
+          34.399689
+        ]
+      },
+      "properties": {
+        "编号": "w305",
+        "type": "rsvr",
+        "stnm": "蔺家坝闸",
+        "stcd": "STYHA55904"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.385347,
+          34.318709
+        ]
+      },
+      "properties": {
+        "编号": "w329",
+        "type": "rsvr",
+        "stnm": "土楼站",
+        "stcd": "STYHA55937"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.37075,
+          34.319673
+        ]
+      },
+      "properties": {
+        "编号": "w306",
+        "type": "rsvr",
+        "stnm": "解台闸",
+        "stcd": "STYHA55906"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.361816,
+          34.593296
+        ]
+      },
+      "properties": {
+        "编号": "w260",
+        "type": "rsvr",
+        "stnm": "韩庄闸",
+        "stcd": "STYHA55207"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.126806,
+          34.582016
+        ]
+      },
+      "properties": {
+        "编号": "w334",
+        "type": "rsvr",
+        "stnm": "五段闸",
+        "stcd": "STYHA55946"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.140525,
+          34.482354
+        ]
+      },
+      "properties": {
+        "编号": "w346",
+        "type": "rsvr",
+        "stnm": "沿湖站",
+        "stcd": "STYHA55990"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.535978,
+          34.143695
+        ]
+      },
+      "properties": {
+        "编号": "w342",
+        "type": "rsvr",
+        "stnm": "崔贺庄水库",
+        "stcd": "STYHA55973"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.250539,
+          34.009737
+        ]
+      },
+      "properties": {
+        "编号": "w314",
+        "type": "rsvr",
+        "stnm": "骆马湖水库",
+        "stcd": "STYHA55914"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.294626,
+          34.117601
+        ]
+      },
+      "properties": {
+        "编号": "w208",
+        "type": "rsvr",
+        "stnm": "北坝涵洞",
+        "stcd": "STYHA54737"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.315356,
+          34.117933
+        ]
+      },
+      "properties": {
+        "编号": "w184",
+        "type": "rsvr",
+        "stnm": "嶂山闸",
+        "stcd": "STYHA54701"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.108792,
+          34.088214
+        ]
+      },
+      "properties": {
+        "编号": "w320",
+        "type": "rsvr",
+        "stnm": "皂河站",
+        "stcd": "STYHA55920"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.10676,
+          34.058087
+        ]
+      },
+      "properties": {
+        "编号": "w313",
+        "type": "rsvr",
+        "stnm": "皂河闸",
+        "stcd": "STYHA55913"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.060827,
+          34.153519
+        ]
+      },
+      "properties": {
+        "编号": "w339",
+        "type": "rsvr",
+        "stnm": "黄墩湖滞洪闸",
+        "stcd": "STYHA55967"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.96942,
+          34.143337
+        ]
+      },
+      "properties": {
+        "编号": "w340",
+        "type": "rsvr",
+        "stnm": "民便河闸",
+        "stcd": "STYHA55970"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.87188,
+          34.075937
+        ]
+      },
+      "properties": {
+        "编号": "w626",
+        "type": "rsvr",
+        "stnm": "庆安",
+        "stcd": "STHHA53931"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.908649,
+          34.235771
+        ]
+      },
+      "properties": {
+        "编号": "w322",
+        "type": "rsvr",
+        "stnm": "土山",
+        "stcd": "STYHA55923"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.901393,
+          34.234057
+        ]
+      },
+      "properties": {
+        "编号": "w331",
+        "type": "rsvr",
+        "stnm": "刘集站",
+        "stcd": "STYHA55940"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.927547,
+          34.333929
+        ]
+      },
+      "properties": {
+        "编号": "w311",
+        "type": "rsvr",
+        "stnm": "运河",
+        "stcd": "STYHA55911"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.358777,
+          34.372077
+        ]
+      },
+      "properties": {
+        "编号": "w188",
+        "type": "rsvr",
+        "stnm": "新安",
+        "stcd": "STYHA54707"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.359582,
+          34.306881
+        ]
+      },
+      "properties": {
+        "编号": "w216",
+        "type": "rsvr",
+        "stnm": "塔山闸",
+        "stcd": "STYHA54805"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.378655,
+          34.187286
+        ]
+      },
+      "properties": {
+        "编号": "w217",
+        "type": "rsvr",
+        "stnm": "沭河王庄闸",
+        "stcd": "STYHA54808"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.471956,
+          34.373307
+        ]
+      },
+      "properties": {
+        "编号": "w244",
+        "type": "rsvr",
+        "stnm": "高塘水库",
+        "stcd": "STYHA54952"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.470028,
+          34.460756
+        ]
+      },
+      "properties": {
+        "编号": "w238",
+        "type": "rsvr",
+        "stnm": "大石埠水库",
+        "stcd": "STYHA54934"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.109466,
+          34.533054
+        ]
+      },
+      "properties": {
+        "编号": "w221",
+        "type": "rsvr",
+        "stnm": "港上",
+        "stcd": "STYHA54827"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.966256,
+          34.464945
+        ]
+      },
+      "properties": {
+        "编号": "w345",
+        "type": "rsvr",
+        "stnm": "邳城站",
+        "stcd": "STYHA55987"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.93161,
+          34.534087
+        ]
+      },
+      "properties": {
+        "编号": "w324",
+        "type": "rsvr",
+        "stnm": "林子",
+        "stcd": "STYHA55926"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.818202,
+          34.419268
+        ]
+      },
+      "properties": {
+        "编号": "w308",
+        "type": "rsvr",
+        "stnm": "刘山闸",
+        "stcd": "STYHA55908"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.727144,
+          34.550443
+        ]
+      },
+      "properties": {
+        "编号": "w280",
+        "type": "rsvr",
+        "stnm": "台儿庄闸",
+        "stcd": "STYHA55604"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.719478,
+          34.064231
+        ]
+      },
+      "properties": {
+        "编号": "w224",
+        "type": "rsvr",
+        "stnm": "柴米河地涵",
+        "stcd": "STYHA54882"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.724014,
+          34.062457
+        ]
+      },
+      "properties": {
+        "编号": "w196",
+        "type": "rsvr",
+        "stnm": "柴米闸",
+        "stcd": "STYHA54718"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.746154,
+          34.136384
+        ]
+      },
+      "properties": {
+        "编号": "w225",
+        "type": "rsvr",
+        "stnm": "南偏泓闸",
+        "stcd": "STYHA54886"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.767865,
+          34.145546
+        ]
+      },
+      "properties": {
+        "编号": "w185",
+        "type": "rsvr",
+        "stnm": "沭阳",
+        "stcd": "STYHA54703"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.734612,
+          34.139879
+        ]
+      },
+      "properties": {
+        "编号": "w219",
+        "type": "rsvr",
+        "stnm": "排污地涵",
+        "stcd": "STYHA54810"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.728082,
+          34.144802
+        ]
+      },
+      "properties": {
+        "编号": "w218",
+        "type": "rsvr",
+        "stnm": "北泓拦污闸",
+        "stcd": "STYHA54809"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.709232,
+          34.155168
+        ]
+      },
+      "properties": {
+        "编号": "w227",
+        "type": "rsvr",
+        "stnm": "沭新闸",
+        "stcd": "STYHA54888"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.744744,
+          34.148478
+        ]
+      },
+      "properties": {
+        "编号": "w226",
+        "type": "rsvr",
+        "stnm": "北偏泓闸",
+        "stcd": "STYHA54887"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.651437,
+          34.172019
+        ]
+      },
+      "properties": {
+        "编号": "w223",
+        "type": "rsvr",
+        "stnm": "桐槐树",
+        "stcd": "STYHA54851"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.184577,
+          34.20711
+        ]
+      },
+      "properties": {
+        "编号": "w194",
+        "type": "rsvr",
+        "stnm": "叮当河闸",
+        "stcd": "STYHA54715"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.309462,
+          34.166961
+        ]
+      },
+      "properties": {
+        "编号": "w206",
+        "type": "rsvr",
+        "stnm": "龙沟河闸",
+        "stcd": "STYHA54735"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.490367,
+          34.242216
+        ]
+      },
+      "properties": {
+        "编号": "w186",
+        "type": "rsvr",
+        "stnm": "小潮河闸",
+        "stcd": "STYHA54704"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.637057,
+          34.324765
+        ]
+      },
+      "properties": {
+        "编号": "w195",
+        "type": "rsvr",
+        "stnm": "东友涵洞",
+        "stcd": "STYHA54716"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53603,
+          34.491584
+        ]
+      },
+      "properties": {
+        "编号": "w214",
+        "type": "rsvr",
+        "stnm": "车轴河闸",
+        "stcd": "STYHA54762"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.534313,
+          34.495682
+        ]
+      },
+      "properties": {
+        "编号": "w212",
+        "type": "rsvr",
+        "stnm": "善后新闸",
+        "stcd": "STYHA54760"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53648,
+          34.497513
+        ]
+      },
+      "properties": {
+        "编号": "w213",
+        "type": "rsvr",
+        "stnm": "烧香河闸",
+        "stcd": "STYHA54761"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.904499,
+          34.471516
+        ]
+      },
+      "properties": {
+        "编号": "w245",
+        "type": "rsvr",
+        "stnm": "蔷北地涵",
+        "stcd": "STYHA54992"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.861495,
+          34.477864
+        ]
+      },
+      "properties": {
+        "编号": "w233",
+        "type": "rsvr",
+        "stnm": "房山水库",
+        "stcd": "STYHA54922"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.83389,
+          34.461298
+        ]
+      },
+      "properties": {
+        "编号": "w240",
+        "type": "rsvr",
+        "stnm": "芝麻站",
+        "stcd": "STYHA54941"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.869945,
+          34.445507
+        ]
+      },
+      "properties": {
+        "编号": "w241",
+        "type": "rsvr",
+        "stnm": "房山站",
+        "stcd": "STYHA54942"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.84313,
+          34.369327
+        ]
+      },
+      "properties": {
+        "编号": "w203",
+        "type": "rsvr",
+        "stnm": "小许庄",
+        "stcd": "STYHA54731"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.83519,
+          34.369667
+        ]
+      },
+      "properties": {
+        "编号": "w228",
+        "type": "rsvr",
+        "stnm": "沭新 退水闸",
+        "stcd": "STYHA54890"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.724772,
+          34.37884
+        ]
+      },
+      "properties": {
+        "编号": "w232",
+        "type": "rsvr",
+        "stnm": "安峰山水库",
+        "stcd": "STYHA54920"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.603914,
+          34.446275
+        ]
+      },
+      "properties": {
+        "编号": "w243",
+        "type": "rsvr",
+        "stnm": "阿湖水库",
+        "stcd": "STYHA54950"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.634364,
+          34.536806
+        ]
+      },
+      "properties": {
+        "编号": "w234",
+        "type": "rsvr",
+        "stnm": "贺庄水库（苏）",
+        "stcd": "STYHA54924"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.625512,
+          34.592644
+        ]
+      },
+      "properties": {
+        "编号": "w236",
+        "type": "rsvr",
+        "stnm": "昌黎水库",
+        "stcd": "STYHA54928"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.730909,
+          34.52862
+        ]
+      },
+      "properties": {
+        "编号": "w235",
+        "type": "rsvr",
+        "stnm": "西双湖水库",
+        "stcd": "STYHA54926"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.719607,
+          34.629293
+        ]
+      },
+      "properties": {
+        "编号": "w237",
+        "type": "rsvr",
+        "stnm": "横沟水库",
+        "stcd": "STYHA54930"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.131821,
+          34.611061
+        ]
+      },
+      "properties": {
+        "编号": "w220",
+        "type": "river",
+        "stnm": "临洪",
+        "stcd": "51113800"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.159776,
+          34.653099
+        ]
+      },
+      "properties": {
+        "编号": "w187",
+        "type": "rsvr",
+        "stnm": "临洪闸",
+        "stcd": "STYHA54705"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.15421,
+          34.670168
+        ]
+      },
+      "properties": {
+        "编号": "w210",
+        "type": "rsvr",
+        "stnm": "临洪西站",
+        "stcd": "STYHA54742"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.855972,
+          34.763184
+        ]
+      },
+      "properties": {
+        "编号": "w242",
+        "type": "rain",
+        "stnm": "石梁河站",
+        "stcd": "51112101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.857261,
+          34.763741
+        ]
+      },
+      "properties": {
+        "编号": "w229",
+        "type": "rsvr",
+        "stnm": "石梁河水库",
+        "stcd": "51112101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.721945,
+          34.769477
+        ]
+      },
+      "properties": {
+        "编号": "w205",
+        "type": "river",
+        "stnm": "大兴镇",
+        "stcd": "51112000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.547221,
+          34.802495
+        ]
+      },
+      "properties": {
+        "编号": "w179",
+        "type": "rsvr",
+        "stnm": "人民胜利堰闸",
+        "stcd": "STYHA54327"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.551804,
+          34.804121
+        ]
+      },
+      "properties": {
+        "编号": "w180",
+        "type": "rain",
+        "stnm": "大官庄闸新",
+        "stcd": "51111911"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.963539,
+          34.938688
+        ]
+      },
+      "properties": {
+        "编号": "w230",
+        "type": "rsvr",
+        "stnm": "小塔山水库",
+        "stcd": "STYHA54902"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.124815,
+          33.88425
+        ]
+      },
+      "properties": {
+        "编号": "W590",
+        "type": "rsvr",
+        "stnm": "沙集站",
+        "stcd": "STHHA53134"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.30254,
+          33.988533
+        ]
+      },
+      "properties": {
+        "编号": "W316",
+        "type": "rsvr",
+        "stnm": "井儿头站",
+        "stcd": "STYHA55916"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.287768,
+          33.983493
+        ]
+      },
+      "properties": {
+        "编号": "W317",
+        "type": "rsvr",
+        "stnm": "宿迁闸",
+        "stcd": "STYHA55917"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.440092,
+          33.827931
+        ]
+      },
+      "properties": {
+        "编号": "W312",
+        "type": "rsvr",
+        "stnm": "刘老涧站",
+        "stcd": "STYHA55912"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.278535,
+          33.635685
+        ]
+      },
+      "properties": {
+        "编号": "W102",
+        "type": "rsvr",
+        "stnm": "金锁镇",
+        "stcd": "STHHA53009"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.171021,
+          33.466624
+        ]
+      },
+      "properties": {
+        "编号": "W100",
+        "type": "rsvr",
+        "stnm": "泗洪（老）",
+        "stcd": "STHHA53007"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.169465,
+          33.464724
+        ]
+      },
+      "properties": {
+        "编号": "W101",
+        "type": "rsvr",
+        "stnm": "泗洪",
+        "stcd": "STHHA53008"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.066603,
+          33.18555
+        ]
+      },
+      "properties": {
+        "编号": "W99",
+        "type": "rsvr",
+        "stnm": "峰山",
+        "stcd": "STHHA53006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.051685,
+          33.445603
+        ]
+      },
+      "properties": {
+        "编号": "W87",
+        "type": "rsvr",
+        "stnm": "团结闸",
+        "stcd": "STHHA52776"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.131042,
+          33.165717
+        ]
+      },
+      "properties": {
+        "编号": "W17",
+        "type": "rsvr",
+        "stnm": "小柳巷",
+        "stcd": "STHHA51093"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.700831,
+          33.69716
+        ]
+      },
+      "properties": {
+        "编号": "W318",
+        "type": "rsvr",
+        "stnm": "泗阳站",
+        "stcd": "STYHA55918"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.920482,
+          33.589482
+        ]
+      },
+      "properties": {
+        "编号": "W110",
+        "type": "rsvr",
+        "stnm": "淮阴闸",
+        "stcd": "STHHA53026"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.931296,
+          33.596075
+        ]
+      },
+      "properties": {
+        "编号": "W211",
+        "type": "rsvr",
+        "stnm": "淮涟闸",
+        "stcd": "STYHA54751"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.937537,
+          33.583518
+        ]
+      },
+      "properties": {
+        "编号": "W197",
+        "type": "rsvr",
+        "stnm": "盐河闸",
+        "stcd": "STYHA54722"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.143362,
+          33.479639
+        ]
+      },
+      "properties": {
+        "编号": "W592",
+        "type": "rsvr",
+        "stnm": "渠北闸",
+        "stcd": "STHHA53140"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.156359,
+          33.461701
+        ]
+      },
+      "properties": {
+        "编号": "W607",
+        "type": "rsvr",
+        "stnm": "小引江闸",
+        "stcd": "STHHA53624"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.145437,
+          33.477012
+        ]
+      },
+      "properties": {
+        "编号": "W112",
+        "type": "rsvr",
+        "stnm": "运东闸",
+        "stcd": "STHHA53032"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.131824,
+          33.469281
+        ]
+      },
+      "properties": {
+        "编号": "W134",
+        "type": "rsvr",
+        "stnm": "淮安抽水二站",
+        "stcd": "STHHA53603"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.970219,
+          33.595096
+        ]
+      },
+      "properties": {
+        "编号": "W109",
+        "type": "rsvr",
+        "stnm": "杨庄闸",
+        "stcd": "STHHA53021"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.871905,
+          33.885601
+        ]
+      },
+      "properties": {
+        "编号": "W193",
+        "type": "rsvr",
+        "stnm": "钱集闸",
+        "stcd": "STYHA54714"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.265639,
+          33.812186
+        ]
+      },
+      "properties": {
+        "编号": "W198",
+        "type": "rsvr",
+        "stnm": "朱码闸",
+        "stcd": "STYHA54724"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.32621,
+          33.688706
+        ]
+      },
+      "properties": {
+        "编号": "W551",
+        "type": "rsvr",
+        "stnm": "茭陵站",
+        "stcd": "STHHA53028"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.588969,
+          33.78418
+        ]
+      },
+      "properties": {
+        "编号": "W552",
+        "type": "rsvr",
+        "stnm": "腰闸",
+        "stcd": "STHHA53034"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.60377,
+          33.801864
+        ]
+      },
+      "properties": {
+        "编号": "W114",
+        "type": "rsvr",
+        "stnm": "东沙港闸",
+        "stcd": "STHHA53040"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.607377,
+          33.807261
+        ]
+      },
+      "properties": {
+        "编号": "W555",
+        "type": "rsvr",
+        "stnm": "腰洞",
+        "stcd": "STHHA53041"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.707077,
+          33.983769
+        ]
+      },
+      "properties": {
+        "编号": "W586",
+        "type": "rsvr",
+        "stnm": "大套站",
+        "stcd": "STHHA53117"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.778619,
+          33.926988
+        ]
+      },
+      "properties": {
+        "编号": "W622",
+        "type": "rsvr",
+        "stnm": "姚湾闸",
+        "stcd": "STHHA53705"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.71455,
+          33.305068
+        ]
+      },
+      "properties": {
+        "编号": "W643",
+        "type": "rsvr",
+        "stnm": "黄土沟",
+        "stcd": "STHHA53568"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.396653,
+          33.04956
+        ]
+      },
+      "properties": {
+        "编号": "W601",
+        "type": "rsvr",
+        "stnm": "运西南闸",
+        "stcd": "STHHA53612"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.350395,
+          33.053894
+        ]
+      },
+      "properties": {
+        "编号": "W646",
+        "type": "rsvr",
+        "stnm": "大汕子闸",
+        "stcd": "STHHA53601"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.255534,
+          33.303377
+        ]
+      },
+      "properties": {
+        "编号": "W576",
+        "type": "rsvr",
+        "stnm": "运西北闸",
+        "stcd": "STHHA53088"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.225382,
+          33.349276
+        ]
+      },
+      "properties": {
+        "编号": "W562",
+        "type": "rsvr",
+        "stnm": "白马地涵",
+        "stcd": "STHHA53056"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.22843,
+          33.347704
+        ]
+      },
+      "properties": {
+        "编号": "W556",
+        "type": "rsvr",
+        "stnm": "泾河",
+        "stcd": "STHHA53044"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.165203,
+          33.157837
+        ]
+      },
+      "properties": {
+        "编号": "W120",
+        "type": "rsvr",
+        "stnm": "阮桥闸",
+        "stcd": "STHHA53054"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.073061,
+          33.054196
+        ]
+      },
+      "properties": {
+        "编号": "W608",
+        "type": "rsvr",
+        "stnm": "石港站",
+        "stcd": "STHHA53626"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.156816,
+          33.31121
+        ]
+      },
+      "properties": {
+        "编号": "W609",
+        "type": "rsvr",
+        "stnm": "镇湖闸",
+        "stcd": "STHHA53627"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.908503,
+          33.360722
+        ]
+      },
+      "properties": {
+        "编号": "W597",
+        "type": "rsvr",
+        "stnm": "淮阴抽水站",
+        "stcd": "STHHA53604"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.906711,
+          33.35663
+        ]
+      },
+      "properties": {
+        "编号": "W554",
+        "type": "rsvr",
+        "stnm": "越闸站",
+        "stcd": "STHHA53038"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.82791,
+          33.294224
+        ]
+      },
+      "properties": {
+        "编号": "W111",
+        "type": "rsvr",
+        "stnm": "高良涧闸",
+        "stcd": "STHHA53030"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.794457,
+          33.20918
+        ]
+      },
+      "properties": {
+        "编号": "W594",
+        "type": "rsvr",
+        "stnm": "周桥洞",
+        "stcd": "STHHA53142"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.732456,
+          33.117225
+        ]
+      },
+      "properties": {
+        "编号": "W593",
+        "type": "rsvr",
+        "stnm": "洪金洞",
+        "stcd": "STHHA53141"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.781386,
+          33.095961
+        ]
+      },
+      "properties": {
+        "编号": "W137",
+        "type": "rsvr",
+        "stnm": "蒋坝抽水站",
+        "stcd": "STHHA53625"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.728631,
+          33.087682
+        ]
+      },
+      "properties": {
+        "编号": "W103",
+        "type": "rsvr",
+        "stnm": "三河闸",
+        "stcd": "STHHA53010"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.747269,
+          33.084038
+        ]
+      },
+      "properties": {
+        "编号": "W595",
+        "type": "rsvr",
+        "stnm": "堆头水轮泵",
+        "stcd": "STHHA53143"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.877779,
+          33.346259
+        ]
+      },
+      "properties": {
+        "编号": "W108",
+        "type": "rsvr",
+        "stnm": "二河闸",
+        "stcd": "STHHA53019"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.349184,
+          32.038246
+        ]
+      },
+      "properties": {
+        "编号": "W384",
+        "type": "rsvr",
+        "stnm": "襄河口闸",
+        "stcd": "STCHA69328"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.481821,
+          32.872655
+        ]
+      },
+      "properties": {
+        "编号": "W633",
+        "type": "rsvr",
+        "stnm": "桂五",
+        "stcd": "STHHA53251"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.340227,
+          33.799318
+        ]
+      },
+      "properties": {
+        "编号": "w128",
+        "type": "rsvr",
+        "stnm": "射阳河闸",
+        "stcd": "STHHA53091"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.389449,
+          33.735473
+        ]
+      },
+      "properties": {
+        "编号": "w642",
+        "type": "rsvr",
+        "stnm": "运棉河闸",
+        "stcd": "STHHA53559"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.390526,
+          33.732521
+        ]
+      },
+      "properties": {
+        "编号": "w599",
+        "type": "rsvr",
+        "stnm": "黄沙港闸",
+        "stcd": "STHHA53607"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.394962,
+          33.727672
+        ]
+      },
+      "properties": {
+        "编号": "w644",
+        "type": "rsvr",
+        "stnm": "利民河闸",
+        "stcd": "STHHA53571"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.472371,
+          33.617755
+        ]
+      },
+      "properties": {
+        "编号": "w614",
+        "type": "rsvr",
+        "stnm": "新洋港闸",
+        "stcd": "STHHA53093"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.491085,
+          33.614941
+        ]
+      },
+      "properties": {
+        "编号": "w631",
+        "type": "rsvr",
+        "stnm": "西潮河闸",
+        "stcd": "STHHA53202"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.582703,
+          33.462006
+        ]
+      },
+      "properties": {
+        "编号": "w624",
+        "type": "rsvr",
+        "stnm": "斗龙港闸",
+        "stcd": "STHHA53810"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.592909,
+          33.465852
+        ]
+      },
+      "properties": {
+        "编号": "w577",
+        "type": "rsvr",
+        "stnm": "大丰闸",
+        "stcd": "STHHA53095"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.69637,
+          33.186142
+        ]
+      },
+      "properties": {
+        "编号": "w579",
+        "type": "rsvr",
+        "stnm": "王港闸",
+        "stcd": "STHHA53097"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.795503,
+          33.053254
+        ]
+      },
+      "properties": {
+        "编号": "w581",
+        "type": "rsvr",
+        "stnm": "川东港闸",
+        "stcd": "STHHA53101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.840752,
+          32.951575
+        ]
+      },
+      "properties": {
+        "编号": "W580",
+        "type": "rsvr",
+        "stnm": "东台河闸",
+        "stcd": "STHHA53099"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.404108,
+          32.059042
+        ]
+      },
+      "properties": {
+        "编号": "W486",
+        "type": "rsvr",
+        "stnm": "夏仕港闸",
+        "stcd": "STCHA69576"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.482621,
+          32.105707
+        ]
+      },
+      "properties": {
+        "编号": "W404",
+        "type": "rsvr",
+        "stnm": "焦港闸",
+        "stcd": "STCHA69419"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.643988,
+          32.074691
+        ]
+      },
+      "properties": {
+        "编号": "W406",
+        "type": "rsvr",
+        "stnm": "碾砣港闸",
+        "stcd": "STCHA69421"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.737263,
+          32.043411
+        ]
+      },
+      "properties": {
+        "编号": "W407",
+        "type": "rsvr",
+        "stnm": "九圩港闸",
+        "stcd": "STCHA69423"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.818412,
+          32.020973
+        ]
+      },
+      "properties": {
+        "编号": "W408",
+        "type": "rsvr",
+        "stnm": "南通闸",
+        "stcd": "STCHA69425"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.478597,
+          32.604072
+        ]
+      },
+      "properties": {
+        "编号": "W615",
+        "type": "rsvr",
+        "stnm": "贲家集站",
+        "stcd": "STHHA53690"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.402513,
+          32.732642
+        ]
+      },
+      "properties": {
+        "编号": "W645",
+        "type": "rsvr",
+        "stnm": "安丰站",
+        "stcd": "STHHA53574"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.340248,
+          32.856537
+        ]
+      },
+      "properties": {
+        "编号": "W584",
+        "type": "rsvr",
+        "stnm": "东台站",
+        "stcd": "STHHA53111"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.859706,
+          32.609847
+        ]
+      },
+      "properties": {
+        "编号": "W641",
+        "type": "rsvr",
+        "stnm": "新港闸",
+        "stcd": "STHHA53557"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5144,
+          32.483339
+        ]
+      },
+      "properties": {
+        "编号": "W630",
+        "type": "rsvr",
+        "stnm": "邵仙洞",
+        "stcd": "STHHA53200"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.505981,
+          32.423835
+        ]
+      },
+      "properties": {
+        "编号": "W548",
+        "type": "rsvr",
+        "stnm": "万福闸",
+        "stcd": "STHHA53016"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.549532,
+          32.420159
+        ]
+      },
+      "properties": {
+        "编号": "W575",
+        "type": "rsvr",
+        "stnm": "芒稻闸",
+        "stcd": "STHHA53084"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.555839,
+          32.414376
+        ]
+      },
+      "properties": {
+        "编号": "W118",
+        "type": "rsvr",
+        "stnm": "江都一站",
+        "stcd": "STHHA53050"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.569389,
+          32.421735
+        ]
+      },
+      "properties": {
+        "编号": "W603",
+        "type": "rsvr",
+        "stnm": "江都东闸",
+        "stcd": "STHHA53616"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.68168,
+          32.493694
+        ]
+      },
+      "properties": {
+        "编号": "W560",
+        "type": "rsvr",
+        "stnm": "宜陵闸",
+        "stcd": "STHHA53052"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.795175,
+          32.016138
+        ]
+      },
+      "properties": {
+        "编号": "W419",
+        "type": "rsvr",
+        "stnm": "武定门闸",
+        "stcd": "STCHA69436"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.557585,
+          32.165518
+        ]
+      },
+      "properties": {
+        "编号": "W469",
+        "type": "rsvr",
+        "stnm": "晓桥",
+        "stcd": "STCHA69517"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.588574,
+          32.202646
+        ]
+      },
+      "properties": {
+        "编号": "W389",
+        "type": "rsvr",
+        "stnm": "汊河集闸",
+        "stcd": "STCHA69369"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.693411,
+          32.32387
+        ]
+      },
+      "properties": {
+        "编号": "W470",
+        "type": "rsvr",
+        "stnm": "三汊湾闸",
+        "stcd": "STCHA69518"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.937498,
+          32.200919
+        ]
+      },
+      "properties": {
+        "编号": "W466",
+        "type": "rsvr",
+        "stnm": "划子口闸",
+        "stcd": "STCHA69512"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.927137,
+          32.250191
+        ]
+      },
+      "properties": {
+        "编号": "W464",
+        "type": "rsvr",
+        "stnm": "红山窑闸",
+        "stcd": "STCHA69509"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.067792,
+          32.089169
+        ]
+      },
+      "properties": {
+        "编号": "W545",
+        "type": "rsvr",
+        "stnm": "安基山水库",
+        "stcd": "STCHA69991"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.177729,
+          32.078413
+        ]
+      },
+      "properties": {
+        "编号": "W536",
+        "type": "rsvr",
+        "stnm": "北山水库",
+        "stcd": "STCHA69942"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.247501,
+          32.067565
+        ]
+      },
+      "properties": {
+        "编号": "W538",
+        "type": "rsvr",
+        "stnm": "仑山水库",
+        "stcd": "STCHA69948"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.389607,
+          32.0685
+        ]
+      },
+      "properties": {
+        "编号": "W541",
+        "type": "rsvr",
+        "stnm": "凌塘水库",
+        "stcd": "STCHA69966"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.386821,
+          32.253102
+        ]
+      },
+      "properties": {
+        "编号": "W472",
+        "type": "rsvr",
+        "stnm": "瓜州站",
+        "stcd": "STCHA69551"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.842771,
+          32.305142
+        ]
+      },
+      "properties": {
+        "编号": "W477",
+        "type": "rsvr",
+        "stnm": "高港抽水站",
+        "stcd": "STCHA69556"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.867889,
+          32.2959
+        ]
+      },
+      "properties": {
+        "编号": "W485",
+        "type": "rsvr",
+        "stnm": "口岸闸",
+        "stcd": "STCHA69574"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.956169,
+          32.235048
+        ]
+      },
+      "properties": {
+        "编号": "W475",
+        "type": "rsvr",
+        "stnm": "马甸站",
+        "stcd": "STCHA69554"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.935621,
+          32.153659
+        ]
+      },
+      "properties": {
+        "编号": "W483",
+        "type": "rsvr",
+        "stnm": "过船港闸",
+        "stcd": "STCHA69570"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.504686,
+          32.783546
+        ]
+      },
+      "properties": {
+        "编号": "W635",
+        "type": "rsvr",
+        "stnm": "化农水库",
+        "stcd": "STHHA53255"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.511112,
+          32.826714
+        ]
+      },
+      "properties": {
+        "编号": "W634",
+        "type": "rsvr",
+        "stnm": "山孔",
+        "stcd": "STHHA53253"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.695506,
+          32.841478
+        ]
+      },
+      "properties": {
+        "编号": "W625",
+        "type": "rsvr",
+        "stnm": "红旗库",
+        "stcd": "STHHA53906"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.555336,
+          32.930481
+        ]
+      },
+      "properties": {
+        "编号": "W636",
+        "type": "rsvr",
+        "stnm": "龙王山",
+        "stcd": "STHHA53259"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.642503,
+          32.543254
+        ]
+      },
+      "properties": {
+        "编号": "W398",
+        "type": "rsvr",
+        "stnm": "大泉水库",
+        "stcd": "STCHA69411"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.682593,
+          32.586912
+        ]
+      },
+      "properties": {
+        "编号": "W399",
+        "type": "rsvr",
+        "stnm": "大河桥水库",
+        "stcd": "STCHA69412"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.756587,
+          32.485787
+        ]
+      },
+      "properties": {
+        "编号": "W400",
+        "type": "rsvr",
+        "stnm": "山湖水库",
+        "stcd": "STCHA69413"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.831776,
+          32.5453
+        ]
+      },
+      "properties": {
+        "编号": "W627",
+        "type": "rsvr",
+        "stnm": "河王坝",
+        "stcd": "STHHA53932"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.969237,
+          32.472811
+        ]
+      },
+      "properties": {
+        "编号": "W396",
+        "type": "rsvr",
+        "stnm": "金牛山水库",
+        "stcd": "STCHA69409"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.730421,
+          32.255856
+        ]
+      },
+      "properties": {
+        "编号": "W468",
+        "type": "rsvr",
+        "stnm": "葛塘",
+        "stcd": "STCHA69516"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.091145,
+          32.406765
+        ]
+      },
+      "properties": {
+        "编号": "W628",
+        "type": "rsvr",
+        "stnm": "月塘水库",
+        "stcd": "STHHA53950"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.198,
+          32.269074
+        ]
+      },
+      "properties": {
+        "编号": "W397",
+        "type": "rsvr",
+        "stnm": "泗源沟闸",
+        "stcd": "STCHA69410"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.237067,
+          32.240319
+        ]
+      },
+      "properties": {
+        "编号": "W473",
+        "type": "rsvr",
+        "stnm": "十二圩站",
+        "stcd": "STCHA69552"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.318771,
+          32.250092
+        ]
+      },
+      "properties": {
+        "编号": "W474",
+        "type": "rsvr",
+        "stnm": "土桥站",
+        "stcd": "STCHA69553"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.861509,
+          32.011091
+        ]
+      },
+      "properties": {
+        "编号": "W395",
+        "type": "rsvr",
+        "stnm": "小河闸",
+        "stcd": "STCHA69405"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.792981,
+          32.092294
+        ]
+      },
+      "properties": {
+        "编号": "W461",
+        "type": "rsvr",
+        "stnm": "九曲河闸",
+        "stcd": "STCHA69499"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.564972,
+          32.178838
+        ]
+      },
+      "properties": {
+        "编号": "W393",
+        "type": "rsvr",
+        "stnm": "谏壁闸",
+        "stcd": "STCHA69401"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.300048,
+          34.10323
+        ]
+      },
+      "properties": {
+        "编号": "w113",
+        "type": "rsvr",
+        "stnm": "六垛南闸",
+        "stcd": "STHHA53036"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.298909,
+          34.106059
+        ]
+      },
+      "properties": {
+        "编号": "w115",
+        "type": "rsvr",
+        "stnm": "六垛北闸",
+        "stcd": "STHHA53042"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.559473,
+          32.416769
+        ]
+      },
+      "properties": {
+        "编号": "w119",
+        "type": "rsvr",
+        "stnm": "江都四站",
+        "stcd": "STHHA53051"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.993884,
+          32.523087
+        ]
+      },
+      "properties": {
+        "编号": "w129",
+        "type": "rsvr",
+        "stnm": "小洋口闸",
+        "stcd": "STHHA53107"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.145817,
+          33.475962
+        ]
+      },
+      "properties": {
+        "编号": "w133",
+        "type": "rsvr",
+        "stnm": "运东电站",
+        "stcd": "STHHA53172"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.131663,
+          33.469159
+        ]
+      },
+      "properties": {
+        "编号": "w135",
+        "type": "rsvr",
+        "stnm": "淮安抽水一站",
+        "stcd": "STHHA53606"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.827927,
+          33.294266
+        ]
+      },
+      "properties": {
+        "编号": "w136",
+        "type": "rsvr",
+        "stnm": "高良涧电站",
+        "stcd": "STHHA53622"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.55853,
+          32.416218
+        ]
+      },
+      "properties": {
+        "编号": "w139",
+        "type": "rsvr",
+        "stnm": "江都三站",
+        "stcd": "STHHA53632"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.557264,
+          32.415494
+        ]
+      },
+      "properties": {
+        "编号": "w138",
+        "type": "rsvr",
+        "stnm": "江都二站",
+        "stcd": "STHHA53631"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.361614,
+          34.592982
+        ]
+      },
+      "properties": {
+        "编号": "w261",
+        "type": "rsvr",
+        "stnm": "伊家河闸",
+        "stcd": "STYHA55209"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.370878,
+          34.31961
+        ]
+      },
+      "properties": {
+        "编号": "w307",
+        "type": "rsvr",
+        "stnm": "解台站",
+        "stcd": "STYHA55907"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.817652,
+          34.421142
+        ]
+      },
+      "properties": {
+        "编号": "w309",
+        "type": "rsvr",
+        "stnm": "刘山站",
+        "stcd": "STYHA55909"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.249158,
+          34.008919
+        ]
+      },
+      "properties": {
+        "编号": "w315",
+        "type": "rsvr",
+        "stnm": "洋河滩闸",
+        "stcd": "STYHA55915"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.699899,
+          33.696227
+        ]
+      },
+      "properties": {
+        "编号": "w321",
+        "type": "rsvr",
+        "stnm": "泗阳闸",
+        "stcd": "STYHA55921"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.439712,
+          33.826868
+        ]
+      },
+      "properties": {
+        "编号": "w319",
+        "type": "rsvr",
+        "stnm": "刘老涧闸",
+        "stcd": "STYHA55919"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.822545,
+          34.418505
+        ]
+      },
+      "properties": {
+        "编号": "w330",
+        "type": "rsvr",
+        "stnm": "刘山南站",
+        "stcd": "STYHA55939"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.901704,
+          34.232325
+        ]
+      },
+      "properties": {
+        "编号": "w332",
+        "type": "rsvr",
+        "stnm": "刘集地涵",
+        "stcd": "STYHA55942"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.97096,
+          34.143975
+        ]
+      },
+      "properties": {
+        "编号": "w341",
+        "type": "rsvr",
+        "stnm": "民便河站",
+        "stcd": "STYHA55972"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.698935,
+          33.695507
+        ]
+      },
+      "properties": {
+        "编号": "w344",
+        "type": "rsvr",
+        "stnm": "泗阳二站",
+        "stcd": "STYHA55982"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.439974,
+          33.827392
+        ]
+      },
+      "properties": {
+        "编号": "w343",
+        "type": "rsvr",
+        "stnm": "刘老涧新闸",
+        "stcd": "STYHA55980"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.58315,
+          32.175559
+        ]
+      },
+      "properties": {
+        "编号": "w394",
+        "type": "rsvr",
+        "stnm": "谏壁站",
+        "stcd": "STCHA69403"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.789864,
+          32.015509
+        ]
+      },
+      "properties": {
+        "编号": "w420",
+        "type": "rsvr",
+        "stnm": "武定门站",
+        "stcd": "STCHA69437"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.956169,
+          32.23487
+        ]
+      },
+      "properties": {
+        "编号": "w484",
+        "type": "rsvr",
+        "stnm": "马甸闸",
+        "stcd": "STCHA69572"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.842171,
+          32.304964
+        ]
+      },
+      "properties": {
+        "编号": "w478",
+        "type": "rsvr",
+        "stnm": "高港闸",
+        "stcd": "STCHA69557"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.844322,
+          32.307237
+        ]
+      },
+      "properties": {
+        "编号": "w479",
+        "type": "rsvr",
+        "stnm": "高港送水闸",
+        "stcd": "STCHA69558"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.516677,
+          31.812151
+        ]
+      },
+      "properties": {
+        "编号": "w480",
+        "type": "rsvr",
+        "stnm": "三和港闸",
+        "stcd": "STCHA69562"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.553288,
+          32.419715
+        ]
+      },
+      "properties": {
+        "编号": "w563",
+        "type": "rsvr",
+        "stnm": "江都引江桥",
+        "stcd": "STHHA53057"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.658209,
+          32.480856
+        ]
+      },
+      "properties": {
+        "编号": "w568",
+        "type": "rsvr",
+        "stnm": "宜陵地涵",
+        "stcd": "STHHA53065"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.125181,
+          33.884402
+        ]
+      },
+      "properties": {
+        "编号": "w591",
+        "type": "rsvr",
+        "stnm": "沙集闸",
+        "stcd": "STHHA53135"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.967033,
+          33.597175
+        ]
+      },
+      "properties": {
+        "编号": "w596",
+        "type": "rsvr",
+        "stnm": "杨庄闸",
+        "stcd": "STHHA53171"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.147126,
+          33.467708
+        ]
+      },
+      "properties": {
+        "编号": "w598",
+        "type": "rsvr",
+        "stnm": "淮安三站",
+        "stcd": "STHHA53605"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.147815,
+          33.468565
+        ]
+      },
+      "properties": {
+        "编号": "w600",
+        "type": "rsvr",
+        "stnm": "大引江闸",
+        "stcd": "STHHA53609"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.515798,
+          32.424728
+        ]
+      },
+      "properties": {
+        "编号": "w602",
+        "type": "rsvr",
+        "stnm": "太平闸",
+        "stcd": "STHHA53614"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.528528,
+          32.432521
+        ]
+      },
+      "properties": {
+        "编号": "w606",
+        "type": "rsvr",
+        "stnm": "金湾闸",
+        "stcd": "STHHA53620"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.132326,
+          33.469603
+        ]
+      },
+      "properties": {
+        "编号": "w610",
+        "type": "rsvr",
+        "stnm": "沙庄闸",
+        "stcd": "STHHA53628"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.132405,
+          33.469618
+        ]
+      },
+      "properties": {
+        "编号": "w611",
+        "type": "rsvr",
+        "stnm": "运西电站",
+        "stcd": "STHHA53629"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.132395,
+          33.469482
+        ]
+      },
+      "properties": {
+        "编号": "w612",
+        "type": "rsvr",
+        "stnm": "沙庄引江闸",
+        "stcd": "STHHA53630"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.513735,
+          32.482298
+        ]
+      },
+      "properties": {
+        "编号": "w632",
+        "type": "rsvr",
+        "stnm": "运盐河闸",
+        "stcd": "STHHA53210"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.515394,
+          32.483815
+        ]
+      },
+      "properties": {
+        "编号": "w638",
+        "type": "rsvr",
+        "stnm": "邵仙闸",
+        "stcd": "STHHA53407"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.998358,
+          34.875938
+        ]
+      },
+      "properties": {
+        "编号": "w258",
+        "type": "rsvr",
+        "stnm": "二级坝一闸",
+        "stcd": "STYHA55203"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.958951,
+          34.867238
+        ]
+      },
+      "properties": {
+        "编号": "w276",
+        "type": "rsvr",
+        "stnm": "二级坝四闸",
+        "stcd": "STYHA55264"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.810901,
+          31.771485
+        ]
+      },
+      "properties": {
+        "编号": "w444",
+        "type": "rsvr",
+        "stnm": "常熟抽水站",
+        "stcd": "STCHA69470"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.924094,
+          32.250462
+        ]
+      },
+      "properties": {
+        "编号": "w465",
+        "type": "rsvr",
+        "stnm": "红山窑站",
+        "stcd": "STCHA69511"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.089126,
+          34.372823
+        ]
+      },
+      "properties": {
+        "编号": "w549",
+        "type": "rsvr",
+        "stnm": "滨海闸",
+        "stcd": "STHHA53024"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.590602,
+          33.78163
+        ]
+      },
+      "properties": {
+        "编号": "w553",
+        "type": "rsvr",
+        "stnm": "腰闸电站",
+        "stcd": "STHHA53035"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.361455,
+          34.592755
+        ]
+      },
+      "properties": {
+        "编号": "W262",
+        "type": "rsvr",
+        "stnm": "韩庄老运河闸",
+        "stcd": "STYHA55211"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.123195,
+          34.049228
+        ]
+      },
+      "properties": {
+        "编号": "W587",
+        "type": "rsvr",
+        "stnm": "北坍站",
+        "stcd": "STHHA53118"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.909088,
+          31.92384
+        ]
+      },
+      "properties": {
+        "编号": "W410",
+        "type": "rsvr",
+        "stnm": "营船港闸",
+        "stcd": "STCHA69427"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.494265,
+          32.538353
+        ]
+      },
+      "properties": {
+        "编号": "w558",
+        "type": "rsvr",
+        "stnm": "邵伯闸",
+        "stcd": "STHHA53048"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.186611,
+          31.651805
+        ]
+      },
+      "properties": {
+        "编号": "w503",
+        "type": "rsvr",
+        "stnm": "洛社",
+        "stcd": "STCZA69644"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.190968,
+          31.951302
+        ]
+      },
+      "properties": {
+        "编号": "w422",
+        "type": "rsvr",
+        "stnm": "句容",
+        "stcd": "STCPA69439"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.962776,
+          34.501051
+        ]
+      },
+      "properties": {
+        "编号": "w336",
+        "type": "rsvr",
+        "stnm": "敬安",
+        "stcd": "STYPA55955"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.605576,
+          34.566007
+        ]
+      },
+      "properties": {
+        "编号": "w327",
+        "type": "rsvr",
+        "stnm": "宋楼",
+        "stcd": "STYPA55931"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.611424,
+          34.687328
+        ]
+      },
+      "properties": {
+        "编号": "w302",
+        "type": "rsvr",
+        "stnm": "丰县",
+        "stcd": "STYPA55900"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.496404,
+          34.312008
+        ]
+      },
+      "properties": {
+        "编号": "w207",
+        "type": "rsvr",
+        "stnm": "高流",
+        "stcd": "STYPA54736"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.204153,
+          34.238557
+        ]
+      },
+      "properties": {
+        "编号": "w132",
+        "type": "rsvr",
+        "stnm": "徐州",
+        "stcd": "STHPA53129"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.467428,
+          34.252925
+        ]
+      },
+      "properties": {
+        "编号": "w347",
+        "type": "rsvr",
+        "stnm": "五孔桥",
+        "stcd": "STYPA55993"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.596981,
+          34.215686
+        ]
+      },
+      "properties": {
+        "编号": "w348",
+        "type": "rsvr",
+        "stnm": "单集",
+        "stcd": "STYPA55994"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.650931,
+          34.373118
+        ]
+      },
+      "properties": {
+        "编号": "w325",
+        "type": "rsvr",
+        "stnm": "耿集（大阚口）",
+        "stcd": "STYPA55928"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.421919,
+          34.416109
+        ]
+      },
+      "properties": {
+        "编号": "w326",
+        "type": "rsvr",
+        "stnm": "贾汪",
+        "stcd": "STYPA55929"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.57354,
+          34.035574
+        ]
+      },
+      "properties": {
+        "编号": "w588",
+        "type": "rsvr",
+        "stnm": "双沟",
+        "stcd": "STHPA53120"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.471417,
+          34.214728
+        ]
+      },
+      "properties": {
+        "编号": "w215",
+        "type": "rsvr",
+        "stnm": "时集",
+        "stcd": "STYPA54802"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.449246,
+          34.130666
+        ]
+      },
+      "properties": {
+        "编号": "w190",
+        "type": "rsvr",
+        "stnm": "邵店",
+        "stcd": "STYPA54710"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.979842,
+          34.625113
+        ]
+      },
+      "properties": {
+        "编号": "w323",
+        "type": "rsvr",
+        "stnm": "四户",
+        "stcd": "STYPA55924"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.578243,
+          34.213184
+        ]
+      },
+      "properties": {
+        "编号": "w199",
+        "type": "rsvr",
+        "stnm": "响水口",
+        "stcd": "STYPA54726"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.844289,
+          34.157842
+        ]
+      },
+      "properties": {
+        "编号": "w640",
+        "type": "rsvr",
+        "stnm": "七套",
+        "stcd": "STHPA53555"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.351557,
+          34.088187
+        ]
+      },
+      "properties": {
+        "编号": "w247",
+        "type": "rsvr",
+        "stnm": "灌南",
+        "stcd": "STYPA54997"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.186113,
+          34.01567
+        ]
+      },
+      "properties": {
+        "编号": "w201",
+        "type": "rsvr",
+        "stnm": "高沟",
+        "stcd": "STYPA54729"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.129396,
+          34.839928
+        ]
+      },
+      "properties": {
+        "编号": "w209",
+        "type": "rsvr",
+        "stnm": "青口",
+        "stcd": "STYPA54740"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.952951,
+          33.906053
+        ]
+      },
+      "properties": {
+        "编号": "W131",
+        "type": "rsvr",
+        "stnm": "睢宁",
+        "stcd": "STHPA53121"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.199891,
+          33.767868
+        ]
+      },
+      "properties": {
+        "编号": "W589",
+        "type": "rsvr",
+        "stnm": "小王庄",
+        "stcd": "STHPA53123"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.62127,
+          33.91303
+        ]
+      },
+      "properties": {
+        "编号": "w222",
+        "type": "rsvr",
+        "stnm": "穿城",
+        "stcd": "STYPA54850"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.415788,
+          33.005704
+        ]
+      },
+      "properties": {
+        "编号": "W557",
+        "type": "rsvr",
+        "stnm": "界首",
+        "stcd": "STHPA53046"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.201257,
+          32.873536
+        ]
+      },
+      "properties": {
+        "编号": "W604",
+        "type": "rsvr",
+        "stnm": "庙沟",
+        "stcd": "STHPA53618"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.249867,
+          32.741297
+        ]
+      },
+      "properties": {
+        "编号": "W629",
+        "type": "rsvr",
+        "stnm": "岗板头",
+        "stcd": "STHPA53954"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.612473,
+          32.064819
+        ]
+      },
+      "properties": {
+        "编号": "W467",
+        "type": "rsvr",
+        "stnm": "江浦",
+        "stcd": "STCPA69515"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.323897,
+          32.471396
+        ]
+      },
+      "properties": {
+        "编号": "W621",
+        "type": "rsvr",
+        "stnm": "花庄",
+        "stcd": "STHPA53704"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.567384,
+          32.400416
+        ]
+      },
+      "properties": {
+        "编号": "W418",
+        "type": "rsvr",
+        "stnm": "如皋",
+        "stcd": "STCPA69435"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.750835,
+          32.50999
+        ]
+      },
+      "properties": {
+        "编号": "W620",
+        "type": "rsvr",
+        "stnm": "沿口",
+        "stcd": "STHPA53703"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.757921,
+          32.249555
+        ]
+      },
+      "properties": {
+        "编号": "W618",
+        "type": "rsvr",
+        "stnm": "白浦",
+        "stcd": "STHPA53696"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.907239,
+          32.363359
+        ]
+      },
+      "properties": {
+        "编号": "W617",
+        "type": "rsvr",
+        "stnm": "岔河",
+        "stcd": "STHPA53695"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.840703,
+          32.177334
+        ]
+      },
+      "properties": {
+        "编号": "W403",
+        "type": "rsvr",
+        "stnm": "刘桥",
+        "stcd": "STCPA69417"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.933681,
+          32.06674
+        ]
+      },
+      "properties": {
+        "编号": "W402",
+        "type": "rsvr",
+        "stnm": "兴仁",
+        "stcd": "STCPA69415"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.412744,
+          32.050691
+        ]
+      },
+      "properties": {
+        "编号": "W409",
+        "type": "rsvr",
+        "stnm": "包场",
+        "stcd": "STCPA69426"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.193806,
+          32.317129
+        ]
+      },
+      "properties": {
+        "编号": "W414",
+        "type": "rsvr",
+        "stnm": "掘港",
+        "stcd": "STCPA69431"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.779017,
+          31.862104
+        ]
+      },
+      "properties": {
+        "编号": "w411",
+        "type": "rsvr",
+        "stnm": "向阳",
+        "stcd": "STCPA69428"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.654173,
+          31.826766
+        ]
+      },
+      "properties": {
+        "编号": "w413",
+        "type": "rsvr",
+        "stnm": "启东",
+        "stcd": "STCPA69430"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.296045,
+          31.594771
+        ]
+      },
+      "properties": {
+        "编号": "w526",
+        "type": "rsvr",
+        "stnm": "吕庄水库",
+        "stcd": "STCHA69905"
+      }
+    }
+  ]
+}

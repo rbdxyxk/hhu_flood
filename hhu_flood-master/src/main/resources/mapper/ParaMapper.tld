@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hhu.mapper.ParaMapper">
+
+
+
+    <sql id="selectFields">
+        A,DATT,B,EX,IM,KI,KG,CI,CG,CS,L,X,K,SM,WUM,WLM,WDM,C
+    </sql>
+
+    <select id="select_para" resultType="java.math.BigDecimal">
+        use forcastflood;
+        select <include refid="selectFields"></include>
+        from para_forecast
+        where  ParaName=#{para_name} and CalRegNM=#{cal_reg_nm} and ParamID like 'SLHRES%'
+    </select>
+
+
+</mapper>

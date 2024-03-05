@@ -1,0 +1,15 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.481496,31.8472]},"properties":{"S":"s1329","SB":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[116.970209,34.87264]},"properties":{"S":"s1325","SB":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[116.952365,34.866855]},"properties":{"S":"s1326","SB":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[116.990778,34.875388]},"properties":{"S":"s1324","SB":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[117.365411,34.597886]},"properties":{"S":"s1321","SB":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[117.174026,34.400632]},"properties":{"S":"s1327","SB":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.325089,34.12092]},"properties":{"S":"s1319","SB":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.541673,34.808257]},"properties":{"S":"s1317","SB":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.051861,33.449928]},"properties":{"S":"S1313","SB":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.030714,33.17559]},"properties":{"S":"S1314","SB":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.349654,32.039195]},"properties":{"S":"S1330","SB":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.588247,32.203539]},"properties":{"S":"S1331","SB":""}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[119.151401,34.669701]},"properties":{"S":"S1332","SB":"","名称": "太平庄闸"}}
+]}

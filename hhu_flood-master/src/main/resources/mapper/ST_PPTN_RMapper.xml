@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hhu.mapper.ST_PPTN_RMapper">
+
+    <select id="getAllSTCDAndSTNM" resultType="cn.hhu.Bean.ST_STINFO_B">
+    use jsycwater;
+    select STCD,STNM
+    from  st_stbprp_b
+    where STCD in ('51111911','51112000','51131300','51112101','51131350','51112500'
+    ,'51115350','51133300','51106900','51321850','51133450','51104700','51104800',
+    '51131900','51105200','51123150','51124400','51105500','51125450','51123250',
+    '51123400','51104101','51100801','51131050','51130400','51111501','51104201',
+    '51111750','51104501','51101101','51101201','51114800','51115000','51320950',
+    '51100300','51121450','51100601','51103400','51104587','51125550','51111000',
+    '51114600','51111301','51115000' )
+--         SELECT  a.STCD,a.STNM FROM `st_stbprp_b` a , (
+-- SELECT DISTINCT STCD FROM `st_pptn_r`
+-- ) b WHERE a.`STCD`=b.`STCD`;
+--     use waterflood;
+    </select>
+    <select id="searchAllByStcdAndTm" resultType="cn.hhu.Bean.ST_PPTN_R">
+        use jsycwater;
+        select stcd,tm,INTV,IFNULL(DRP,0.0) as DRP ,IFNULL(DYP,0.0) as DYP
+        from st_pptn_r
+        where tm between #{startDatetime} AND  #{endDatetime}
+        and stcd in
+        <foreach item="item" collection="stcd" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+        ORDER BY stcd,tm
+        ;
+        use waterflood;
+    </select>
+</mapper>

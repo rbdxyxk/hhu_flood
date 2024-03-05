@@ -1,0 +1,20 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.7367,33.0982]},"properties":{"名称":"蒋坝","报汛站码":"53002","水流站码":"53002000"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[117.282,32.9555]},"properties":{"名称":"蚌埠","报汛站码":"51078","水流站码":"51078000"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[117.9758,32.7736]},"properties":{"名称":"明光","报汛站码":"52956","水流站码":"52956000"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.0491,33.4481]},"properties":{"名称":"团结闸","报汛站码":"52776","水流站码":"50908400"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.1736,33.4627]},"properties":{"名称":"泗洪(姚圩)老）","报汛站码":"53007","水流站码":"50914700"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.1749,33.4534]},"properties":{"名称":"泗洪(姚圩)濉）","报汛站码":"53008","水流站码":"50912900"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.2994,33.6191]},"properties":{"名称":"金锁镇","报汛站码":"53009","水流站码":"50914900"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.0615,33.1821]},"properties":{"名称":"峰山","报汛站码":"53006","水流站码":"50902300"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.8778,33.3397]},"properties":{"名称":"二河闸","报汛站码":"53019","水流站码":"51110301"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118,33]},"properties":{"名称":"高良涧闸","报汛站码":"53030","水流站码":"51001750"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.7428,33.0834]},"properties":{"名称":"三河闸","报汛站码":"53010","水流站码":"51002700"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.2422,34.0108]},"properties":{"名称":"洋河滩闸","报汛站码":"55915","水流站码":"51107800"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.1221,34.54]},"properties":{"名称":"港上","报汛站码":"54827","水流站码":"51101800"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[117.931,34.3062]},"properties":{"名称":"运河","报汛站码":"55911","水流站码":"51205100"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[117.9138,34.2347]},"properties":{"名称":"土山","报汛站码":"55923","水流站码":"51210500"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[117.8997,34.2324]},"properties":{"名称":"刘集地涵","报汛站码":"55942","水流站码":"55942000"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.1018,34.0584]},"properties":{"名称":"皂河闸","报汛站码":"55913","水流站码":"51205500"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[118.3078,34.1136]},"properties":{"名称":"嶂山闸","报汛站码":"54701","水流站码":"51102601"}}
+]}

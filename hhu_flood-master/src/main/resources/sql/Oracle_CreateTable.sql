@@ -1,0 +1,2070 @@
+CREATE TABLE  ST_STBPRP_B (
+    STCD    CHAR(8)     NOT NULL,
+    STNM    CHAR(30),
+    RVNM    CHAR(30),
+    HNNM    CHAR(30),
+    BSNM    CHAR(30),
+    LGTD    DECIMAL(10,6),
+    LTTD    DECIMAL(10,6),
+    STLC    CHAR(50),
+    ADDVCD   CHAR(6),
+    DTMNM   CHAR(16),
+    DTMEL   DECIMAL(7,3),
+    DTPR    DECIMAL(7,3),
+    STTP    CHAR(2),
+    FRGRD   CHAR(1),
+    ESSTYM    CHAR(6),
+    BGFRYM    CHAR(6),
+    ATCUNIT   CHAR(20),
+    ADMAUTH   CHAR(20),
+    LOCALITY    CHAR(10)    NOT NULL,
+    STBK    CHAR(1),
+    STAZT   DECIMAL(3),
+    DSTRVM    DECIMAL(6,1),
+    DRNA    DECIMAL(7),
+    PHCD    CHAR(6),
+    USFL    CHAR(1),
+    COMMENTS    VARCHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD)
+);
+
+CREATE TABLE  ST_STSMTASK_B (
+    STCD    CHAR(8)     NOT NULL,
+    DFRTMS    DECIMAL(2),
+    PFL   CHAR(1),
+    EFL   CHAR(1),
+    ZFL   CHAR(1),
+    QFL   CHAR(1),
+    WFL   CHAR(1),
+    INQFL   CHAR(1),
+    DAMFL   CHAR(1),
+    OTQFL   CHAR(1),
+    WDWVFL    CHAR(1),
+    SEDFL   CHAR(1),
+    ICEFL   CHAR(1),
+    PPFL    CHAR(1),
+    DRNFL   CHAR(1),
+    SOILFL    CHAR(1),
+    GRWFL   CHAR(1),
+    STATFL    CHAR(1),
+    OFFICER   CHAR(12)    NOT NULL,
+    MPHONE    CHAR(11)    NOT NULL,
+    SPHONE    CHAR(12)    NOT NULL,
+    MODITIME    DATE,
+    PRIMARY KEY (STCD)
+);
+
+CREATE TABLE  ST_RSVRSTRL_B (
+    STCD    CHAR(8)     NOT NULL,
+    RLSTCD    CHAR(8)     NOT NULL,
+    IOMRK   CHAR(1)     NOT NULL,
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,RLSTCD,IOMRK)
+);
+
+CREATE TABLE  ST_WASRL_B (
+    STCD    CHAR(8)     NOT NULL,
+    RLSTCD    CHAR(8)     NOT NULL,
+    RLMRK   CHAR(1)     NOT NULL,
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,RLSTCD,RLMRK)
+);
+
+CREATE TABLE  ST_RVFCCH_B (
+    STCD    CHAR(8)     NOT NULL,
+    LDKEL   DECIMAL(7,3),
+    RDKEL   DECIMAL(7,3),
+    WRZ   DECIMAL(7,3),
+    WRQ   DECIMAL(9,3),
+    GRZ   DECIMAL(7,3),
+    GRQ   DECIMAL(9,3),
+    FLPQ    DECIMAL(9,3),
+    OBHTZ   DECIMAL(7,3),
+    OBHTZTM   DATE,
+    IVHZ    DECIMAL(7,3),
+    IVHZTM    DATE,
+    OBMXQ   DECIMAL(9,3),
+    OBMXQTM   DATE,
+    IVMXQ   DECIMAL(9,3),
+    IVMXQTM   DATE,
+    HMXS    DECIMAL(9,3),
+    HMXSTM    DATE,
+    HMXAVV    DECIMAL(9,3),
+    HMXAVVTM    DATE,
+    HLZ   DECIMAL(7,3),
+    HLZTM   DATE,
+    HMNQ    DECIMAL(9,3),
+    HMNQTM    DATE,
+    TAZ   DECIMAL(7,3),
+    TAQ   DECIMAL(9,3),
+    LAZ   DECIMAL(7,3),
+    LAQ   DECIMAL(9,3),
+    SFZ   DECIMAL(7,3),
+    SFQ   DECIMAL(9,3),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD)
+);
+
+CREATE TABLE  ST_RSVRFCCH_B (
+    STCD    CHAR(8)     NOT NULL,
+    RSVRTP    CHAR(1),
+    DAMEL   DECIMAL(7,3),
+    CKFLZ   DECIMAL(7,3),
+    DSFLZ   DECIMAL(7,3),
+    NORMZ   DECIMAL(7,3),
+    DDZ   DECIMAL(7,3),
+    ACTZ    DECIMAL(7,3),
+    TTCP    DECIMAL(9,3),
+    FLDCP   DECIMAL(9,3),
+    ACTCP   DECIMAL(9,3),
+    DDCP    DECIMAL(9,3),
+    HHRZ    DECIMAL(7,3),
+    HMXW    DECIMAL(9,3),
+    HHRZTM    DATE,
+    HMXINQ    DECIMAL(9,3),
+    RSTDR   DECIMAL(5,2),
+    HMXINQTM    DATE,
+    HMXOTQ    DECIMAL(9,3),
+    HMXOTQTM    DATE,
+    HLRZ    DECIMAL(7,3),
+    HLRZTM    DATE,
+    HMNINQ    DECIMAL(9,3),
+    HMNINQTM    DATE,
+    LAZ   DECIMAL(7,3),
+    SFQ   DECIMAL(9,3),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD)
+);
+
+CREATE TABLE  ST_RSVRFSR_B (
+    STCD    CHAR(8)     NOT NULL,
+    BGMD    CHAR(4)     NOT NULL,
+    EDMD    CHAR(4)     NOT NULL,
+    FSLTDZ    DECIMAL(7,3),
+    FSLTDW    DECIMAL(9,3),
+    FSTP    CHAR(1),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,BGMD)
+);
+
+CREATE TABLE  ST_SOILCH_B (
+    STCD    CHAR(8)     NOT NULL,
+    SLTP    CHAR(1),
+    SLTX    CHAR(2),
+    SFBR    CHAR(20),
+    SSPG    DECIMAL(4,2),
+    DSD   DECIMAL(4,2)     NOT NULL,
+    SPOR    DECIMAL(4,2)     NOT NULL,
+    SHWC    DECIMAL(4,2)     NOT NULL,
+    FDCP    DECIMAL(4,2),
+    WLCP    DECIMAL(4,2),
+    COMMENTS    VARCHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD)
+);
+
+CREATE TABLE  ST_FSDR_B (
+    UPSTCD    CHAR(8)     NOT NULL,
+    DWSTCD    CHAR(8)     NOT NULL,
+    RCHLEN    DECIMAL(3),
+    SFTQ    DECIMAL(9,3),
+    QMGN    DECIMAL(5)     NOT NULL,
+    MNTRTM    DECIMAL(5,2),
+    MXTRTM    DECIMAL(5,2),
+    AVTRTM    DECIMAL(5,2),
+    MODITIME    DATE,
+    PRIMARY KEY (UPSTCD,DWSTCD,QMGN)
+);
+
+CREATE TABLE  ST_ZQRL_B (
+    STCD    CHAR(8)     NOT NULL,
+    LNNM    CHAR(30)    NOT NULL,
+    BGTM    DATE     NOT NULL,
+    PTNO    DECIMAL(4)     NOT NULL,
+    Z   DECIMAL(7,3)     NOT NULL,
+    Q   DECIMAL(9,3)     NOT NULL,
+    COMMENTS    CHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,LNNM,BGTM,PTNO)
+);
+
+CREATE TABLE  ST_ZVARL_B (
+    STCD    CHAR(8)     NOT NULL,
+    MSTM    DATE     NOT NULL,
+    PTNO    DECIMAL(4)     NOT NULL,
+    RZ    DECIMAL(7,3)     NOT NULL,
+    W   DECIMAL(9,3),
+    WSFA    DECIMAL(7),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,MSTM,PTNO)
+);
+
+CREATE TABLE  ST_FRAPAR_B (
+    STCD    CHAR(8)     NOT NULL,
+    TPCYR   DECIMAL(4)     NOT NULL,
+    VARTP   CHAR(3)     NOT NULL,
+    AVRG    DECIMAL(11,4)    NOT NULL,
+    CV    DECIMAL(5,3)     NOT NULL,
+    CS    DECIMAL(5,3)     NOT NULL,
+    BGYR    DECIMAL(4)     NOT NULL,
+    EDYR    DECIMAL(4)     NOT NULL,
+    SPNUM   DECIMAL(4)     NOT NULL,
+    COMMENTS    VARCHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,TPCYR,VARTP)
+);
+
+CREATE TABLE  ST_FFRAR_B (
+    STCD    CHAR(8)     NOT NULL,
+    TPCYR   DECIMAL(4)     NOT NULL,
+    RCINT   DECIMAL(5)     NOT NULL,
+    Q   DECIMAL(9,3),
+    Z   DECIMAL(7,3),
+    W1    DECIMAL(11,4),
+    W3    DECIMAL(11,4),
+    W5    DECIMAL(11,4),
+    W7    DECIMAL(11,4),
+    W10   DECIMAL(11,4),
+    W15   DECIMAL(11,4),
+    W30   DECIMAL(11,4),
+    W60   DECIMAL(11,4),
+    COMMENTS    VARCHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,TPCYR,RCINT)
+);
+
+CREATE TABLE  ST_RVSECT_B (
+    STCD    CHAR(8)     NOT NULL,
+    MSTM    DATE     NOT NULL,
+    BGBK    CHAR(1)     NOT NULL,
+    VTNO    DECIMAL(4)     NOT NULL,
+    DI    DECIMAL(8,3)     NOT NULL,
+    ZB    DECIMAL(8,3)     NOT NULL,
+    COMMENTS    CHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,MSTM,VTNO)
+);
+
+CREATE TABLE  ST_INSTCD_B (
+    INSTCD    CHAR(10)    NOT NULL,
+    INSTNM    CHAR(60),
+    LOCALITY    CHAR(10),
+    MODITIME    DATE,
+    PRIMARY KEY (INSTCD)
+);
+
+CREATE TABLE  ST_PPTN_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    DRP   DECIMAL(5,1),
+    INTV    DECIMAL(5,2),
+    PDR   DECIMAL(5,2),
+    DYP   DECIMAL(5,1),
+    WTH   CHAR(1),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_SNOW_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    SNOWDEP   DECIMAL(3),
+    SNOWDEN   DECIMAL(3,2),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_HAIL_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    HPD   DECIMAL(3),
+    HLDR    DECIMAL(5,2),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_DAYEV_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    EPTP    CHAR(1),
+    DYE   DECIMAL(5,1),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_RIVER_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    Z   DECIMAL(7,3),
+    Q   DECIMAL(9,3),
+    XSA   DECIMAL(9,3),
+    XSAVV   DECIMAL(5,3),
+    XSMXV   DECIMAL(5,3),
+    FLWCHRCD    CHAR(1),
+    WPTN    CHAR(1),
+    MSQMT   CHAR(1),
+    MSAMT   CHAR(1),
+    MSVMT   CHAR(1),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_RSVR_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    RZ    DECIMAL(7,3),
+    INQ   DECIMAL(9,3),
+    W   DECIMAL(9,3),
+    BLRZ    DECIMAL(7,3),
+    OTQ   DECIMAL(9,3),
+    RWCHRCD   CHAR(1),
+    RWPTN   CHAR(1),
+    INQDR   DECIMAL(5,2),
+    MSQMT   CHAR(1),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_WAS_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    UPZ   DECIMAL(7,3),
+    DWZ   DECIMAL(7,3),
+    TGTQ    DECIMAL(9,3),
+    SWCHRCD   CHAR(1),
+    SUPWPTN   CHAR(1),
+    SDWWPTN   CHAR(1),
+    MSQMT   CHAR(1),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_GATE_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    EXKEY   CHAR(1)     NOT NULL,
+    EQPTP   CHAR(2),
+    EQPNO   CHAR(2),
+    GTOPNUM   DECIMAL(3),
+    GTOPHGT   DECIMAL(5,2),
+    GTQ   DECIMAL(9,3),
+    MSQMT   CHAR(1),
+    PRIMARY KEY (STCD,TM,EXKEY)
+);
+
+CREATE TABLE  ST_PUMP_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    PPUPZ   DECIMAL(7,3),
+    PPDWZ   DECIMAL(7,3),
+    OMCN    DECIMAL(3),
+    OMPWR   DECIMAL(5),
+    PMPQ    DECIMAL(7,3),
+    PPWCHRCD    CHAR(1),
+    PPUPWPTN    CHAR(1),
+    PPDWWPTN    CHAR(1),
+    MSQMT   CHAR(1),
+    PDCHCD    CHAR(1),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_TIDE_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    TDZ   DECIMAL(7,3),
+    AIRP    DECIMAL(5),
+    TDCHRCD   CHAR(1),
+    TDPTN   CHAR(1),
+    HLTDMK    CHAR(1),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_WDWV_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    WNDV    DECIMAL(4,1),
+    WNDPWR    DECIMAL(2),
+    WNDDIR    CHAR(2),
+    WVHGT   DECIMAL(4),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_SED_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    S   DECIMAL(9,3),
+    SCHRCD    CHAR(1),
+    SMT   CHAR(1),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_TMP_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    ATMP    DECIMAL(3,1),
+    WTMP    DECIMAL(3,1),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_QLICEINF_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    EXKEY   CHAR(1)     NOT NULL,
+    QLTICD    CHAR(2),
+    RLPSTN    CHAR(4),
+    RLDSTN    DECIMAL(3,1),
+    QLTITHK   DECIMAL(4,1),
+    IOSNDP    DECIMAL(2),
+    IUDFSTHK    DECIMAL(2),
+    PRIMARY KEY (STCD,TM,EXKEY)
+);
+
+CREATE TABLE  ST_QTICEINF_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    EXKEY   CHAR(1)     NOT NULL,
+    QNTICD    CHAR(1),
+    RLPSTN    CHAR(4),
+    RLDSTN    DECIMAL(3,1),
+    LBDIWD    DECIMAL(1),
+    RBDIWD    DECIMAL(1),
+    BDITHK    DECIMAL(4,1),
+    IRCON   DECIMAL(1),
+    DITHK   DECIMAL(4,1),
+    MXIA    DECIMAL(4),
+    MXIV    DECIMAL(3,1),
+    IQ    DECIMAL(9,3),
+    FRZPROP   CHAR(1),
+    BRKPROP   CHAR(1),
+    DIPCK   DECIMAL(1),
+    IDAMGRW   CHAR(1),
+    IDAMHGT   DECIMAL(3,1),
+    IDAMWD    DECIMAL(7,3),
+    IDAMUPZ   DECIMAL(7,3),
+    IDAMUPWPTN    CHAR(1),
+    ELTY    CHAR(1),
+    IQPROP    CHAR(1),
+    PRIMARY KEY (STCD,TM,EXKEY)
+);
+
+CREATE TABLE  ST_SOIL_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    EXKEY   CHAR(1)     NOT NULL,
+    VTAVSLM   DECIMAL(4,1),
+    SRLSLM    DECIMAL(4,1),
+    SLM10   DECIMAL(4,1),
+    SLM20   DECIMAL(4,1),
+    SLM30   DECIMAL(4,1),
+    SLM40   DECIMAL(4,1),
+    SLM60   DECIMAL(4,1),
+    SLM80   DECIMAL(4,1),
+    SLM100    DECIMAL(4,1),
+    CRPTY   CHAR(1),
+    CRPGRWPRD   CHAR(1),
+    HITRSN    CHAR(1),
+    SLMMMT    CHAR(1),
+    PRIMARY KEY (STCD,TM,EXKEY)
+);
+
+CREATE TABLE  ST_GRW_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    GWBD    DECIMAL(6,2),
+    GWBDRMK   CHAR(1),
+    SPQ   DECIMAL(9,3),
+    GWTMP   DECIMAL(4,1),
+    GWPTN   CHAR(1),
+    SPQMMT    CHAR(1),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_WGRW_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    WLMIN   DECIMAL(11,4),
+    WLMINMT   CHAR(1),
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_STORM_R (
+    STCD    CHAR(8)     NOT NULL,
+    TM    DATE     NOT NULL,
+    STRMDR    DECIMAL(5,2),
+    STRMP   DECIMAL(4,1),
+    WTH   CHAR(1),
+    PRIMARY KEY (STCD,TM)
+);
+
+CREATE TABLE  ST_WSPAVSD_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDR   DECIMAL(5,2),
+    DRAVZ   DECIMAL(7,3),
+    DRAVQ   DECIMAL(9,3),
+    DRPW    DECIMAL(11,3),
+    DRDW    DECIMAL(11,3),
+    PRIMARY KEY (STCD,IDTM)
+);
+
+CREATE TABLE  ST_RVAV_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    AVZ   DECIMAL(7,3),
+    AVQ   DECIMAL(9,3),
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_RSVRAV_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    AVRZ    DECIMAL(7,3),
+    AVINQ   DECIMAL(9,3),
+    AVOTQ   DECIMAL(9,3),
+    AVW   DECIMAL(9,3),
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_WASAV_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    AVUPZ   DECIMAL(7,3),
+    AVDWZ   DECIMAL(7,3),
+    AVGTQ   DECIMAL(9,3),
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_TIDEAV_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    AVHTDZ    DECIMAL(7,3),
+    AVLTDZ    DECIMAL(7,3),
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_TMPAV_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    AVATMP    DECIMAL(3,1),
+    AVWTMP    DECIMAL(3,1),
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_GRWAV_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    AVGWBD    DECIMAL(7,3),
+    AVSPQ   DECIMAL(7,3),
+    AVGWTMP   DECIMAL(3,1),
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_ESTAT_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    ACCE    DECIMAL(6,1),
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_PSTAT_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    ACCP    DECIMAL(6,1),
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_WDPSTAT_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    PPTMS   DECIMAL(4),
+    ACCPW   DECIMAL(11,3),
+    PPHRS   DECIMAL(6,2),
+    DRNTMS    DECIMAL(4),
+    ACCDW   DECIMAL(11,3),
+    DRNHRS    DECIMAL(6,2),
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_SEDRF_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    WRNF    DECIMAL(11,3),
+    STW   DECIMAL(11,3),
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_WGRWSTAT_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    ACCGDW    DECIMAL(5),
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_RVEVS_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    HTZ   DECIMAL(7,3),
+    LTZ   DECIMAL(7,3),
+    MXQ   DECIMAL(9,3),
+    MNQ   DECIMAL(9,3),
+    HTZTM   DATE,
+    LTZTM   DATE,
+    MXQTM   DATE,
+    MNQTM   DATE,
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_RSVREVS_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    HTRZ    DECIMAL(7,3),
+    LTRZ    DECIMAL(7,3),
+    MXINQ   DECIMAL(9,3),
+    MNINQ   DECIMAL(9,3),
+    MXOTQ   DECIMAL(9,3),
+    MNOTQ   DECIMAL(9,3),
+    MXW   DECIMAL(9,3),
+    MNW   DECIMAL(9,3),
+    HTRZTM    DATE,
+    LTRZTM    DATE,
+    MXINQTM   DATE,
+    MNINQTM   DATE,
+    MXOTQTM   DATE,
+    MNOTQTM   DATE,
+    MXWTM   DATE,
+    MNWTM   DATE,
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_WASEVS_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    HTUPZ   DECIMAL(7,3),
+    LTUPZ   DECIMAL(7,3),
+    MXGTQ   DECIMAL(9,3),
+    MNGTQ   DECIMAL(9,3),
+    HTDWZ   DECIMAL(7,3),
+    LTDWZ   DECIMAL(7,3),
+    HTUPZTM   DATE,
+    LTUPZTM   DATE,
+    MXGTQTM   DATE,
+    MNGTQTM   DATE,
+    HTDWZTM   DATE,
+    LTDWZTM   DATE,
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_PMEVS_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    PPUPHTZ   DECIMAL(7,3),
+    PPUPLTZ   DECIMAL(7,3),
+    PPDWHTZ   DECIMAL(7,3),
+    PPDWLTZ   DECIMAL(7,3),
+    MXPPQ   DECIMAL(9,3),
+    MNPPQ   DECIMAL(9,3),
+    MXDNQ   DECIMAL(9,3),
+    MNDNQ   DECIMAL(9,3),
+    PPUPHTZTM   DATE,
+    PPUPLTZTM   DATE,
+    PPDWHTZTM   DATE,
+    PPDWLTZTM   DATE,
+    MXPPQTM   DATE,
+    MNPPQTM   DATE,
+    MXDNQTM   DATE,
+    MNDNQTM   DATE,
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_TIDEEVS_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    HTTDZ   DECIMAL(7,3),
+    LTTDZ   DECIMAL(7,3),
+    MXWNDV    DECIMAL(4,1),
+    HTTDZTM   DATE,
+    LTTDZTM   DATE,
+    MXWNDVTM    DATE,
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_TMPEVS_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    MXATMP    DECIMAL(3,1),
+    MNATMP    DECIMAL(3,1),
+    MXWTMP    DECIMAL(3,1),
+    MNWTMP    DECIMAL(3,1),
+    MXATMPTM    DATE,
+    MNATMPTM    DATE,
+    MXWTMPTM    DATE,
+    MNWTMPTM    DATE,
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_GRWEVS_R (
+    STCD    CHAR(8)     NOT NULL,
+    IDTM    DATE     NOT NULL,
+    STTDRCD   CHAR(1)     NOT NULL,
+    MXBD    DECIMAL(7,3),
+    MNBD    DECIMAL(7,3),
+    MXSPQ   DECIMAL(9,3),
+    MNSPQ   DECIMAL(9,3),
+    MXGWTMP   DECIMAL(4,2),
+    MNGWTMP   DECIMAL(4,2),
+    MXBDTM    DATE,
+    MNBDTM    DATE,
+    MXSPQTM   DATE,
+    MNSPQTM   DATE,
+    MXGWTMPTM   DATE,
+    MNGWTMPTM   DATE,
+    PRIMARY KEY (STCD,IDTM,STTDRCD)
+);
+
+CREATE TABLE  ST_FORECASTC_F (
+    STCD    CHAR(8)     NOT NULL,
+    UNITNAME    CHAR(30)    NOT NULL,
+    PLCD    CHAR(20)    NOT NULL,
+    FYMDH   DATE     NOT NULL,
+    IYMDH   DATE     NOT NULL,
+    WNSTATUS    CHAR(1),
+    COMMENTS    VARCHAR(200),
+    PRIMARY KEY (STCD,UNITNAME,PLCD,FYMDH,IYMDH)
+);
+
+CREATE TABLE  ST_FORECAST_F (
+    STCD    CHAR(8)     NOT NULL,
+    UNITNAME    CHAR(30)    NOT NULL,
+    PLCD    CHAR(20)    NOT NULL,
+    FYMDH   DATE     NOT NULL,
+    IYMDH   DATE     NOT NULL,
+    YMDH    DATE     NOT NULL,
+    Z   DECIMAL(7,3),
+    Q   DECIMAL(9,3),
+    PRIMARY KEY (STCD,UNITNAME,PLCD,FYMDH,IYMDH,YMDH)
+);
+
+CREATE TABLE  ST_REGLAT_F (
+    STCD    CHAR(8)     NOT NULL,
+    UNITNAME    CHAR(30)    NOT NULL,
+    PLCD    CHAR(20)    NOT NULL,
+    FYMDH   DATE     NOT NULL,
+    IYMDH   DATE     NOT NULL,
+    YMDH    DATE     NOT NULL,
+    Z   DECIMAL(7,3),
+    W   DECIMAL(9,3),
+    OTQ   DECIMAL(9,3),
+    PRIMARY KEY (STCD,UNITNAME,PLCD,FYMDH,IYMDH,YMDH)
+);
+
+CREATE TABLE  ST_TDFR_F (
+    STCD    CHAR(8)     NOT NULL,
+    UNITNAME    CHAR(30)    NOT NULL,
+    PLCD    CHAR(20)    NOT NULL,
+    FYMDH   DATE     NOT NULL,
+    IYMDH   DATE     NOT NULL,
+    YMDH    DATE     NOT NULL,
+    TDZ   DECIMAL(7,3),
+    STRMSRG   DECIMAL(7,3),
+    HLTDMK    CHAR(1),
+    PRIMARY KEY (STCD,UNITNAME,PLCD,FYMDH,IYMDH,YMDH)
+);
+
+CREATE TABLE  ST_ASTROTD_F (
+    STCD    CHAR(8)     NOT NULL,
+    YMDH    DATE     NOT NULL,
+    TDZ   DECIMAL(7,3),
+    PRIMARY KEY (STCD,YMDH)
+);
+
+CREATE TABLE  ST_SEDFR_F (
+    STCD    CHAR(8)     NOT NULL,
+    UNITNAME    CHAR(30)    NOT NULL,
+    PLCD    CHAR(20)    NOT NULL,
+    FYMDH   DATE     NOT NULL,
+    IYMDH   DATE     NOT NULL,
+    YMDH    DATE     NOT NULL,
+    FS    DECIMAL(9,3),
+    SCHRCD    CHAR(1),
+    PRIMARY KEY (STCD,UNITNAME,PLCD,FYMDH,IYMDH,YMDH)
+);
+
+CREATE TABLE  ST_ICEFR_F (
+    STCD    CHAR(8)     NOT NULL,
+    UNITNAME    CHAR(30)    NOT NULL,
+    PLCD    CHAR(20)    NOT NULL,
+    FYMDH   DATE     NOT NULL,
+    IYMDH   DATE     NOT NULL,
+    YMDH    DATE     NOT NULL,
+    EXKEY   CHAR(1)     NOT NULL,
+    FICD    CHAR(2),
+    FIRPSTN   CHAR(1),
+    FRLDSTN   DECIMAL(3,1),
+    FITHK   DECIMAL(4,1),
+    ITHKCD    CHAR(1),
+    FIQ   DECIMAL(9,3),
+    IQPROP    CHAR(1),
+    PRIMARY KEY (STCD,UNITNAME,PLCD,FYMDH,IYMDH,YMDH,EXKEY)
+);
+
+CREATE TABLE  ST_PDDMYAV_S (
+    STCD    CHAR(8)     NOT NULL,
+    MNTH    DECIMAL(2)     NOT NULL,
+    DAY   DECIMAL(2)     NOT NULL,
+    MYDAVP    DECIMAL(5,1),
+    BGYR    DECIMAL(4),
+    EDYR    DECIMAL(4),
+    STTYRNUM    DECIMAL(4),
+    COMMENTS    VARCHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,MNTH,DAY)
+);
+
+CREATE TABLE  ST_PDMMYSQ_S (
+    STCD    CHAR(8)     NOT NULL,
+    YR    DECIMAL(4)     NOT NULL,
+    MNTH    DECIMAL(2)     NOT NULL,
+    PRDTP   DECIMAL(1)     NOT NULL,
+    ACCP    DECIMAL(5,1),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,YR,MNTH,PRDTP)
+);
+
+CREATE TABLE  ST_PDMMYAV_S (
+    STCD    CHAR(8)     NOT NULL,
+    MNTH    DECIMAL(2)     NOT NULL,
+    PRDTP   DECIMAL(1)     NOT NULL,
+    MYMAVP    DECIMAL(5,1),
+    BGYR    DECIMAL(4),
+    EDYR    DECIMAL(4),
+    STTYRNUM    DECIMAL(4),
+    COMMENTS    VARCHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,MNTH,PRDTP)
+);
+
+CREATE TABLE  ST_RVDAYMYAV_S (
+    STCD    CHAR(8)     NOT NULL,
+    MNTH    DECIMAL(2)     NOT NULL,
+    DAY   DECIMAL(2)     NOT NULL,
+    MYDAVZ    DECIMAL(7,3),
+    MYDAVQ    DECIMAL(9,3),
+    BGYR    DECIMAL(4),
+    EDYR    DECIMAL(4),
+    STTYRNUM    DECIMAL(4),
+    COMMENTS    VARCHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,MNTH,DAY)
+);
+
+CREATE TABLE  ST_RVDMMYSQ_S (
+    STCD    CHAR(8)     NOT NULL,
+    YR    DECIMAL(4)     NOT NULL,
+    MNTH    DECIMAL(2)     NOT NULL,
+    PRDTP   DECIMAL(1)     NOT NULL,
+    AVZ   DECIMAL(7,3),
+    AVQ   DECIMAL(9,3),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,YR,MNTH,PRDTP)
+);
+
+CREATE TABLE  ST_RVDMMYAV_S (
+    STCD    CHAR(8)     NOT NULL,
+    MNTH    DECIMAL(2)     NOT NULL,
+    PRDTP   DECIMAL(1)     NOT NULL,
+    MYMAVZ    DECIMAL(7,3),
+    MYMAVQ    DECIMAL(9,3),
+    BGYR    DECIMAL(4),
+    EDYR    DECIMAL(4),
+    STTYRNUM    DECIMAL(4),
+    COMMENTS    VARCHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,MNTH,PRDTP)
+);
+
+CREATE TABLE  ST_RVDMEVSQ_S (
+    STCD    CHAR(8)     NOT NULL,
+    YR    DECIMAL(4)     NOT NULL,
+    MNTH    DECIMAL(2)     NOT NULL,
+    PRDTP   DECIMAL(1)     NOT NULL,
+    HTZ   DECIMAL(7,3),
+    HTZTM   DATE,
+    MXQ   DECIMAL(9,3),
+    MXQTM   DATE,
+    LTZ   DECIMAL(7,3),
+    LTZTM   DATE,
+    MNQ   DECIMAL(9,3),
+    MNQTM   DATE,
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,YR,MNTH,PRDTP)
+);
+
+CREATE TABLE  ST_RVYEVSQ_S (
+    STCD    CHAR(8)     NOT NULL,
+    YR    DECIMAL(4)     NOT NULL,
+    HTZ   DECIMAL(7,3),
+    HTZTM   DATE,
+    MXQ   DECIMAL(9,3),
+    MXQTM   DATE,
+    LTZ   DECIMAL(7,3),
+    LTZTM   DATE,
+    MNQ   DECIMAL(9,3),
+    MNQTM   DATE,
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,YR)
+);
+
+CREATE TABLE  ST_RSVRMYAV_S (
+    STCD    CHAR(8)     NOT NULL,
+    MNTH    DECIMAL(2)     NOT NULL,
+    DAY   DECIMAL(2)     NOT NULL,
+    MYDAVW    DECIMAL(9,3),
+    BGYR    DECIMAL(4),
+    EDYR    DECIMAL(4),
+    STTYRNUM    DECIMAL(4),
+    COMMENTS    VARCHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (STCD,MNTH,DAY)
+);
+
+CREATE TABLE  ST_INSTCD_E (
+    INSTCD    VARCHAR(10)    NOT NULL,
+    INSTNM    VARCHAR(40)    NOT NULL,
+    EXCTYPE   VARCHAR(1)     NOT NULL,
+    EXCIP   VARCHAR(39)    NOT NULL,
+    EXCPORT   DECIMAL(5)     NOT NULL,
+    EXCSRV    VARCHAR(32)    NOT NULL,
+    WEBURL    VARCHAR(50),
+    PASSWORD    VARCHAR(32),
+    ISSTARTS    VARCHAR(1)     NOT NULL,
+    MODITIME    DATE     NOT NULL,
+    PRIMARY KEY (INSTCD)
+);
+
+CREATE TABLE  ST_STCD_E (
+    INSTCD    VARCHAR(10)    NOT NULL,
+    STCD    VARCHAR(8)     NOT NULL,
+    MODITIME    DATE     NOT NULL,
+    PRIMARY KEY (INSTCD,STCD)
+);
+
+CREATE TABLE  ST_TABLE_E (
+    INSTCD    VARCHAR(10)    NOT NULL,
+    TABID   VARCHAR(20)    NOT NULL,
+    ISSTARTS    VARCHAR(1)     NOT NULL,
+    MODITIME    DATE     NOT NULL,
+    PRIMARY KEY (INSTCD,TABID)
+);
+
+CREATE TABLE  ST_SENDWAIT_E (
+    SLSH    DECIMAL(18,0)    NOT NULL,
+    STCD    VARCHAR(8)     NOT NULL,
+    TABID   VARCHAR(30)    NOT NULL,
+    TM    DATE,
+    EXCKEY    VARCHAR(200)     NOT NULL,
+    OPERATION   VARCHAR(1)     NOT NULL,
+    EXCINF    VARCHAR(4000)    NOT NULL,
+    POLLSTATUS    VARCHAR(1)     NOT NULL,
+    MODITIME    DATE     NOT NULL,
+    PRIMARY KEY (SLSH)
+);
+
+CREATE TABLE  ST_SENDDO_E (
+    SLSH    DECIMAL(18,0)    NOT NULL,
+    STCD    VARCHAR(8)     NOT NULL,
+    TABID   VARCHAR(30)    NOT NULL,
+    TM    DATE,
+    EXCKEY    VARCHAR(200)     NOT NULL,
+    OPERATION   VARCHAR(1)     NOT NULL,
+    EXCINF    VARCHAR(4000)    NOT NULL,
+    MODITIME    DATE     NOT NULL,
+    PRIMARY KEY (SLSH)
+);
+
+CREATE TABLE  ST_SENDFILE_E (
+    SFNUM   DECIMAL(18,0)    NOT NULL,
+    INSTCD   VARCHAR(10)     NOT NULL,
+    SENDTYPE    VARCHAR(1),
+    SENDSTATUS    VARCHAR(1)     NOT NULL,
+    SFILENAME   VARCHAR(32)    NOT NULL,
+    SENDTM    DATE,
+    SENDCOUNT   DECIMAL(18,0),
+    ERRLINE   DECIMAL(18,0),
+    MODITIME    DATE     NOT NULL,
+    PRIMARY KEY (SFNUM)
+);
+
+CREATE TABLE  ST_SENDTO_E (
+    INSTCD   VARCHAR(10)     NOT NULL,
+    SLSH    DECIMAL(18,0)    NOT NULL,
+    SFNUM   DECIMAL(18,0)    NOT NULL,
+    TM    DATE,
+    SENDSTATUS    VARCHAR(1),
+    STAT    VARCHAR(1),
+    MODITIME    DATE     NOT NULL,
+    PRIMARY KEY (INSTCD,SLSH)
+);
+
+CREATE TABLE  ST_SENDSTAT_E (
+	INSTCD    VARCHAR(10)     NOT NULL,
+	COUNTDAY    DATE     NOT NULL,
+	STTDRCD    VARCHAR(1)     NOT NULL,
+	FRGRD    VARCHAR(1)     NOT NULL,
+	OPERATION    VARCHAR(1)     NOT NULL,
+	INFTYPE    VARCHAR(1)     NOT NULL,
+	STCDNUM    DECIMAL(6,0),
+	INFNUM    DECIMAL(9,0),
+	COUNTL30    DECIMAL(9,0),
+	COUNTB60    DECIMAL(9,0),
+	COUNTT60    DECIMAL(9,0),
+	MODITIME    DATE     NOT NULL,
+	PRIMARY KEY (INSTCD, COUNTDAY, STTDRCD, FRGRD, OPERATION, INFTYPE)
+);
+
+CREATE TABLE  ST_RECVFILE_E (
+    RFNUM   DECIMAL(18,0)    NOT NULL,
+    INSTCD   VARCHAR(10)     NOT NULL,
+    RECVTYPE    VARCHAR(1)     NOT NULL,
+    RECVSTATUS    VARCHAR(1)     NOT NULL,
+    RFILENAME   VARCHAR(200)     NOT NULL,
+    RECVTM    DATE     NOT NULL,
+    MODITIME    DATE     NOT NULL,
+    PRIMARY KEY (RFNUM)
+);
+
+CREATE TABLE  ST_RECVINF_E (
+    RLSH    DECIMAL(18,0)    NOT NULL,
+    RFNUM   DECIMAL(18,0)    NOT NULL,
+    INSTCD   VARCHAR(10)    NOT NULL,
+    SLSH    DECIMAL(18,0)    NOT NULL,
+    STCD    VARCHAR(8)     NOT NULL,
+    TABID   VARCHAR(30)    NOT NULL,
+    TM    DATE     NOT NULL,
+    EXCKEY    VARCHAR(200)     NOT NULL,
+    OPERATION   VARCHAR(1)     NOT NULL,
+    EXCINF    VARCHAR(4000)    NOT NULL,
+    INSTOSTATUS   VARCHAR(1)     NOT NULL,
+    INSTOTM   DATE,
+    ERRINF    VARCHAR(4000),
+    MANUALTM    DATE,
+    STAT    VARCHAR(1),
+    MODITIME    DATE     NOT NULL,
+    PRIMARY KEY (RLSH)
+);
+
+CREATE TABLE  ST_RECVSTAT_E (
+	INSTCD    VARCHAR(10)     NOT NULL,
+	COUNTDAY    DATE     NOT NULL,
+	STTDRCD    VARCHAR(1)     NOT NULL,
+	FRGRD    VARCHAR(1)     NOT NULL,
+	OPERATION    VARCHAR(1)     NOT NULL,
+	INFTYPE    VARCHAR(1)     NOT NULL,
+	STCDNUM    DECIMAL(6,0),
+	INFNUM    DECIMAL(9,0),
+	COUNTL30    DECIMAL(9,0),
+	COUNTB60    DECIMAL(9,0),
+	COUNTT60    DECIMAL(9,0),
+	MODITIME    DATE     NOT NULL,
+	PRIMARY KEY (INSTCD, COUNTDAY, STTDRCD, FRGRD, OPERATION, INFTYPE)
+);
+
+CREATE TABLE  ST_STSMCNT_E (
+	INSTCD    VARCHAR(10)     NOT NULL,
+	STCD    VARCHAR(8)     NOT NULL,
+	COUNTDAY    DATE     NOT NULL,
+	INFSTATUS    VARCHAR(1)     NOT NULL,
+	INFTYPE    VARCHAR(1)     NOT NULL,
+	FRGRD    VARCHAR(1)     NOT NULL,
+	ICNT    DECIMAL(9,0)     NOT NULL,
+	UCNT    DECIMAL(9,0)     NOT NULL,
+	DCNT    DECIMAL(9,0)     NOT NULL,
+	MODITIME    DATE     NOT NULL,
+	PRIMARY KEY (INSTCD, STCD, COUNTDAY, INFSTATUS, INFTYPE)
+);
+
+CREATE TABLE  ST_NETSTAT_E (
+	INSTCD	VARCHAR(10)		NOT NULL,
+	CHANGETIME    DATE     NOT NULL,
+    NETTYPE    VARCHAR(1),
+    NETSTATUS    VARCHAR(2),
+    PRIMARY KEY (INSTCD,CHANGETIME)
+);
+
+CREATE TABLE  ST_SYNCSET_E (
+    SYSNAME   VARCHAR(32)    NOT NULL,
+    SYSVALUE    VARCHAR(200)     NOT NULL,
+    PRIMARY KEY (SYSNAME)
+);
+
+CREATE TABLE  ST_SYSLOG_E (
+    LOGLSH    DECIMAL(18,0)    NOT NULL,
+    LOGTYPE   VARCHAR(1)     NOT NULL,
+    LOGCONTENT    VARCHAR(512)     NOT NULL,
+    MODITIME    DATE     NOT NULL,
+    PRIMARY KEY (LOGLSH)
+);
+
+CREATE TABLE  ST_TABLE_D (
+    TABID   CHAR(20)    NOT NULL,
+    TABNO   CHAR(11)    NOT NULL,
+    TABCN   VARCHAR(30)    NOT NULL,
+    TABEN   VARCHAR(200),
+    EXCHFL    CHAR(1)     NOT NULL,
+    MODITIME    DATE,
+    PRIMARY KEY (TABID)
+);
+
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_STBPRP_B',	'ST_001_0001',	'测站基本属性表',	'station basic properties',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_STSMTASK_B',	'ST_001_0002',	'测站报送任务表',	'station submitted task',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RSVRSTRL_B',	'ST_001_0003',	'库（湖）站关系表',	'relationship of reservoirs (lakes) and stations ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_WASRL_B',	'ST_001_0004',	'堰闸站关系表',	'relationship of weir and sluice stations',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RVFCCH_B',	'ST_001_0005',	'河道站防洪指标表',	'flood control characteristics of river stations ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RSVRFCCH_B',	'ST_001_0006',	'库（湖）站防洪指标表',	'flood control characteristics of reservoirs (lakes) ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RSVRFSR_B',	'ST_001_0007',	'库（湖）站汛限水位表',	'reservoir (lakes) regulation in flood season',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_SOILCH_B',	'ST_001_0008',	'土壤墒情特征值表',	'characteristics of soil moisture',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_FSDR_B',	'ST_001_0009',	'洪水传播时间表',	'spread duration of flood',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_ZQRL_B',	'ST_001_0010',	'水位流量关系曲线表',	'stage-discharge relation',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_ZVARL_B',	'ST_001_0011',	'库（湖）容曲线表',	'stage-capacity-area curves',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_FRAPAR_B',	'ST_001_0012',	'洪水频率分析参数表',	'flood frequency of analysis parameters',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_FFRAR_B',	'ST_001_0013',	'洪水频率分析成果表',	'flood frequency of analysis findings',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RVSECT_B',	'ST_001_0014',	'大断面测验成果表',	'results of cross-section measurement',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_INSTCD_B',	'ST_001_0015',	'单位名称编码表',	'codes for institutes releasing information',	sysdate(),	'0' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_PPTN_R',	'ST_002_0001',	'降水量表',	'hydrologic information of precipitation ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_SNOW_R',	'ST_002_0002',	'降雪表',	'hydrologic information of snow',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_HAIL_R',	'ST_002_0003',	'冰雹表',	'hydrologic information of hail',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_DAYEV_R',	'ST_002_0004',	'日蒸发量表',	'daily evaporation ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RIVER_R',	'ST_002_0005',	'河道水情表',	'hydrologic information of rivers',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RSVR_R',	'ST_002_0006',	'水库水情表',	'hydrologic information of reservoirs',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_WAS_R',	'ST_002_0007',	'堰闸水情表',	'hydrologic information of weirs & sluices ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_GATE_R',	'ST_002_0008',	'闸门启闭情况表',	'information of gates opening',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_PUMP_R',	'ST_002_0009',	'泵站水情表',	'hydrologic information of pumping stations',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_TIDE_R',	'ST_002_0010',	'潮汐水情表',	'hydrologic information of tides ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_WDWV_R',	'ST_002_0011',	'风浪信息表',	'information of wind & wave',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_SED_R',	'ST_002_0012',	'含沙量表',	'information of sediment concentration ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_TMP_R',	'ST_002_0013',	'气温水温表',	'information of water & air temperatures ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_QLICEINF_R',	'ST_002_0014',	'定性冰情表',	'quanlitative information of ice ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_QTICEINF_R',	'ST_002_0015',	'定量冰情表',	'quantitative information of ice ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_SOIL_R',	'ST_002_0016',	'土壤墒情表',	'information of soil moisture',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_GRW_R',	'ST_002_0017',	'地下水情表',	'hydrologic information of groundwater ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_WGRW_R',	'ST_002_0018',	'地下水开采量表',	'volume of groundwater exploited ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_STORM_R',	'ST_002_0019',	'暴雨加报表',	'extra hydrologic information of storm ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_WSPAVSD_R',	'ST_002_0020',	'堰闸(泵)站时段均值表',	'average values of weir & sluice (pumping) stations in short duration',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RVAV_R',	'ST_002_0021',	'河道水情多日均值表',	'multi-day-averaged values of hydrologic information of rivers ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RSVRAV_R',	'ST_002_0022',	'水库水情多日均值表',	'multi-day-averaged values of hydrologic information of reservoirs ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_WASAV_R',	'ST_002_0023',	'堰闸(泵)水情多日均值表',	'multi-day-averaged values of hydrologic information of weirs & sluices',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_TIDEAV_R',	'ST_002_0024',	'潮汐水情多日均值表',	'multi-day-averaged values of hydrologic information of tides',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_TMPAV_R',	'ST_002_0025',	'气温水温多日均值表',	'multi-day-averaged values of temperatures of air and water',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_GRWAV_R',	'ST_002_0026',	'地下水情多日均值表',	'multi-days-averaged values of hydrologic information of groundwater ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_ESTAT_R',	'ST_002_0027',	'蒸发量统计表',	'statistics of evaporation ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_PSTAT_R',	'ST_002_0028',	'降水量统计表',	'statistics of precipitation ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_WDPSTAT_R',	'ST_002_0029',	'引排水量统计表',	'statistics of water volumes of drainage & pump',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_SEDRF_R',	'ST_002_0030',	'输沙输水总量表',	'total runoffs of sediment & water ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_WGRWSTAT_R',	'ST_002_0031',	'地下水开采量统计表',	'statistics of volume of groundwater exploited ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RVEVS_R',	'ST_002_0032',	'河道水情极值表',	'extreme-values series of rivers ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RSVREVS_R',	'ST_002_0033',	'水库水情极值表',	'extreme-values series of reservoirs ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_WASEVS_R',	'ST_002_0034',	'堰闸水情极值表',	'extreme-values series of weirs & sluices',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_PMEVS_R',	'ST_002_0035',	'泵站水情极表',	'extreme-values series of pumping stations ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_TIDEEVS_R',	'ST_002_0036',	'潮汐水情极值表',	'extreme-values series of tides',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_TMPEVS_R',	'ST_002_0037',	'气温水温极值表',	'extreme-values series of water & air temperatures ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_GRWEVS_R',	'ST_002_0038',	'地下水水情极值表',	'extreme-values series of groundwater',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_FORECASTC_F',	'ST_003_0001',	'水情预报成果注释表',	'comments of hydrologic forecasting result ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_FORECAST_F',	'ST_003_0002',	'水情预报成果表',	'hydrologic forecasting result ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_REGLAT_F',	'ST_003_0003',	'调度预报成果表',	'regulation forecasting result ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_TDFR_F',	'ST_003_0004',	'潮位预报成果表',	'hydrologic forecasting result of tides',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_ASTROTD_F',	'ST_003_0005',	'天文潮预报成果表',	'hydrologic forecasting result of astronomical tide',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_SEDFR_F',	'ST_003_0006',	'含沙量预报表',	'hydrologic forecasting result of sediment ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_ICEFR_F',	'ST_003_0007',	'冰情预报表',	'hydrologic forecasting result of ices ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_PDDMYAV_S',	'ST_004_0001',	'日降水量多年统计表',	'statistics of multi-year daily precipitation',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_PDMMYSQ_S',	'ST_004_0002',	'旬月降水量系列表',	'multi-year precipitation on 10-day or month sequence',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_PDMMYAV_S',	'ST_004_0003',	'旬月降水量多年统计表',	'statistics of multi-year precipitation on 10-day or month ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RVDAYMYAV_S',	'ST_004_0004',	'水位流量多年日平均统计表',	'statistics of multi-year-averaged values of daily stage & discharge ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RVDMMYSQ_S',	'ST_004_0005',	'水位流量旬月均值系列表',	'averaged values of stage & discharge on 10-day or month sequence',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RVDMMYAV_S',	'ST_004_0006',	'水位流量多年旬月平均统计表',	'statistics of multi-year-averaged values of stage & discharge on 10-day or month',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RVDMEVSQ_S',	'ST_004_0007',	'水位流量旬月极值系列表',	'extreme values of stage & discharge on 10-day or month sequence ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RVYEVSQ_S',	'ST_004_0008',	'水位流量年极值系列表',	'annual extreme values of stage & discharge sequence ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_RSVRMYAV_S',	'ST_004_0009',	'库（湖）蓄水量多年日平均统计表',	'statistics of multi-year-averaged values of daily reservoir (lakes) ',	sysdate(),	'1' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_INSTCD_E',	'ST_005_0001',	'交换单位信息表',	'exchange institutes ',	sysdate(),	'0' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_STCD_E',	'ST_005_0002',	'交换测站信息表',	'exchange station',	sysdate(),	'0' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_TABLE_E',	'ST_005_0003',	'交换表单信息表',	'exchange table',	sysdate(),	'0' );
+INSERT INTO ST_TABLE_D (TABID, TABNO, TABCN, TABEN, MODITIME, EXCHFL) VALUES('ST_SENDWAIT_E','ST_005_0004','待发送信息记录表','ST_SENDWAIT_E',sysdate(),'0' );
+INSERT INTO ST_TABLE_D (TABID, TABNO, TABCN, TABEN, MODITIME, EXCHFL) VALUES('ST_SENDDO_E','ST_005_0005','已处理信息记录表','ST_SENDDO_E',sysdate(),'0' );
+INSERT INTO ST_TABLE_D (TABID, TABNO, TABCN, TABEN, MODITIME, EXCHFL) VALUES('ST_SENDFILE_E','ST_005_0006','发送文件信息表','ST_SENDFILE_E',sysdate(),'0' );
+INSERT INTO ST_TABLE_D (TABID, TABNO, TABCN, TABEN, MODITIME, EXCHFL) VALUES('ST_SENDTO_E','ST_005_0007','信息配发记录表','ST_SENDTO_E',sysdate(),'0' );
+INSERT INTO ST_TABLE_D (TABID, TABNO, TABCN, TABEN, MODITIME, EXCHFL) VALUES('ST_SENDSTAT_E','ST_005_0008','发送信息统计表','ST_SENDSTAT_E',sysdate(),'0' );
+INSERT INTO ST_TABLE_D (TABID, TABNO, TABCN, TABEN, MODITIME, EXCHFL) VALUES('ST_RECVFILE_E','ST_005_0009','接收文件信息表','ST_RECVFILE_E',sysdate(),'0' );
+INSERT INTO ST_TABLE_D (TABID, TABNO, TABCN, TABEN, MODITIME, EXCHFL) VALUES('ST_RECVINF_E','ST_005_0010','接收信息记录表','ST_RECVINF_E',sysdate(),'0' );
+INSERT INTO ST_TABLE_D (TABID, TABNO, TABCN, TABEN, MODITIME, EXCHFL) VALUES('ST_RECVSTAT_E','ST_005_0011','接收信息统计表','ST_RECVSTAT_E',sysdate(),'0' );
+INSERT INTO ST_TABLE_D (TABID, TABNO, TABCN, TABEN, MODITIME, EXCHFL) VALUES('ST_STSMCNT_E','ST_005_0012','测站报送信息统计表','ST_STSMCNT_E',sysdate(),'0' );
+INSERT INTO ST_TABLE_D (TABID, TABNO, TABCN, TABEN, MODITIME, EXCHFL) VALUES('ST_NETSTAT_E','ST_005_0013','网络状态统计表','ST_NETSTAT_E',sysdate(),'0' );
+INSERT INTO ST_TABLE_D (TABID, TABNO, TABCN, TABEN, MODITIME, EXCHFL) VALUES('ST_SYNCSET_E','ST_005_0014','系统配置信息表','ST_SYNCSET_E',sysdate(),'0' );
+INSERT INTO ST_TABLE_D (TABID, TABNO, TABCN, TABEN, MODITIME, EXCHFL) VALUES('ST_SYSLOG_E','ST_005_0015','系统日志表','ST_SYSLOG_E',sysdate(),'0' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_TABLE_D',	'ST_006_0001',	'表属性信息表',	'table information ',	sysdate(),	'0' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_FIELD_D',	'ST_006_0002',	'字段属性信息表',	'field information ',	sysdate(),	'0' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_EUNTLANG_D',	'ST_006_0003',	'枚举代码与自然语言对照表',	'compare of enumeration code & nature language ',	sysdate(),	'0' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_ADDVCD_D',	'ST_006_0004',	'行政区域代码表',	'code for administrative division',	sysdate(),	'0' );
+INSERT INTO ST_TABLE_D (TABID,	 TABNO,	 TABCN,	 TABEN,	 MODITIME,	 EXCHFL) VALUES(	'ST_ENNMCD_D',	'ST_006_0005',	'中国河流名称代码表',	'code for rivers name of china ',	sysdate(),	'0' );
+
+CREATE TABLE  ST_FIELD_D (
+    TABID   CHAR(20)    NOT NULL,
+    FLID    CHAR(20)    NOT NULL,
+    FLSID   DECIMAL(2)     NOT NULL,
+    FLCN    VARCHAR(40)    NOT NULL,
+    FLEN    VARCHAR(200),
+    FLTL    VARCHAR(20),
+    NLAT    CHAR(1),
+    UNNM    VARCHAR(30),
+    FCHSC   CHAR(20),
+    EUFL    CHAR(1),
+    PKAT    CHAR(1),
+    MODITIME    DATE,
+    PRIMARY KEY (TABID,FLID)
+);
+
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	2,	'测站名称',	'STNM',	'station name',	'CHAR(30)',	'',	'',	'',	'',	' ',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	3,	'河流名称',	'RVNM',	'river name',	'CHAR(30)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	4,	'水系名称',	'HNNM',	'hydrographic net name',	'CHAR(30)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	5,	'流域名称',	'BSNM',	'basin name',	'CHAR(30)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	6,	'经度',	'LGTD',	'east longitude',	'DECIMAL(10,6)',	'',	'度',	'保留6位小数',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	7,	'纬度',	'LTTD',	'north latitude',	'DECIMAL(10,6)',	'',	'度',	'保留6位小数',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	8,	'站址',	'STLC',	'station location',	'CHAR(50)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	9,	'行政区划码',	'ADDVCD',	'administration division code',	'CHAR(6)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	10,	'基面名称',	'DTMNM',	'datum name',	'CHAR(16)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	11,	'基面高程',	'DTMEL',	'datum elevation',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	12,	'基面修正值',	'DTPR',	'modifying datum',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	13,	'站类',	'STTP',	'station type',	'CHAR(2)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	14,	'报汛等级',	'FRGRD',	'grade of flood-reporting',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	15,	'建站年月',	'ESSTYM',	'year and month of establish station',	'CHAR(6)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	16,	'始报年月',	'BGFRYM',	'beginning year and month of flood-reporting',	'CHAR(6)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	17,	'隶属行业单位',	'ATCUNIT',	'attached unit',	'CHAR(20)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	18,	'信息管理单位',	'ADMAUTH',	'administering authority',	'CHAR(20)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	19,	'交换管理单位',	'LOCALITY',	'locality',	'CHAR(10)',	'N',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	20,	'测站岸别',	'STBK',	'station bank',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	21,	'测站方位',	'STAZT',	'station direction',	'DECIMAL(3)',	'',	'度',	'45度步长取值',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	22,	'至河口距离',	'DSTRVM',	'distance to river mouth',	'DECIMAL(6,1)',	'',	'公里',	'保留一位小数',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	23,	'集水面积',	'DRNA',	'drainage area',	'DECIMAL(7)',	'',	'平方公里',	'计至整数位',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	24,	'拼音码',	'PHCD',	'phonetic code',	'CHAR(6)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	25,	'启用标志',	'USFL',	'used flag',	'CHAR(1)',	'',	'',	'“0”和“1”',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	26,	'备注',	'COMMENTS',	'comments',	'VARCHAR(200)',	'',	'',	'不超过100个汉字',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STBPRP_B',	27,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	2,	'报汛段次',	'DFRTMS',	'times of daily flood - reporting',	'DECIMAL(2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	3,	'降水量标志',	'PFL',	'precipitation flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	4,	'蒸发量标志',	'EFL',	'evaporation flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	5,	'水位标志',	'ZFL',	'stage flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	6,	'流量标志',	'QFL',	'discharge flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	7,	'蓄水量标志',	'WFL',	'reservoir storage flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	8,	'入库流量标志',	'INQFL',	'reservoir inflow discharge flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	9,	'闸门启闭标志',	'DAMFL',	'gates operation flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	10,	'出库流量标志',	'OTQFL',	'reservoir outflow discharge flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	11,	'风浪标志',	'WDWVFL',	'wind & wave flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	12,	'泥沙标志',	'SEDFL',	'sediment flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	13,	'冰情标志',	'ICEFL',	'ice flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	14,	'引水量标志',	'PPFL',	'flag of water pumped volume',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	15,	'排水量标志',	'DRNFL',	'flag of water drained volume',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	16,	'墒情标志',	'SOILFL',	'soil moisture flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	17,	'地下水标志',	'GRWFL',	'groundwater flag',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	18,	'旬月统计标志',	'STATFL',	'flag of statistics on 10-day or month',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	19,	'测站联系人',	'OFFICER',	'station officer',	'CHAR(12)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	20,	'移动电话号码',	'MPHONE',	'mobile telephone',	'CHAR(11)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	21,	'固定电话号码',	'SPHONE',	'station telephone',	'CHAR(12)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STSMTASK_B',	22,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRSTRL_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRSTRL_B',	2,	'关联站码',	'RLSTCD',	'relating station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRSTRL_B',	3,	'入出库标志',	'IOMRK',	'marker of reservoir inflow/outflow',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRSTRL_B',	4,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASRL_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASRL_B',	2,	'关联站码',	'RLSTCD',	'relating station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASRL_B',	3,	'关系标志',	'RLMRK',	'marker of relationship of weir (sluice) stations',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASRL_B',	4,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	2,	'左堤高程',	'LDKEL',	'elevation of left dike',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	3,	'右堤高程',	'RDKEL',	'elevation of right dike',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	4,	'警戒水位',	'WRZ',	'warning stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	5,	'警戒流量',	'WRQ',	'warning discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	6,	'保证水位',	'GRZ',	'guaranteed stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	7,	'保证流量',	'GRQ',	'guaranteed discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	8,	'平滩流量',	'FLPQ',	'floodplain discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	9,	'实测最高水位',	'OBHTZ',	'observed highest stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	10,	'实测最高水位出现时间',	'OBHTZTM',	'occuring time of observed highest stage',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	11,	'调查最高水位',	'IVHZ',	'investigated highest stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	12,	'调查最高水位出现时间',	'IVHZTM',	'occuring time of investigated highest stage',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	13,	'实测最大流量',	'OBMXQ',	'observed maximum discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	14,	'实测最大流量出现时间',	'OBMXQTM',	'occuring time of observed maximum discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	15,	'调查最大流量',	'IVMXQ',	'investigated maximum discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	16,	'调查最大流量出现时间',	'IVMXQTM',	'occuring time of investigated maximum discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	17,	'历史最大含沙量',	'HMXS',	'historical maximum sediment concentration',	'DECIMAL(9,3)',	'',	'千克每立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	18,	'历史最大含沙量出现时间',	'HMXSTM',	'occuring time of historical maximum sediment concentration',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	19,	'历史最大断面平均流速',	'HMXAVV',	'historical maximum average velocity in measuring cross-section',	'DECIMAL(9,3)',	'',	'米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	20,	'历史最大断面平均流速出现时间',	'HMXAVVTM',	'occuring time of historical maximum average velocity in measuring cross-section',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	21,	'历史最低水位',	'HLZ',	'historical lowest stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	22,	'历史最低水位出现时间',	'HLZTM',	'occuring time of historical lowest stage',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	23,	'历史最小流量',	'HMNQ',	'historical minimum discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	24,	'历史最小流量出现时间',	'HMNQTM',	'occuring time of historical minimum discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	25,	'高水位告警值',	'TAZ',	'alarm value of high stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	26,	'大流量告警值',	'TAQ',	'alarm value of large discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	27,	'低水位告警值',	'LAZ',	'alarm value of low stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	28,	'小流量告警值',	'LAQ',	'alarm value of little discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	29,	'启动预报水位标准',	'SFZ',	'start standard of stage forecasting ',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	30,	'启动预报流量标准',	'SFQ',	'start standard of discharge forecasting',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVFCCH_B',	31,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	2,	'水库类型',	'RSVRTP',	'reservoir type',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	3,	'坝顶高程',	'DAMEL',	'elevation of dam crest',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	4,	'校核洪水位',	'CKFLZ',	'check flood stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	5,	'设计洪水位',	'DSFLZ',	'design flood stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	6,	'正常高水位',	'NORMZ',	'normal top stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	7,	'死水位',	'DDZ',	'dead pool stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	8,	'兴利水位',	'ACTZ',	'active reservoir stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	9,	'总库容',	'TTCP',	'total reservoir capacity',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	10,	'防洪库容',	'FLDCP',	'flood-control reservoir capacity',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	11,	'兴利库容',	'ACTCP',	'active reservoir capacity',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	12,	'死库容',	'DDCP',	'dead reservoir capacity',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	13,	'历史最高库水位',	'HHRZ',	'historical highest stage in reservoir region',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	14,	'历史最大蓄水量',	'HMXW',	'historical maximum reservoir storage',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	15,	'历史最高库水位（蓄水量）出现时间',	'HHRZTM',	'occuring time of historical highest stage（reservoir storage） in reservoir region',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	16,	'历史最大入流',	'HMXINQ',	'historical maximum inflow discharge of reservoir',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	17,	'历史最大入流时段长',	'RSTDR',	'duration of historical maximum inflow discharge of reservoir',	'DECIMAL(5,2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	18,	'历史最大入流出现时间',	'HMXINQTM',	'occuring time of historical maximum inflow discharge of reservoir',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	19,	'历史最大出流',	'HMXOTQ',	'historical maximum outflow discharge of reservoir',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	20,	'历史最大出流出现时间',	'HMXOTQTM',	'occuring time of historical maximum outflow discharge of reservoir',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	21,	'历史最低库水位',	'HLRZ',	'historical lowest stage in reservoir region',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	22,	'历史最低库水位出现时间',	'HLRZTM',	'occuring time of historical lowest stage in reservoir region',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	23,	'历史最小日均入流',	'HMNINQ',	'historical minimum inflow discharge of reservoir',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	24,	'历史最小日均入流出现时间',	'HMNINQTM',	'occuring time of historical minimum inflow discharge of reservoir',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	25,	'低水位告警值',	'LAZ',	'alarm value of low stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	26,	'启动预报流量标准',	'SFQ',	'start standard of discharge forecasting',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFCCH_B',	27,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFSR_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFSR_B',	2,	'开始月日',	'BGMD',	'beginning month & day',	'CHAR(4)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFSR_B',	3,	'结束月日',	'EDMD',	'end month & day',	'CHAR(4)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFSR_B',	4,	'汛限水位',	'FSLTDZ',	'limitted stage in flood-season',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFSR_B',	5,	'汛限库容',	'FSLTDW',	'limitted reservoir storage in flood-season',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFSR_B',	6,	'汛期类别',	'FSTP',	'flood-season type',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRFSR_B',	7,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOILCH_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOILCH_B',	2,	'土壤类别',	'SLTP',	'soil type',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOILCH_B',	3,	'土壤质地',	'SLTX',	'soil texture',	'CHAR(2)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOILCH_B',	4,	'土壤结构',	'SFBR',	'soil fabric ',	'CHAR(20)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOILCH_B',	5,	'土壤比重',	'SSPG',	'soil specific gravity ',	'DECIMAL(4,2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOILCH_B',	6,	'土壤干容重',	'DSD',	'dry soil sensity ',	'DECIMAL(4,2)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOILCH_B',	7,	'土壤孔隙度',	'SPOR',	'soil porosity ',	'DECIMAL(4,2)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOILCH_B',	8,	'饱和含水量',	'SHWC',	'soil hygroscopic water content ',	'DECIMAL(4,2)',	'N',	'%',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOILCH_B',	9,	'田间持水量',	'FDCP',	'field capacity ',	'DECIMAL(4,2)',	'',	'%',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOILCH_B',	10,	'凋萎含水量',	'WLCP',	'wilting capacity',	'DECIMAL(4,2)',	'',	'%',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOILCH_B',	11,	'备注',	'COMMENTS',	'comments',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOILCH_B',	12,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FSDR_B',	1,	'上游站码',	'UPSTCD',	'code of upstream station',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FSDR_B',	2,	'下游站码',	'DWSTCD',	'code of downstream station',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FSDR_B',	3,	'河段长',	'RCHLEN',	'reach length',	'DECIMAL(3)',	'',	'公里',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FSDR_B',	4,	'安全泄量',	'SFTQ',	'safety discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FSDR_B',	5,	'流量量级',	'QMGN',	'discharge magnitude',	'DECIMAL(5)',	'N',	'立方米每秒',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FSDR_B',	6,	'最小传播时间',	'MNTRTM',	'minimal travel time',	'DECIMAL(5,2)',	'',	'小时',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FSDR_B',	7,	'最大传播时间',	'MXTRTM',	'maximum travel time',	'DECIMAL(5,2)',	'',	'小时',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FSDR_B',	8,	'平均传播时间',	'AVTRTM',	'average travel time',	'DECIMAL(5,2)',	'',	'小时',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FSDR_B',	9,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZQRL_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZQRL_B',	2,	'曲线名称',	'LNNM',	'line name',	'CHAR(30)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZQRL_B',	3,	'启用时间',	'BGTM',	'beginning time',	'DATE',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZQRL_B',	4,	'点序号',	'PTNO',	'order of curve point',	'DECIMAL(4)',	'N',	'',	'',	'',	'4',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZQRL_B',	5,	'水位',	'Z',	'stage',	'DECIMAL(7,3)',	'N',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZQRL_B',	6,	'流量',	'Q',	'discharge',	'DECIMAL(9,3)',	'N',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZQRL_B',	7,	'备注',	'COMMENTS',	'comments',	'CHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZQRL_B',	8,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZVARL_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZVARL_B',	2,	'施测时间',	'MSTM',	'measuring time',	'DATE',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZVARL_B',	3,	'点序号',	'PTNO',	'order of curve point',	'DECIMAL(4)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZVARL_B',	4,	'库水位',	'RZ',	'stage in reservoir region',	'DECIMAL(7,3)',	'N',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZVARL_B',	5,	'蓄水量',	'W',	'reservoir storage',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZVARL_B',	6,	'水面面积',	'WSFA',	'water surface area',	'DECIMAL(7)',	'',	'平方公里',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ZVARL_B',	7,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FRAPAR_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FRAPAR_B',	2,	'典型年',	'TPCYR',	'typical year',	'DECIMAL(4)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FRAPAR_B',	3,	'统计变量类别',	'VARTP',	'statistical variable type',	'CHAR(3)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FRAPAR_B',	4,	'平均值',	'AVRG',	'average value',	'DECIMAL(11,4)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FRAPAR_B',	5,	'离差系数',	'CV',	'variation coefficient',	'DECIMAL(5,3)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FRAPAR_B',	6,	'偏差系数',	'CS',	'skewness coefficient',	'DECIMAL(5,3)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FRAPAR_B',	7,	'开始年份',	'BGYR',	'beginning year',	'DECIMAL(4)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FRAPAR_B',	8,	'结束年份',	'EDYR',	'end year',	'DECIMAL(4)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FRAPAR_B',	9,	'样本数量',	'SPNUM',	'DECIMAL of samples',	'DECIMAL(4)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FRAPAR_B',	10,	'备注',	'COMMENTS',	'comments',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FRAPAR_B',	11,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	2,	'典型年',	'TPCYR',	'typical year',	'DECIMAL(4)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	3,	'重现期',	'RCINT',	'recurrence interval',	'DECIMAL(5)',	'N',	'年',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	4,	'流量',	'Q',	'discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	5,	'水位',	'Z',	'stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	6,	'一日洪量',	'W1',	'1-day flood volume',	'DECIMAL(11,4)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	7,	'三日洪量',	'W3',	'3-days flood volume',	'DECIMAL(11,4)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	8,	'五日洪量',	'W5',	'5-days flood volume',	'DECIMAL(11,4)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	9,	'七日洪量',	'W7',	'7-days flood volume',	'DECIMAL(11,4)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	10,	'十日洪量',	'W10',	'10-days flood volume',	'DECIMAL(11,4)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	11,	'十五日洪量',	'W15',	'15-days flood volume',	'DECIMAL(11,4)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	12,	'三十日洪量',	'W30',	'30-days flood volume',	'DECIMAL(11,4)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	13,	'六十日洪量',	'W60',	'60-days flood volume',	'DECIMAL(11,4)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	14,	'备注',	'COMMENTS',	'comments',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FFRAR_B',	15,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVSECT_B',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVSECT_B',	2,	'施测时间',	'MSTM',	'measuring time',	'DATE',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVSECT_B',	3,	'起测岸别',	'BGBK',	'beginning bank',	'CHAR(1)',	'N',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVSECT_B',	4,	'垂线号',	'VTNO',	'order of typical verticals',	'DECIMAL(4)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVSECT_B',	5,	'起点距',	'DI',	'distance from initial point',	'DECIMAL(8,3)',	'N',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVSECT_B',	6,	'河底高程',	'ZB',	'elevation of river bed',	'DECIMAL(8,3)',	'N',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVSECT_B',	7,	'备注',	'COMMENTS',	'comments',	'CHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVSECT_B',	8,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_B',	1,	'单位代码',	'INSTCD',	'institute code ',	'CHAR(10)',	'N',	'',	'',	'1',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_B',	2,	'单位名称',	'INSTNM',	'name of institute',	'CHAR(60)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_B',	3,	'交换管理单位',	'LOCALITY',	'locality',	'CHAR(10)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_B',	4,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PPTN_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PPTN_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PPTN_R',	3,	'时段降水量',	'DRP',	'precipitation in a period of time',	'DECIMAL(5,1)',	'',	'毫米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PPTN_R',	4,	'时段长',	'INTV',	'interval',	'DECIMAL(5,2)',	'',	'小时',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PPTN_R',	5,	'降水历时',	'PDR',	'precipitation duration',	'DECIMAL(5,2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PPTN_R',	6,	'日降水量',	'DYP',	'daily precipitation',	'DECIMAL(5,1)',	'',	'毫米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PPTN_R',	7,	'天气状况',	'WTH',	'weather',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SNOW_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SNOW_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SNOW_R',	3,	'积雪深度',	'SNOWDEP',	'snow depth',	'DECIMAL(3)',	'',	'厘米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SNOW_R',	4,	'积雪密度',	'SNOWDEN',	'snow density',	'DECIMAL(3,2)',	'',	'克每立方厘米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_HAIL_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_HAIL_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_HAIL_R',	3,	'雹粒直径',	'HPD',	'diameter of hail particle',	'DECIMAL(3)',	'',	'毫米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_HAIL_R',	4,	'降雹历时',	'HLDR',	'hail duration',	'DECIMAL(5,2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_DAYEV_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_DAYEV_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_DAYEV_R',	3,	'蒸发器类型',	'EPTP',	'evaporation pan type',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_DAYEV_R',	4,	'日蒸发量',	'DYE',	'daily evaporation',	'DECIMAL(5,1)',	'',	'毫米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RIVER_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RIVER_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RIVER_R',	3,	'水位',	'Z',	'stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RIVER_R',	4,	'流量',	'Q',	'discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RIVER_R',	5,	'断面过水面积',	'XSA',	'wetted cross-section area',	'DECIMAL(9,3)',	'',	'平方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RIVER_R',	6,	'断面平均流速',	'XSAVV',	'mean velocity in cross-section',	'DECIMAL(5,3)',	'',	'米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RIVER_R',	7,	'断面最大流速',	'XSMXV',	'maximum velocity in cross-section',	'DECIMAL(5,3)',	'',	'米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RIVER_R',	8,	'河水特征码',	'FLWCHRCD',	'code for characteristics of flow',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RIVER_R',	9,	'水势',	'WPTN',	'water potential',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RIVER_R',	10,	'测流方法',	'MSQMT',	'method of flow measurement',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RIVER_R',	11,	'测积方法',	'MSAMT',	'method of area measurement',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RIVER_R',	12,	'测速方法',	'MSVMT',	'method of velocity measurement',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVR_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVR_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVR_R',	3,	'库上水位',	'RZ',	'stage in reservoir region',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVR_R',	4,	'入库流量',	'INQ',	'reservoir inflow discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVR_R',	5,	'蓄水量',	'W',	'reservoir storage',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVR_R',	6,	'库下水位',	'BLRZ',	'stage below the reservoir region',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVR_R',	7,	'出库流量',	'OTQ',	'reservoir outflow discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVR_R',	8,	'库水特征码',	'RWCHRCD',	'code for characteristics of reservoir flow',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVR_R',	9,	'库水水势',	'RWPTN',	'water potential of reservoir',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVR_R',	10,	'入流时段长',	'INQDR',	'duration of reservoir inflow',	'DECIMAL(5,2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVR_R',	11,	'测流方法',	'MSQMT',	'method of flow measurement',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WAS_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WAS_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WAS_R',	3,	'闸上水位',	'UPZ',	'stage in sluice upstream',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WAS_R',	4,	'闸下水位',	'DWZ',	'stage in sluice downstream',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WAS_R',	5,	'总过闸流量',	'TGTQ',	'total outflow discharges in sluice',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WAS_R',	6,	'闸水特征码',	'SWCHRCD',	'code for characteristics of flow in upstream of sluice',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WAS_R',	7,	'闸上水势',	'SUPWPTN',	'water potential in sluice upstream',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WAS_R',	8,	'闸下水势',	'SDWWPTN',	'water potential in sluice downstream',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WAS_R',	9,	'测流方法',	'MSQMT',	'method of flow measurement',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GATE_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GATE_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GATE_R',	3,	'扩展关键字',	'EXKEY',	'extend keywords',	'CHAR(1)',	'N',	'',	' @、A到Z',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GATE_R',	4,	'设备类别',	'EQPTP',	'type of equipment',	'CHAR(2)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GATE_R',	5,	'设备编号',	'EQPNO',	'equipment DECIMAL',	'CHAR(2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GATE_R',	6,	'开启孔数',	'GTOPNUM',	'DECIMAL of gates openned',	'DECIMAL(3)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GATE_R',	7,	'开启高度',	'GTOPHGT',	'height of openning gate above ground',	'DECIMAL(5,2)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GATE_R',	8,	'过闸流量',	'GTQ',	'gate discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GATE_R',	9,	'测流方法',	'MSQMT',	'method of flow measurement',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PUMP_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PUMP_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PUMP_R',	3,	'站上水位',	'PPUPZ',	'stage in upstream of pumping station',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PUMP_R',	4,	'站下水位',	'PPDWZ',	'stage in downstream of pumping station',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PUMP_R',	5,	'开机台数',	'OMCN',	'the DECIMAL of operating machines in pumping station',	'DECIMAL(3)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PUMP_R',	6,	'开机功率',	'OMPWR',	'sum of power in operation of pumping station',	'DECIMAL(5)',	'',	'千瓦',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PUMP_R',	7,	'抽水流量',	'PMPQ',	'pumping discharge',	'DECIMAL(7,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PUMP_R',	8,	'站水特征码',	'PPWCHRCD',	'code for characteristics of flow in pumping station',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PUMP_R',	9,	'站上水势',	'PPUPWPTN',	'water potential in upstream of pumping station',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PUMP_R',	10,	'站下水势',	'PPDWWPTN',	'water potential in downstream of pumping station',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PUMP_R',	11,	'测流方法',	'MSQMT',	'method of flow measurement',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PUMP_R',	12,	'引排特征码',	'PDCHCD',	'code for indicating pumping & draining',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDE_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDE_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDE_R',	3,	'潮位',	'TDZ',	'tidal level',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDE_R',	4,	'气压',	'AIRP',	'atmospheric pressure',	'DECIMAL(5)',	'',	'百帕',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDE_R',	5,	'潮水特征码',	'TDCHRCD',	'code for chracteristics of tidal current',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDE_R',	6,	'潮势',	'TDPTN',	'tidal potential',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDE_R',	7,	'高低潮标志',	'HLTDMK',	'marker of high/low tide',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDWV_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDWV_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDWV_R',	3,	'风速',	'WNDV',	'wind velocity',	'DECIMAL(4,1)',	'',	'米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDWV_R',	4,	'风力',	'WNDPWR',	'wind power',	'DECIMAL(2)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDWV_R',	5,	'风向',	'WNDDIR',	'wind direction',	'CHAR(2)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDWV_R',	6,	'浪高',	'WVHGT',	'wave height',	'DECIMAL(4)',	'',	'厘米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SED_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SED_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SED_R',	3,	'含沙量',	'S',	'sediment concentration',	'DECIMAL(9,3)',	'',	'千克每立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SED_R',	4,	'含沙量特征码',	'SCHRCD',	'code for characteristics of sediment concentration',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SED_R',	5,	'含沙量测法',	'SMT',	'method of sediment concentration measurement',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMP_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMP_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMP_R',	3,	'气温',	'ATMP',	'air temperature',	'DECIMAL(3,1)',	'',	'摄氏度',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMP_R',	4,	'水温',	'WTMP',	'water temperature',	'DECIMAL(3,1)',	'',	'摄氏度',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QLICEINF_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QLICEINF_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QLICEINF_R',	3,	'扩展关键字',	'EXKEY',	'extend keywords',	'CHAR(1)',	'N',	'',	' @、A到Z',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QLICEINF_R',	4,	'定性冰情号',	'QLTICD',	'qualitative ice code',	'CHAR(2)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QLICEINF_R',	5,	'相对位置',	'RLPSTN',	'relative position',	'CHAR(4)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QLICEINF_R',	6,	'相对距离',	'RLDSTN',	'relative distance to hydrometric station',	'DECIMAL(3,1)',	'',	'公里',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QLICEINF_R',	7,	'定性冰厚',	'QLTITHK',	'qualitative ice thickness',	'DECIMAL(4,1)',	'',	'厘米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QLICEINF_R',	8,	'冰上雪深',	'IOSNDP',	'snow depth on ice',	'DECIMAL(2)',	'',	'厘米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QLICEINF_R',	9,	'冰下冰花厚',	'IUDFSTHK',	'thickness of frazil slush under ice',	'DECIMAL(2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	3,	'扩展关键字',	'EXKEY',	'extend keywords',	'CHAR(1)',	'N',	'',	' @、A到Z',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	4,	'定量冰情号',	'QNTICD',	'quantitative ice code',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	5,	'相对位置',	'RLPSTN',	'relative position',	'CHAR(4)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	6,	'相对距离',	'RLDSTN',	'relative distance to hydrometric station',	'DECIMAL(3,1)',	'',	'公里',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	7,	'左岸冰宽',	'LBDIWD',	'left border ice width',	'DECIMAL(1)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	8,	'右岸冰宽',	'RBDIWD',	'right border ice width',	'DECIMAL(1)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	9,	'岸冰厚度',	'BDITHK',	'thickness of border ice',	'DECIMAL(4,1)',	'',	'厘米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	10,	'流冰密度',	'IRCON',	'ice run concentration',	'DECIMAL(1)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	11,	'流冰厚度',	'DITHK',	'thickness of drifting ice',	'DECIMAL(4,1)',	'',	'厘米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	12,	'最大冰块面积',	'MXIA',	'maximum area of ice',	'DECIMAL(4)',	'',	'平方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	13,	'最大冰块流速',	'MXIV',	'maximum velocity of ice',	'DECIMAL(3,1)',	'',	'米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	14,	'冰流量',	'IQ',	'ice discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	15,	'封冻性质',	'FRZPROP',	'property of freeze-up',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	16,	'解冻性质',	'BRKPROP',	'property of ice break-up',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	17,	'流冰堆积',	'DIPCK',	'drifting ice pack',	'DECIMAL(1)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	18,	'冰坝发展',	'IDAMGRW',	'ice dam growing',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	19,	'冰坝高度',	'IDAMHGT',	'height of ice dam',	'DECIMAL(3,1)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	20,	'冰坝宽度',	'IDAMWD',	'width of ice dam',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	21,	'冰坝上游水位',	'IDAMUPZ',	'stage in upstream of ice dam',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	22,	'冰坝上游水势',	'IDAMUPWPTN',	'water potential in upstream of ice dam',	'CHAR(1)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	23,	'高程类型',	'ELTY',	'type of elevation',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_QTICEINF_R',	24,	'冰流量性质',	'IQPROP',	'property of ice discharge',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	3,	'扩展关键字',	'EXKEY',	'extend keywords',	'CHAR(1)',	'N',	'',	' @、A到Z',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	4,	'垂线平均含水量',	'VTAVSLM',	'vertical averaged soil moisture content',	'DECIMAL(4,1)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	5,	'表层含水量',	'SRLSLM',	'soil moisture content in surface layer',	'DECIMAL(4,1)',	'',	'%',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	6,	'10cm深度含水量',	'SLM10',	'soil moisture content at point 10cm below ground',	'DECIMAL(4,1)',	'',	'%',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	7,	'20cm深度含水量',	'SLM20',	'soil moisture content at point 20cm below ground',	'DECIMAL(4,1)',	'',	'%',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	8,	'30cm深度含水量',	'SLM30',	'soil moisture content at point 30cm below ground',	'DECIMAL(4,1)',	'',	'%',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	9,	'40cm深度含水量',	'SLM40',	'soil moisture content at point 40cm below ground',	'DECIMAL(4,1)',	'',	'%',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	10,	'60cm深度含水量',	'SLM60',	'soil moisture content at point 60cm below ground',	'DECIMAL(4,1)',	'',	'%',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	11,	'80cm深度含水量',	'SLM80',	'soil moisture content at point 80cm below ground',	'DECIMAL(4,1)',	'',	'%',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	12,	'100cm深度含水量',	'SLM100',	'soil moisture content at point 100cm below ground',	'DECIMAL(4,1)',	'',	'%',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	13,	'作物种类',	'CRPTY',	'crop type',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	14,	'作物生长期',	'CRPGRWPRD',	'period of crop growth',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	15,	'作物水分状态',	'HITRSN',	'crop moisture content status',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SOIL_R',	16,	'土壤含水量测法',	'SLMMMT',	'method of soil moisture content measurement',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRW_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRW_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRW_R',	3,	'地下水埋深',	'GWBD',	'buried depth of groundwater surface ',	'DECIMAL(6,2)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRW_R',	4,	'地下水埋深注解',	'GWBDRMK',	'remark to buried depth of groundwater surface',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRW_R',	5,	'泉涌水流量',	'SPQ',	'spring discharge  ',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRW_R',	6,	'地下水水温',	'GWTMP',	'water temperature of groundwater',	'DECIMAL(4,1)',	'',	'摄氏度',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRW_R',	7,	'地下水水势',	'GWPTN',	'water potential of groundwater',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRW_R',	8,	'泉涌水流量测法',	'SPQMMT',	'method of spring discharge measurement ',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WGRW_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WGRW_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WGRW_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WGRW_R',	4,	'水井开采量',	'WLMIN',	'mining of well',	'DECIMAL(11,4)',	'',	'万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WGRW_R',	5,	'水井开采量测法',	'WLMINMT',	'method of well mining measurement',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STORM_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STORM_R',	2,	'时间',	'TM',	'time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STORM_R',	3,	'暴雨历时',	'STRMDR',	'storm duration',	'DECIMAL(5,2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STORM_R',	4,	'暴雨量',	'STRMP',	'storm precipitation',	'DECIMAL(4,1)',	'',	'毫米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STORM_R',	5,	'天气状况',	'WTH',	'weather',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WSPAVSD_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WSPAVSD_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WSPAVSD_R',	3,	'统计时段长',	'STTDR',	'statistical duration',	'DECIMAL(5,2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WSPAVSD_R',	4,	'时段平均水位',	'DRAVZ',	'average stage in a period of time',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WSPAVSD_R',	5,	'时段平均流量',	'DRAVQ',	'average discharge in a period of time',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WSPAVSD_R',	6,	'时段引水量',	'DRPW',	'volume of water pumped in a period of time',	'DECIMAL(11,3)',	'',	'立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WSPAVSD_R',	7,	'时段排水量',	'DRDW',	'volume of water drained in a period of time',	'DECIMAL(11,3)',	'',	'立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVAV_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVAV_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVAV_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVAV_R',	4,	'平均水位',	'AVZ',	'average stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVAV_R',	5,	'平均流量',	'AVQ',	'average discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRAV_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRAV_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRAV_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRAV_R',	4,	'平均库水位',	'AVRZ',	'average stage in reservoir region',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRAV_R',	5,	'平均入流量',	'AVINQ',	'average inflow discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRAV_R',	6,	'平均出流量',	'AVOTQ',	'average outflow discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRAV_R',	7,	'平均蓄水量',	'AVW',	'average reservoir storage',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASAV_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASAV_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASAV_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASAV_R',	4,	'平均闸上水位',	'AVUPZ',	'average stage in sluice upstream',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASAV_R',	5,	'平均闸下水位',	'AVDWZ',	'average stage in sluice downstream',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASAV_R',	6,	'平均过闸流量',	'AVGTQ',	'average gate discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEAV_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEAV_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEAV_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEAV_R',	4,	'平均高潮位',	'AVHTDZ',	'average level of high tide',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEAV_R',	5,	'平均低潮位',	'AVLTDZ',	'average level of low tide',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPAV_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPAV_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPAV_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPAV_R',	4,	'平均气温',	'AVATMP',	'average air temperature',	'DECIMAL(3,1)',	'',	'摄氏度',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPAV_R',	5,	'平均水温',	'AVWTMP',	'average water temperature',	'DECIMAL(3,1)',	'',	'摄氏度',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWAV_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWAV_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWAV_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWAV_R',	4,	'平均地下水埋深',	'AVGWBD',	'average buried depth of groundwater ',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWAV_R',	5,	'平均泉涌流量',	'AVSPQ',	'average discharge of spring',	'DECIMAL(7,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWAV_R',	6,	'平均地下水水温',	'AVGWTMP',	'average groundwater temperature',	'DECIMAL(3,1)',	'',	'摄氏度',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ESTAT_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ESTAT_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ESTAT_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ESTAT_R',	4,	'累计蒸发量',	'ACCE',	'accumulative evaporation',	'DECIMAL(6,1)',	'',	'毫米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PSTAT_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PSTAT_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PSTAT_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PSTAT_R',	4,	'累计降水量',	'ACCP',	'accumulative precipitation',	'DECIMAL(6,1)',	'',	'毫米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDPSTAT_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDPSTAT_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDPSTAT_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDPSTAT_R',	4,	'引水次数',	'PPTMS',	'times of pumping',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDPSTAT_R',	5,	'累计引水量',	'ACCPW',	'accumulative volume of water pumped',	'DECIMAL(11,3)',	'',	'万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDPSTAT_R',	6,	'引水时数',	'PPHRS',	'hours of pumping',	'DECIMAL(6,2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDPSTAT_R',	7,	'排水次数',	'DRNTMS',	'times of drainage',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDPSTAT_R',	8,	'累计排水量',	'ACCDW',	'accumulative volume of  water drained',	'DECIMAL(11,3)',	'',	'万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WDPSTAT_R',	9,	'排水时数',	'DRNHRS',	'hours of draining',	'DECIMAL(6,2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDRF_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDRF_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDRF_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDRF_R',	4,	'输水总量',	'WRNF',	'total water runoff',	'DECIMAL(11,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDRF_R',	5,	'输沙总量',	'STW',	'total sediment runoff',	'DECIMAL(11,3)',	'',	'万吨',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WGRWSTAT_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WGRWSTAT_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WGRWSTAT_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WGRWSTAT_R',	4,	'累计开采量',	'ACCGDW',	'accumulative volume of groundwater exploited',	'DECIMAL(5)',	'',	'万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVEVS_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVEVS_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVEVS_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVEVS_R',	4,	'最高水位',	'HTZ',	'highest stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVEVS_R',	5,	'最低水位',	'LTZ',	'lowerest stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVEVS_R',	6,	'最大流量',	'MXQ',	'maxmum discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVEVS_R',	7,	'最小流量',	'MNQ',	'minimum discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVEVS_R',	8,	'最高水位出现时间',	'HTZTM',	'occurring time of highest stage',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVEVS_R',	9,	'最低水位出现时间',	'LTZTM',	'occurring time of lowest stage',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVEVS_R',	10,	'最大流量出现时间',	'MXQTM',	'occurring time of maxmum discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVEVS_R',	11,	'最小流量出现时间',	'MNQTM',	'occurring time of minimum discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	4,	'最高库水位',	'HTRZ',	'highest stage in reservoir region',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	5,	'最低库水位',	'LTRZ',	'lowest stage in reservoir region',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	6,	'最大入库流量',	'MXINQ',	'maximum inflow discharge of reservoir',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	7,	'最小入库流量',	'MNINQ',	'minimum inflow discharge of reservoir',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	8,	'最大出库流量',	'MXOTQ',	'maximum outflow discharge of reservoir',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	9,	'最小出库流量',	'MNOTQ',	'minimum outflow discharge of reservoir',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	10,	'最大蓄水量',	'MXW',	'maximum reservoir storage',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	11,	'最小蓄水量',	'MNW',	'minimum reservoir storage',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	12,	'最高库水位出现时间',	'HTRZTM',	'occurring time of highest stage in reservoir region',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	13,	'最低库水位出现时间',	'LTRZTM',	'occurring time of lowest stage in reservoir region',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	14,	'最大入库流量出现时间',	'MXINQTM',	'occurring time of maximum inflow discharge of reservoir',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	15,	'最小入库流量出现时间',	'MNINQTM',	'occuring time of minimum inflow discharge of reservoir',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	16,	'最大出库流量出现时间',	'MXOTQTM',	'occuring time of maximum outflow discharge of reservoir',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	17,	'最小出库流量出现时间',	'MNOTQTM',	'occuring time of minimum outflow discharge of reservoir',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	18,	'最大蓄水量出现时间',	'MXWTM',	'occuring time of maximum reservoir storage',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVREVS_R',	19,	'最小蓄水量出现时间',	'MNWTM',	'occuring time of minimum reservoir storage',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	4,	'最高闸上水位',	'HTUPZ',	'highest stage in sluice upstream',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	5,	'最低闸上水位',	'LTUPZ',	'lowest stage in sluice upstream',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	6,	'最大过闸流量',	'MXGTQ',	'maximum gate discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	7,	'最小过闸流量',	'MNGTQ',	'minimum gate discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	8,	'最高闸下水位',	'HTDWZ',	'highest stage in sluice downstream',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	9,	'最低闸下水位',	'LTDWZ',	'lowest stage in sluice downstream',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	10,	'最高闸上水位出现时间',	'HTUPZTM',	'occuring time of highest stage in sluice upstream',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	11,	'最低闸上水位出现时间',	'LTUPZTM',	'occuring time of lowest stage in sluice upstream',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	12,	'最大过闸流量出现时间',	'MXGTQTM',	'occuring time of maximun gate discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	13,	'最小过闸流量出现时间',	'MNGTQTM',	'occuring time of minimun gate discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	14,	'最高闸下水位出现时间',	'HTDWZTM',	'occuring time of highest stage in sluice downstream',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_WASEVS_R',	15,	'最低闸下水位出现时间',	'LTDWZTM',	'occuring time of lowest stage in sluice downstream',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	4,	'站上最高水位',	'PPUPHTZ',	'highest stage in upstream of pumping station',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	5,	'站上最低水位',	'PPUPLTZ',	'lowest stage in upstream of pumping station',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	6,	'站下最高水位',	'PPDWHTZ',	'highest stage in downstream of pumping station',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	7,	'站下最低水位',	'PPDWLTZ',	'lowest stage in downstream of pumping station',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	8,	'最大引水流量',	'MXPPQ',	'maximum pumping discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	9,	'最小引水流量',	'MNPPQ',	'minimum pumping discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	10,	'最大排水流量',	'MXDNQ',	'maximum draining discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	11,	'最小排水流量',	'MNDNQ',	'minimum draining discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	12,	'站上最高水位出现时间',	'PPUPHTZTM',	'occuring time of highest stage in upstream of pumping station',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	13,	'站上最低水位出现时间',	'PPUPLTZTM',	'occuring time of lowest stage in upstream of pumping station',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	14,	'站下最高水位出现时间',	'PPDWHTZTM',	'occuring time of highest stage in downstream of pumping station',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	15,	'站下最低水位出现时间',	'PPDWLTZTM',	'occuring time of lowest stage in downstream of pumping station',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	16,	'最大引水流量出现时间',	'MXPPQTM',	'occuring time of maximum pumping discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	17,	'最小引水流量出现时间',	'MNPPQTM',	'occuring time of minimum pumping discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	18,	'最大排水流量出现时间',	'MXDNQTM',	'occuring time of maximum draining discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PMEVS_R',	19,	'最小排水流量出现时间',	'MNDNQTM',	'occuring time of minimum draining discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEEVS_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEEVS_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEEVS_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEEVS_R',	4,	'最高潮水位',	'HTTDZ',	'highest tidal level',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEEVS_R',	5,	'最低潮水位',	'LTTDZ',	'lowest tidal level',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEEVS_R',	6,	'最大风速',	'MXWNDV',	'maximum wind velocity',	'DECIMAL(4,1)',	'',	'米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEEVS_R',	7,	'最高潮位出现时间',	'HTTDZTM',	'occurring time of highest tidal level',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEEVS_R',	8,	'最低潮位出现时间',	'LTTDZTM',	'occuring time of lowest tidal level',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TIDEEVS_R',	9,	'最大风速出现时间',	'MXWNDVTM',	'occuring time of maximum wind velocity',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPEVS_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPEVS_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPEVS_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPEVS_R',	4,	'最高气温',	'MXATMP',	'maximum air temperature',	'DECIMAL(3,1)',	'',	'摄氏度',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPEVS_R',	5,	'最低气温',	'MNATMP',	'minimum air temperature',	'DECIMAL(3,1)',	'',	'摄氏度',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPEVS_R',	6,	'最高水温',	'MXWTMP',	'maximum water temperature',	'DECIMAL(3,1)',	'',	'摄氏度',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPEVS_R',	7,	'最低水温',	'MNWTMP',	'minimum water temperature',	'DECIMAL(3,1)',	'',	'摄氏度',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPEVS_R',	8,	'最高气温出现时间',	'MXATMPTM',	'occuring time of maximum air temperature',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPEVS_R',	9,	'最低气温出现时间',	'MNATMPTM',	'occuring time of minimum air temperature',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPEVS_R',	10,	'最高水温出现时间',	'MXWTMPTM',	'occuring time of maximum water temperature',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TMPEVS_R',	11,	'最低水温出现时间',	'MNWTMPTM',	'occuring time of minimum water temperature',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	2,	'标志时间',	'IDTM',	'identifying time',	'DATE',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	3,	'统计时段标志',	'STTDRCD',	'code of statistical duration',	'CHAR(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	4,	'最大埋深',	'MXBD',	'maximum buried depth of groundwater ',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	5,	'最小埋深',	'MNBD',	'minimum buried depth of groundwater ',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	6,	'最大泉涌流量',	'MXSPQ',	'maximum discharge of spring',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	7,	'最小泉涌量',	'MNSPQ',	'minimum discharge of spring',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	8,	'最高地下水水温',	'MXGWTMP',	'maximum groundwater temperature',	'DECIMAL(4,2)',	'',	'摄氏度',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	9,	'最低地下水水温',	'MNGWTMP',	'minimum groundwater temperature',	'DECIMAL(4,2)',	'',	'摄氏度',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	10,	'最大埋深出现时间',	'MXBDTM',	'occuring time of maximum buried depth of groundwater ',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	11,	'最小埋深出现时间',	'MNBDTM',	'occuring time of minimum buried depth of groundwater ',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	12,	'最大泉涌流量出现时间',	'MXSPQTM',	'occuring time of maximum spring discharge ',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	13,	'最小泉涌流量出现时间',	'MNSPQTM',	'occuring time of minimum spring discharge ',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	14,	'最高地下水水温出现时间',	'MXGWTMPTM',	'occuring time of maximum groundwater temperature ',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_GRWEVS_R',	15,	'最低地下水水温出现时间',	'MNGWTMPTM',	'occuring time of minimum groundwater temperature ',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECASTC_F',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECASTC_F',	2,	'预报单位',	'UNITNAME',	'unit name ',	'CHAR(30)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECASTC_F',	3,	'方案代码',	'PLCD',	'plan code',	'CHAR(20)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECASTC_F',	4,	'依据时间',	'FYMDH',	'time of forecasting',	'DATE',	'N',	'',	'',	'',	'4',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECASTC_F',	5,	'发布时间',	'IYMDH',	'time of forecast releasing',	'DATE',	'N',	'',	'',	'',	'5',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECASTC_F',	6,	'告警状态',	'WNSTATUS',	'warning status',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECASTC_F',	7,	'备注',	'COMMENTS',	'comments',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECAST_F',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECAST_F',	2,	'预报单位',	'UNITNAME',	'unit name ',	'CHAR(30)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECAST_F',	3,	'方案代码',	'PLCD',	'plan code',	'CHAR(20)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECAST_F',	4,	'依据时间',	'FYMDH',	'time of forecasting',	'DATE',	'N',	'',	'',	'',	'4',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECAST_F',	5,	'发布时间',	'IYMDH',	'time of forecast releasing',	'DATE',	'N',	'',	'',	'',	'5',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECAST_F',	6,	'发生时间',	'YMDH',	'time of occurrence ',	'DATE',	'N',	'',	'',	'',	'6',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECAST_F',	7,	'预报水位',	'Z',	'stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FORECAST_F',	8,	'预报流量',	'Q',	'discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_REGLAT_F',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_REGLAT_F',	2,	'预报单位',	'UNITNAME',	'unit name ',	'CHAR(30)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_REGLAT_F',	3,	'方案代码',	'PLCD',	'plan code',	'CHAR(20)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_REGLAT_F',	4,	'依据时间',	'FYMDH',	'time of forecasting',	'DATE',	'N',	'',	'',	'',	'4',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_REGLAT_F',	5,	'发布时间',	'IYMDH',	'time of forecast releasing',	'DATE',	'N',	'',	'',	'',	'5',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_REGLAT_F',	6,	'发生时间',	'YMDH',	'time of occurrence ',	'DATE',	'N',	'',	'',	'',	'6',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_REGLAT_F',	7,	'预报水位',	'Z',	'stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_REGLAT_F',	8,	'预报蓄水量',	'W',	'reservoir storage',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_REGLAT_F',	9,	'预报出流',	'OTQ',	'reservoir outflow discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TDFR_F',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TDFR_F',	2,	'预报单位',	'UNITNAME',	'unit name ',	'CHAR(30)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TDFR_F',	3,	'方案代码',	'PLCD',	'plan code',	'CHAR(20)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TDFR_F',	4,	'预报时间',	'FYMDH',	'time of forecasting',	'DATE',	'N',	'',	'',	'',	'4',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TDFR_F',	5,	'发布时间',	'IYMDH',	'time of forecast releasing',	'DATE',	'N',	'',	'',	'',	'5',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TDFR_F',	6,	'发生时间',	'YMDH',	'time of occurrence ',	'DATE',	'N',	'',	'',	'',	'6',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TDFR_F',	7,	'预报潮位',	'TDZ',	'tidal level',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TDFR_F',	8,	'预报增水',	'STRMSRG',	'stream multiplied storage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TDFR_F',	9,	'高低潮标志',	'HLTDMK',	'marker of high/low tide',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ASTROTD_F',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ASTROTD_F',	2,	'发生时间',	'YMDH',	'time of occurrence ',	'DATE',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ASTROTD_F',	3,	'预报天文潮位',	'TDZ',	'tidal level',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDFR_F',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDFR_F',	2,	'预报单位',	'UNITNAME',	'unit name ',	'CHAR(30)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDFR_F',	3,	'方案代码',	'PLCD',	'plan code',	'CHAR(20)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDFR_F',	4,	'依据时间',	'FYMDH',	'time of forecasting',	'DATE',	'N',	'',	'',	'',	'4',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDFR_F',	5,	'发布时间',	'IYMDH',	'time of forecast releasing',	'DATE',	'N',	'',	'',	'',	'5',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDFR_F',	6,	'发生时间',	'YMDH',	'time of occurrence ',	'DATE',	'N',	'',	'',	'',	'6',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDFR_F',	7,	'预报含沙量',	'FS',	'forecasting sediment concentration',	'DECIMAL(9,3)',	'',	'千克每立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_SEDFR_F',	8,	'含沙特征码',	'SCHRCD',	'code for characteristics of sediment concentration',	'CHAR(1)',	'',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	2,	'预报单位',	'UNITNAME',	'unit name ',	'CHAR(30)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	3,	'方案代码',	'PLCD',	'plan code',	'CHAR(20)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	4,	'依据时间',	'FYMDH',	'time of forecasting',	'DATE',	'N',	'',	'',	'',	'4',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	5,	'发布时间',	'IYMDH',	'time of forecast releasing',	'DATE',	'N',	'',	'',	'',	'5',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	6,	'发生时间',	'YMDH',	'time of occurrence ',	'DATE',	'N',	'',	'',	'',	'6',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	7,	'扩展关键字',	'EXKEY',	'extend keywords',	'CHAR(1)',	'N',	'',	' @、A到Z',	'',	'7',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	8,	'预报冰情现象号',	'FICD',	'forecasting ice code ',	'CHAR(2)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	9,	'预报冰情位置',	'FIRPSTN',	'position of forecasting ice regime ',	'CHAR(1)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	10,	'预报相对距离',	'FRLDSTN',	'forecasting relative distance ',	'DECIMAL(3,1)',	'',	'公里',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	11,	'预报冰厚',	'FITHK',	'forecasting ice thickness',	'DECIMAL(4,1)',	'',	'厘米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	12,	'冰厚种类码',	'ITHKCD',	'code for type of ice thickness',	'CHAR(1)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	13,	'预报冰流量',	'FIQ',	'forecasting ice discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ICEFR_F',	14,	'冰流量性质',	'IQPROP',	'property of ice discharge',	'CHAR(1)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDDMYAV_S',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDDMYAV_S',	2,	'月份',	'MNTH',	'month',	'DECIMAL(2)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDDMYAV_S',	3,	'日期',	'DAY',	'day',	'DECIMAL(2)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDDMYAV_S',	4,	'多年平均日降水量',	'MYDAVP',	'multi-year-averaged values of daily precipitation',	'DECIMAL(5,1)',	'',	'毫米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDDMYAV_S',	5,	'开始年份',	'BGYR',	'beginning year',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDDMYAV_S',	6,	'结束年份',	'EDYR',	'end year',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDDMYAV_S',	7,	'统计年数',	'STTYRNUM',	'count of statistical years',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDDMYAV_S',	8,	'备注',	'COMMENTS',	'comments',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDDMYAV_S',	9,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYSQ_S',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYSQ_S',	2,	'年份',	'YR',	'year',	'DECIMAL(4)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYSQ_S',	3,	'月份',	'MNTH',	'month',	'DECIMAL(2)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYSQ_S',	4,	'旬月标示',	'PRDTP',	'period type of 10-day or month ',	'DECIMAL(1)',	'N',	'',	'',	'1',	'4',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYSQ_S',	5,	'累计降水量',	'ACCP',	'accumulative precipitation',	'DECIMAL(5,1)',	'',	'毫米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYSQ_S',	6,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYAV_S',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYAV_S',	2,	'月份',	'MNTH',	'month',	'DECIMAL(2)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYAV_S',	3,	'旬月标示',	'PRDTP',	'period type of 10-day or month ',	'DECIMAL(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYAV_S',	4,	'多年平均旬月降水量',	'MYMAVP',	'multi-year-averaged values of precipitation on 10-day or month',	'DECIMAL(5,1)',	'',	'毫米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYAV_S',	9,	'开始年份',	'BGYR',	'beginning year',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYAV_S',	10,	'结束年份',	'EDYR',	'end year',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYAV_S',	11,	'统计年数',	'STTYRNUM',	'count of statistical years',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYAV_S',	12,	'备注',	'COMMENTS',	'comments',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_PDMMYAV_S',	13,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDAYMYAV_S',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDAYMYAV_S',	2,	'月份',	'MNTH',	'month',	'DECIMAL(2)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDAYMYAV_S',	3,	'日期',	'DAY',	'day',	'DECIMAL(2)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDAYMYAV_S',	4,	'多年日平均水位',	'MYDAVZ',	'multi-years-averaged values of daily stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDAYMYAV_S',	5,	'多年日平均流量',	'MYDAVQ',	'multi-year-averaged values of daily discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDAYMYAV_S',	6,	'开始年份',	'BGYR',	'beginning year',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDAYMYAV_S',	7,	'结束年份',	'EDYR',	'end year',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDAYMYAV_S',	8,	'统计年数',	'STTYRNUM',	'count of statistical years',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDAYMYAV_S',	9,	'备注',	'COMMENTS',	'comments',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDAYMYAV_S',	10,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYSQ_S',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYSQ_S',	2,	'年份',	'YR',	'year',	'DECIMAL(4)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYSQ_S',	3,	'月份',	'MNTH',	'month',	'DECIMAL(2)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYSQ_S',	4,	'旬月标示',	'PRDTP',	'period type of 10-day or month ',	'DECIMAL(1)',	'N',	'',	'',	'1',	'4',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYSQ_S',	5,	'旬月平均水位',	'AVZ',	'average stage',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYSQ_S',	6,	'旬月平均流量',	'AVQ',	'average discharge',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYSQ_S',	7,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYAV_S',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYAV_S',	2,	'月份',	'MNTH',	'month',	'DECIMAL(2)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYAV_S',	3,	'旬月标示',	'PRDTP',	'period type of 10-day or month ',	'DECIMAL(1)',	'N',	'',	'',	'1',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYAV_S',	4,	'多年旬月平均水位',	'MYMAVZ',	'multi-year-averaged values of stage on 10-day or month ',	'DECIMAL(7,3)',	'',	'米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYAV_S',	5,	'多年旬月平均流量',	'MYMAVQ',	'multi-year-averaged values of discharge on 10-day or month',	'DECIMAL(9,3)',	'',	'立方米每秒',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYAV_S',	6,	'开始年份',	'BGYR',	'beginning year',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYAV_S',	7,	'结束年份',	'EDYR',	'end year',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYAV_S',	8,	'统计年数',	'STTYRNUM',	'count of statistical years',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYAV_S',	9,	'备注',	'COMMENTS',	'comments',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMMYAV_S',	10,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	2,	'年份',	'YR',	'year',	'DECIMAL(4)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	3,	'月份',	'MNTH',	'month',	'DECIMAL(2)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	4,	'旬月标示',	'PRDTP',	'period type of 10-day or month ',	'DECIMAL(1)',	'N',	'',	'',	'1',	'4',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	5,	'最高水位',	'HTZ',	'highest stage',	'DECIMAL(7,3)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	6,	'最高水位出现时间',	'HTZTM',	'occurring time of highest stage',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	7,	'最大流量',	'MXQ',	'maxmum discharge',	'DECIMAL(9,3)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	8,	'最大流量出现时间',	'MXQTM',	'occurring time of maxmum discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	9,	'最低水位',	'LTZ',	'lowerest stage',	'DECIMAL(7,3)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	10,	'最低水位出现时间',	'LTZTM',	'occurring time of lowest stage',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	11,	'最小流量',	'MNQ',	'minimum discharge',	'DECIMAL(9,3)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	12,	'最小流量出现时间',	'MNQTM',	'occurring time of minimum discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVDMEVSQ_S',	13,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVYEVSQ_S',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVYEVSQ_S',	2,	'年份',	'YR',	'year',	'DECIMAL(4)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVYEVSQ_S',	3,	'最高水位',	'HTZ',	'highest stage',	'DECIMAL(7,3)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVYEVSQ_S',	4,	'最高水位出现时间',	'HTZTM',	'occurring time of highest stage',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVYEVSQ_S',	5,	'最大流量',	'MXQ',	'maxmum discharge',	'DECIMAL(9,3)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVYEVSQ_S',	6,	'最大流量出现时间',	'MXQTM',	'occurring time of maxmum discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVYEVSQ_S',	7,	'最低水位',	'LTZ',	'lowerest stage',	'DECIMAL(7,3)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVYEVSQ_S',	8,	'最低水位出现时间',	'LTZTM',	'occurring time of lowest stage',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVYEVSQ_S',	9,	'最小流量',	'MNQ',	'minimum discharge',	'DECIMAL(9,3)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVYEVSQ_S',	10,	'最小流量出现时间',	'MNQTM',	'occurring time of minimum discharge',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RVYEVSQ_S',	11,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRMYAV_S',	1,	'测站编码',	'STCD',	'station code',	'CHAR(8)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRMYAV_S',	2,	'月份',	'MNTH',	'month',	'DECIMAL(2)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRMYAV_S',	3,	'日期',	'DAY',	'day',	'DECIMAL(2)',	'N',	'',	'',	'',	'3',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRMYAV_S',	4,	'多年日平均蓄水量',	'MYDAVW',	'multi-year-averaged values of daily reservoir storage',	'DECIMAL(9,3)',	'',	'百万立方米',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRMYAV_S',	5,	'开始年份',	'BGYR',	'beginning year',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRMYAV_S',	6,	'结束年份',	'EDYR',	'end year',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRMYAV_S',	7,	'统计年数',	'STTYRNUM',	'count of statistical years',	'DECIMAL(4)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRMYAV_S',	8,	'备注',	'COMMENTS',	'comments',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_RSVRMYAV_S',	9,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_E',	1,	'单位代码',	'INSTCD',	'institute code ',	'VARCHAR(10)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_E',	2,	'单位名称',	'INSTNM',	'name of institute',	'VARCHAR(40)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_E',	3,	'交换类型',	'EXCTYPE',	'exchange type',	'VARCHAR(1)',	'N',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_E',	4,	'IP地址',	'EXCIP',	'exchange of ip address ',	'VARCHAR(39)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_E',	5,	'端口号',	'EXCPORT',	'exchange port',	'DECIMAL(5)',	'N',	'',	'80～10000',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_E',	6,	'服务名',	'EXCSRV',	'exchange of server name',	'VARCHAR(32)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_E',	7,	'手工上传网址',	'WEBURL',	'url of manual uploading',	'VARCHAR(50)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_E',	8,	'手工上传密码',	'PASSWORD',	'password of manual uploading',	'VARCHAR(32)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_E',	9,	'启动交换',	'ISSTARTS',	'start exchange',	'VARCHAR(1)',	'N',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_INSTCD_E',	10,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STCD_E',	1,	'单位代码',	'INSTCD',	'institute code ',	'VARCHAR(10)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STCD_E',	2,	'测站编码',	'STCD',	'station code',	'VARCHAR(8)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_STCD_E',	3,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TABLE_E',	1,	'单位代码',	'INSTCD',	'institute code ',	'VARCHAR(10)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TABLE_E',	2,	'表标识',	'TABID',	'table identifying',	'VARCHAR(20)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TABLE_E',	3,	'启动交换',	'ISSTARTS',	'start exchange',	'VARCHAR(1)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TABLE_E',	4,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDWAIT_E',1,'发送流水号','SLSH','SLSH','DECIMAL(18,0)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDWAIT_E',2,'测站编码','STCD','STCD','VARCHAR(8)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDWAIT_E',3,'表标识','TABID','TABID','VARCHAR(30)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDWAIT_E',4,'数据时间','TM','TM','DATE','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDWAIT_E',5,'扩展关键字','EXCKEY','EXCKEY','VARCHAR(200)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDWAIT_E',6,'操作类型','OPERATION','OPERATION','VARCHAR(1)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDWAIT_E',7,'交换信息','EXCINF','EXCINF','VARCHAR(4000)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDWAIT_E',8,'轮询状态','POLLSTATUS','POLLSTATUS','VARCHAR(1)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDWAIT_E',9,'时间戳','MODITIME','MODITIME','DATE','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDDO_E',1,'发送流水号','SLSH','SLSH','DECIMAL(18,0)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDDO_E',2,'测站编码','STCD','STCD','VARCHAR(8)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDDO_E',3,'表标识','TABID','TABID','VARCHAR(30)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDDO_E',4,'数据时间','TM','TM','DATE','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDDO_E',5,'扩展关键字','EXCKEY','EXCKEY','VARCHAR(200)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDDO_E',6,'操作类型','OPERATION','OPERATION','VARCHAR(1)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDDO_E',7,'交换信息','EXCINF','EXCINF','VARCHAR(4000)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDDO_E',8,'时间戳','MODITIME','MODITIME','DATE','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDFILE_E',1,'发送文件编号','SFNUM','SFNUM','DECIMAL(18,0)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDFILE_E',2,'单位代码','INSTCD','INSTCD','VARCHAR(10)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDFILE_E',3,'发送类型','SENDTYPE','SENDTYPE','VARCHAR(1)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDFILE_E',4,'发送状态','SENDSTATUS','SENDSTATUS','VARCHAR(1)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDFILE_E',5,'发送文件名','SFILENAME','SFILENAME','VARCHAR(32)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDFILE_E',6,'发送时间','SENDTM','SENDTM','DATE','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDFILE_E',7,'发送次数','SENDCOUNT','SENDCOUNT','DECIMAL(18,0)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDFILE_E',8,'错误行号','ERRLINE','ERRLINE','DECIMAL(18,0)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDFILE_E',9,'时间戳','MODITIME','MODITIME','DATE','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDTO_E',1,'单位代码','INSTCD','INSTCD','VARCHAR(10)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDTO_E',2,'发送流水号','SLSH','SLSH','DECIMAL(18,0)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDTO_E',3,'发送文件编号','SFNUM','SFNUM','DECIMAL(18,0)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDTO_E',4,'数据时间','TM','TM','DATE','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDTO_E',5,'发送状态','SENDSTATUS','SENDSTATUS','VARCHAR(1)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDTO_E',6,'统计标记','STAT','STAT','VARCHAR(1)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDTO_E',7,'时间戳','MODITIME','MODITIME','DATE','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDSTAT_E',1,'单位代码','INSTCD','INSTCD','VARCHAR(10)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDSTAT_E',2,'统计日期','COUNTDAY','COUNTDAY','DATE','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDSTAT_E',3,'统计时段标志','STTDRCD','STTDRCD','VARCHAR(1)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDSTAT_E',4,'报汛等级','FRGRD','FRGRD','VARCHAR(1)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDSTAT_E',5,'操作类型','OPERATION','OPERATION','VARCHAR(1)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDSTAT_E',6,'信息类型','INFTYPE','INFTYPE','VARCHAR(1)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDSTAT_E',7,'测站数量','STCDNUM','STCDNUM','DECIMAL(6,0)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDSTAT_E',8,'信息量','INFNUM','INFNUM','DECIMAL(9,0)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDSTAT_E',9,'30分钟内信息量','COUNTL30','COUNTL30','DECIMAL(9,0)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDSTAT_E',10,'30至60分钟信息量','COUNTB60','COUNTB60','DECIMAL(9,0)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDSTAT_E',11,'大于60分钟信息量','COUNTT60','COUNTT60','DECIMAL(9,0)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SENDSTAT_E',12,'时间戳','MODITIME','MODITIME','DATE','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVFILE_E',1,'接收文件编号','RFNUM','RFNUM','DECIMAL(18,0)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVFILE_E',2,'单位代码','INSTCD','INSTCD','VARCHAR(10)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVFILE_E',3,'接收类型','RECVTYPE','RECVTYPE','VARCHAR(1)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVFILE_E',4,'接收状态','RECVSTATUS','RECVSTATUS','VARCHAR(1)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVFILE_E',5,'接收文件名','RFILENAME','RFILENAME','VARCHAR(200)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVFILE_E',6,'接收时间','RECVTM','RECVTM','DATE','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVFILE_E',8,'时间戳','MODITIME','MODITIME','DATE','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',1,'接收流水号','RLSH','RLSH','DECIMAL(18,0)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',2,'接收文件编号','RFNUM','RFNUM','DECIMAL(18,0)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',3,'单位代码','INSTCD','INSTCD','VARCHAR(10)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',4,'发送流水号','SLSH','SLSH','DECIMAL(18,0)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',5,'测站编码','STCD','STCD','VARCHAR(8)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',6,'表标识','TABID','TABID','VARCHAR(30)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',7,'数据时间','TM','TM','DATE','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',8,'扩展关键字','EXCKEY','EXCKEY','VARCHAR(200)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',9,'操作类型','OPERATION','OPERATION','VARCHAR(1)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',10,'交换信息','EXCINF','EXCINF','VARCHAR(4000)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',11,'入库状态','INSTOSTATUS','INSTOSTATUS','VARCHAR(1)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',12,'入库时间','INSTOTM','INSTOTM','DATE','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',13,'错误信息','ERRINF','ERRINF','VARCHAR(4000)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',14,'人工处理时间','MANUALTM','MANUALTM','DATE','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',15,'统计标记','STAT','STAT','VARCHAR(1)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVINF_E',16,'时间戳','MODITIME','MODITIME','DATE','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVSTAT_E',1,'单位代码','INSTCD','INSTCD','VARCHAR(10)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVSTAT_E',2,'统计日期','COUNTDAY','COUNTDAY','DATE','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVSTAT_E',3,'统计时段标志','STTDRCD','STTDRCD','VARCHAR(1)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVSTAT_E',4,'报汛等级','FRGRD','FRGRD','VARCHAR(1)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVSTAT_E',5,'操作类型','OPERATION','OPERATION','VARCHAR(1)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVSTAT_E',6,'信息类型','INFTYPE','INFTYPE','VARCHAR(1)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVSTAT_E',7,'测站数量','STCDNUM','STCDNUM','DECIMAL(6,0)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVSTAT_E',8,'信息量','INFNUM','INFNUM','DECIMAL(9,0)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVSTAT_E',9,'30分钟内信息量','COUNTL30','COUNTL30','DECIMAL(9,0)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVSTAT_E',10,'30至60分钟信息量','COUNTB60','COUNTB60','DECIMAL(9,0)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVSTAT_E',11,'大于60分钟信息量','COUNTT60','COUNTT60','DECIMAL(9,0)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_RECVSTAT_E',12,'时间戳','MODITIME','MODITIME','DATE','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_STSMCNT_E',1,'单位代码','INSTCD','INSTCD','VARCHAR(10)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_STSMCNT_E',2,'测站编码','STCD','STCD','VARCHAR(8)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_STSMCNT_E',3,'统计日期','COUNTDAY','COUNTDAY','DATE','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_STSMCNT_E',4,'信息状态','INFSTATUS','INFSTATUS','VARCHAR(1)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_STSMCNT_E',5,'信息类型','INFTYPE','INFTYPE','VARCHAR(1)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_STSMCNT_E',6,'报汛等级','FRGRD','FRGRD','VARCHAR(1)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_STSMCNT_E',7,'插入信息量','ICNT','ICNT','DECIMAL(9,0)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_STSMCNT_E',8,'更新信息量','UCNT','UCNT','DECIMAL(9,0)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_STSMCNT_E',9,'删除信息量','DCNT','DCNT','DECIMAL(9,0)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_STSMCNT_E',10,'时间戳','MODITIME','MODITIME','DATE','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_NETSTAT_E',1,'单位代码','INSTCD','INSTCD','VARCHAR(10)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_NETSTAT_E',2,'变化时间','CHANGETIME','CHANGETIME','DATE','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_NETSTAT_E',3,'网络类型','NETTYPE','NETTYPE','VARCHAR(1)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_NETSTAT_E',4,'网络状态','NETSTATUS','NETSTATUS','VARCHAR(2)','','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SYNCSET_E',1,'配置名','SYSNAME','SYSNAME','VARCHAR(32)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SYNCSET_E',2,'配置值','SYSVALUE','SYSVALUE','VARCHAR(200)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SYSLOG_E',1,'日志流水号','LOGLSH','LOGLSH','DECIMAL(18,0)','N','','','Y','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SYSLOG_E',2,'日志类型','LOGTYPE','LOGTYPE','VARCHAR(1)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SYSLOG_E',3,'日志内容','LOGCONTENT','LOGCONTENT','VARCHAR(512)','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID, FLSID, FLCN, FLID, FLEN, FLTL, NLAT, UNNM, FCHSC, PKAT, EUFL, MODITIME) VALUES('ST_SYSLOG_E',4,'时间戳','MODITIME','MODITIME','DATE','N','','','','',sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TABLE_D',	1,	'表标识',	'TABID',	'table identifying',	'CHAR(20)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TABLE_D',	2,	'表编号',	'TABNO',	'serial DECIMAL of the table',	'CHAR(11)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TABLE_D',	3,	'表中文名',	'TABCN',	'chinese name of the table',	'VARCHAR(30)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TABLE_D',	4,	'表英文名',	'TABEN',	'english name of the table',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TABLE_D',	5,	'交换标示',	'EXCHFL',	'exchange flag',	'CHAR(1)',	'N',	'',	'',	'1',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_TABLE_D',	6,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FIELD_D',	1,	'表标识',	'TABID',	'table identifying',	'CHAR(20)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FIELD_D',	2,	'字段标识',	'FLID',	'field identify',	'CHAR(20)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FIELD_D',	3,	'字段序号',	'FLSID',	'field id',	'DECIMAL(2)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FIELD_D',	4,	'字段中文名',	'FLCN',	'chinese name of field',	'VARCHAR(40)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FIELD_D',	5,	'字段英文名',	'FLEN',	'english name of field',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FIELD_D',	6,	'字段类型及长度',	'FLTL',	'field type and length',	'VARCHAR(20)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FIELD_D',	7,	'空值属性',	'NLAT',	'null attribute',	'CHAR(1)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FIELD_D',	8,	'计量单位名称',	'UNNM',	'unit name',	'VARCHAR(30)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FIELD_D',	9,	'取值范围',	'FCHSC',	'fetching scale',	'CHAR(20)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FIELD_D',	10,	'枚举标示',	'EUFL',	'enumeration flag',	'CHAR(1)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FIELD_D',	11,	'主键属性',	'PKAT',	'primary key attribute',	'CHAR(1)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_FIELD_D',	12,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_EUNTLANG_D',	1,	'字段标识',	'FLID',	'field identify',	'VARCHAR(20)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_EUNTLANG_D',	2,	'枚举代码',	'EUCD',	'enumeration code ',	'VARCHAR(10)',	'N',	'',	'',	'',	'2',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_EUNTLANG_D',	3,	'自然语言',	'NTLANG',	'nature language',	'VARCHAR(200)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_EUNTLANG_D',	4,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ADDVCD_D',	1,	'行政区划码',	'ADDVCD',	'administration division code',	'CHAR(6)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ADDVCD_D',	2,	'行政区划名',	'ADDVNM',	'name of administrative division',	'VARCHAR(50)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ADDVCD_D',	3,	'备注',	'COMMENTS',	'comments',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ADDVCD_D',	4,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ENNMCD_D',	1,	'河流名称代码',	'ENNMCD',	'code for rivers name of china',	'CHAR(12)',	'N',	'',	'',	'',	'1',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ENNMCD_D',	2,	'水系名称',	'BSNM',	'basin name',	'VARCHAR(30)',	'N',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ENNMCD_D',	3,	'备注',	'COMMENTS',	'comments',	'VARCHAR(200)',	'',	'',	'',	'',	'',	sysdate());
+INSERT INTO ST_FIELD_D (TABID,	 FLSID,	 FLCN,	 FLID,	 FLEN,	 FLTL,	 NLAT,	 UNNM,	 FCHSC,	 EUFL,	 PKAT,	 MODITIME) VALUES(	'ST_ENNMCD_D',	4,	'时间戳',	'MODITIME',	'modification timestamp',	'DATE',	'',	'',	'',	'',	'',	sysdate());
+
+CREATE TABLE  ST_EUNTLANG_D (
+    FLID    VARCHAR(20)    NOT NULL,
+    EUCD    VARCHAR(10)     NOT NULL,
+    NTLANG    VARCHAR(200)     NOT NULL,
+    MODITIME    DATE,
+    PRIMARY KEY (FLID,EUCD)
+);
+
+CREATE TABLE  ST_ADDVCD_D (
+    ADDVCD    CHAR(6)     NOT NULL,
+    ADDVNM    VARCHAR(50)    NOT NULL,
+    COMMENTS    VARCHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (ADDVCD)
+);
+
+CREATE TABLE  ST_ENNMCD_D (
+    ENNMCD    CHAR(12)    NOT NULL,
+    BSNM    VARCHAR(30)    NOT NULL,
+    COMMENTS    VARCHAR(200),
+    MODITIME    DATE,
+    PRIMARY KEY (ENNMCD)
+);

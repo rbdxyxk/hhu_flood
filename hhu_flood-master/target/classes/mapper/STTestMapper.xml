@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hhu.mapper.STTestMapper">
+
+    <select id="getInfosByName" resultType="cn.hhu.Bean.STTest">
+        use jsycwater;
+        SELECT b.STCD AS STCD ,b.TM AS TM ,b.Z,b.Q,c.DRP FROM ( SELECT STCD,Z,Q,TM FROM ST_RIVER_R WHERE STCD=
+(
+SELECT STCD FROM st_stinfo_b WHERE STNM=#{STNM}
+)
+) b JOIN ( SELECT STCD,TM,DRP FROM ST_PPTN_R WHERE STCD = (
+SELECT STCD FROM st_stinfo_b WHERE STNM=#{STNM}
+)
+ )c ON  b.TM = c.TM
+ORDER BY TM;
+use waterflood;
+
+    </select>
+</mapper>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hhu.mapper.CruiseMapper">
+
+    <sql id="selectFields">
+        id, uid, info_name, info_data, expired
+    </sql>
+
+    <sql id="insertFields">
+        uid, info_name, info_data, expired
+    </sql>
+
+    <insert id="insertRoad" parameterType="cn.hhu.Bean.Road">
+        insert into road(<include refid="insertFields"></include>)
+        values(#{uid},#{info_name},#{info_data},#{expired})
+    </insert>
+
+    <select id="selectRoads" resultType="cn.hhu.Bean.Road">
+        select <include refid="selectFields"></include>
+        from road
+        where uid = #{uid}
+        and expired != 1
+        limit #{offset},#{limit}
+    </select>
+
+    <select id="selectRoadRows" resultType="int">
+        select count(id)
+        from road
+        where uid = #{uid}
+          and expired != 1
+    </select>
+
+</mapper>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hhu.mapper.ParaForecastMapper">
+
+
+
+    <sql id="selectFields">
+        distinct(ParamId),ParaName,CalRegNM,PmakeP,IsOnLine,A,DATT,B,EX,IM,KI,KG,CI,CG,CS,L,X,K,SM,WUM,WLM,WDM,C
+    </sql>
+
+    <select id="getParaForecastsPMakePNotNull" resultType="cn.hhu.Bean.ParaForecast">
+        use forcastflood;
+        select <include refid="selectFields"></include>
+        from para_forecast
+        where ParamId like 'SLHRES%'
+        order by ParamId desc
+    </select>
+
+    <select id="findAll" resultType="cn.hhu.Bean.Para_Calplan">
+        use forcastflood;
+        select <include refid="selectFields"></include>
+        from para_calplan
+        where ParamId like 'SLHRES%'
+        order by Id desc
+    </select>
+
+    <select id="findById" resultType="cn.hhu.Bean.Para_Calplan">
+        use forcastflood;
+        select <include refid="selectFields"></include>
+        from para_calplan
+        where Id = #{id}
+        order by Id desc
+    </select>
+
+    <select id="findByStatus12" resultType="cn.hhu.Bean.Mod_Fruit">
+        use forcastflood;
+        select Id, PDNUM, FLOWTM,Q,W,ZI,V
+        from mod_fruit
+        where Id = #{id}
+          and PDNUM between #{startTime} and #{endTime}
+        order by PDNUM asc
+    </select>
+
+    <select id="findByStatus3" resultType="cn.hhu.Bean.Mod_MidResult">
+        use forcastflood;
+        select Id,PDNUM,FLOWTM,Q,P
+        from mod_midresult
+        where Id = #{id}
+          and CalRegCD = #{calRegCD}
+          and PDNUM between #{startTime} and #{endTime}
+        order by PDNUM asc
+    </select>
+
+
+    <update id="updateData" >
+        use forcastflood;
+        update mod_fruit
+        <if test="status == 1">
+            set Q = #{data1}, W = #{data2} where Id = #{id} and FLOWTM = #{flowtm}
+        </if>
+        <if test="status == 2">
+            set ZI = #{data1}, V = #{data2} where Id = #{id} and FLOWTM = #{flowtm}
+        </if>
+    </update>
+
+    <delete id="deleteDataBy2" >
+        use forcastflood;
+        delete from MOD_FRUIT where id = #{id} and FLOWTM = #{flowtm}
+    </delete>
+    <delete id="deleteData1" >
+        use forcastflood;
+        delete from MOD_FRUIT where id = #{id}
+    </delete>
+    <delete id="deleteData2" >
+        use forcastflood;
+        delete from PARA_CALPLAN where id = #{id}
+    </delete>
+
+    <update id="save">
+        use forcastflood;
+        update PARA_FORECAST set A= #{p1},DATT= #{p2},B= #{p3},IM= #{p4},KI= #{p5},KG= #{p6},EX= #{p7},CI= #{p8},CG= #{p9},CS= #{p10},L= #{p11},X= #{p12},SM= #{p13},WUM= #{p14},WLM= #{p15},WDM= #{p16},C= #{p17},K= #{p18}
+        where ParaName= #{c} and CalRegNM= #{c0}
+    </update>
+
+
+
+
+</mapper>

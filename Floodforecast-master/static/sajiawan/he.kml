@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+<Document>
+<Style id="1334961594">
+  <LineStyle>
+    <color>ff0000ff</color>
+    <width>1</width>
+  </LineStyle>
+  <PolyStyle>
+    <color>40ff0000</color>
+  </PolyStyle>
+</Style>
+<Folder>
+<name>任务范围</name>
+<Placemark>
+  <name>矩形区域-高程</name>
+  <description/>
+  <styleUrl>#1334961594</styleUrl>
+  <Polygon>
+    <tessellate>1</tessellate>
+    <outerBoundaryIs>
+      <LinearRing>
+        <coordinates>
+          118.205163809,34.620919151,0
+          119.15273461,34.620919151,0
+          119.15273461,35.172295493,0
+          118.205163809,35.172295493,0
+          118.205163809,34.620919151,0
+        </coordinates>
+      </LinearRing>
+    </outerBoundaryIs>
+  </Polygon>
+</Placemark>
+</Folder>
+</Document>
+</kml>

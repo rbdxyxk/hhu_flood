@@ -1,0 +1,53 @@
+server:
+  port: 8083
+  # 请求参数大小
+  max-http-header-size: 102400
+spring:
+  datasource:
+    #    进行多数据源的配置
+    dynamic:
+      primary: waterflood
+      datasource:
+        waterflood:
+          username: root
+          password: 999666
+          url: jdbc:mysql://localhost:3306/waterflood?rewriteBatchedStatements=true&serverTimezone=UTC&allowMultiQueries=true
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        slhdsms:
+          username: root
+          password: 999666
+          url: jdbc:mysql://localhost:3306/jsycwater?rewriteBatchedStatements=true&serverTimezone=UTC&allowMultiQueries=true
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        forcastflood:
+          username: root
+          password: 999666
+          url: jdbc:mysql://localhost:3306/forcastflood?rewriteBatchedStatements=true&serverTimezone=UTC&allowMultiQueries=true
+          driver-class-name: com.mysql.cj.jdbc.Driver
+
+      strict: false
+
+
+mybatis:
+  # 实体类的包名
+  type-aliases-package: cn.hhu.Bean
+  # 映射文件的存放位置
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    # 主键自增长
+    use-generated-keys: true
+    # 驼峰命名和下划线命名的匹配
+#    map-underscore-to-camel-case: true
+
+#配置日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: false
+
+Hhu:
+  path:
+    domain:
+      http://localhost:8083
+    # 文件上传路径
+    upload:
+      d:/idea-workspace/hhu/upload

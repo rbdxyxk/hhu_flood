@@ -1,0 +1,144 @@
+#waterInfo {
+    width: 970px;
+    height: 550px;
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    z-index: 3333;
+    overflow: hidden;
+    -webkit-box-shadow: 0 4px 4px rgba(0 0 0 40);
+    display: none;
+    top: 17%;
+    left: 15%;
+
+}
+
+#head {
+    width: 970px;
+    height: 50px;
+    position: relative;
+    text-align: left;
+    padding: 8px 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 34px;
+    border-bottom: 1px solid #b0a7a7;
+    background: #1c7be8;
+    color: #fff;
+}
+
+#title {
+    font-size: 18px;
+    display: inline-block;
+}
+
+#closeInfo {
+    display: inline-block;
+    float: right;
+}
+
+#closeInfo > button {
+    /*background: #1c7be8;*/
+
+}
+
+#content {
+    width: 970px;
+    height: 500px;
+    position: relative;
+}
+
+#headContent {
+    width: 970px;
+    /*height: 30px;*/
+}
+
+#headContent > ul {
+    display: flex;
+}
+
+#headContent > ul > li {
+    /*display: flex;*/
+    width: 25%;
+    text-align: center;
+    background: #eaf3f9;
+    color: #3f91ca;
+}
+
+#chartContent {
+    width: 970px;
+    height: 450px;
+}
+
+#calenderTime {
+    background: #f0f1f2;
+    text-align: left;
+    /*padding: 5px 16px;*/
+}
+
+#time {
+    line-height: 50px;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#photo {
+    width: 650px;
+    height: 420px;
+    margin: auto;
+    float: left;
+}
+
+.myrow {
+    display: inline-block;
+    flex-direction: row;
+    margin-right: 8px;
+    top: 7px;
+    position: relative;
+}
+
+#checkBtn {
+    position: relative;
+    top: -5px;
+}
+
+#infoDiv {
+    position: relative;
+    width: 300px;
+    height: 375px;
+    background-color: #fff;
+    float: left;
+
+}
+
+#imgDiv {
+    height: 375px;
+    position: absolute;
+}
+
+#waterImg {
+    position: absolute;
+    width: 189px;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+}
+
+#ssw {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #ff0;
+    height: 45px;
+}
+
+#cutImg {
+    position: absolute;
+    height: 375px;
+    width: 240px;
+    left: 60px;
+    bottom: -2px;
+}

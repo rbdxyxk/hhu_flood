@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hhu.mapper.DisResFloodMapper">
+    <select id="getone" resultType="cn.hhu.Bean.DisResFlood">
+        use ST_RSVR_R ;
+        use ST_WAS_R ;
+        select STCD,TM,RZ,OTQ
+        from ST_RSVR_R
+        where STCD='51112101' and TM>'" + DateTime.Now.AddDays(-2).Date.ToString() + "'
+        order by TM desc"
+    </select>
+
+    <select id="gettwo" resultType="cn.hhu.Bean.DisResFlood">
+        use ST_RSVR_R ;
+        use ST_WAS_R ;
+        select STCD,TM,TGTQ
+        from ST_WAS_R
+        where STCD='51111911' and TM>'" + DateTime.Now.AddDays(-2).Date.ToString() + "'
+        order by TM desc
+    </select>
+
+    <select id="getthree" resultType="cn.hhu.Bean.DisResFlood">
+        use ST_RSVR_R ;
+        use ST_WAS_R ;
+        select FLOWTM,sum(Q) as SUMQ
+        from MOD_MIDRESULT
+        where  FLOWTM>'" + DateTime.Now.AddDays(-2).Date.ToString() + "'
+        group by FLOWTM
+        order by FLOWTM desc
+    </select>
+
+</mapper>

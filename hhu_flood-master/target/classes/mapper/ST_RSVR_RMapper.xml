@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hhu.mapper.ST_RSVR_RMapper">
+
+    <select id="getAllSTCDAndSTNM" resultType="cn.hhu.Bean.ST_STINFO_B">
+    use jsycwater;
+        SELECT  a.STCD,a.STNM FROM `st_stbprp_b` a , (
+SELECT DISTINCT STCD FROM `st_rsvr_r`
+) b WHERE a.`STCD`=b.`STCD`;
+    use waterflood;
+    </select>
+</mapper>
