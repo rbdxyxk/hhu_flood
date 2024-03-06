@@ -19,111 +19,163 @@
 第174行到第187行，对应图层显示和隐藏。点击图层显示是显示十二个图标且按钮改为图层隐藏，点击图层隐藏，图层消失，按钮回到图层显示。
 
 ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/af2d5da4-c621-45e5-9273-7925a34a24d9)
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/fa963bc4-16d8-4f0b-aeae-4be0c4530f8a)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/c4333126-20bf-43cb-8df2-97cd8b18881d)
+
 
 第199行到第272行，对应页面上层菜单栏，功能分为放大，缩小，测距，测面，清空和全屏（退出全屏）。
 
-![Uploading image.png…]()
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/6d580962-eb04-44a7-bfff-d1dc0e0d2e16)
+
 
 从第284行开始对应页面左侧菜单栏。
 
- ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/34d780eb-c658-46a1-a2be-9d52d2c7b50c)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/56ff2062-0aca-46c2-96ee-69668892a59b)
+
  
 从第305行到第338行对应菜单栏中雨水情功能，其中分为雨情信息，水情信息和水库水情。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/5cd29318-a071-4638-9bd7-87cc01c9241a)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/c466d774-139c-49ff-b02d-bbac2ea48dbe)
 
 从第340行到第383行对应菜单栏中洪水预报功能，其中分为预报首页，人工干预，预报结果，预报参数，自动定时和成果展示。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/19daf6f0-2579-4b83-ad8e-4a0d7255c84e)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/be442dba-4b2f-4ad8-ad77-b684f38817d2)
 
 从第385行到第419行对应菜单栏中工程安全功能，其中分为观测分析，结构分析和综合分析。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/1442bbe3-3b0d-45ef-ba2d-4445b1552856)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/f3fd2c36-4507-464a-9966-06576bb594fa)
+
 
 从第420行到第454行对应菜单栏中三位巡河功能，其中分为线路设置和沿程巡河。
 
- ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/85e556dd-b51a-4ff1-b2a5-dcbbe859277f)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/c890e9e1-348e-462b-b1bc-549b83ca3899)
+
  
 从第455行到第488行对应菜单栏中三位巡河功能，其中分为线路设置和沿程巡河。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/4223adaa-58a9-452c-9e8b-25f434e4b75c)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/ed882581-1a85-476c-ac0b-3943e55fcf8d)
+
 
 从第489行到第531行对应菜单栏中防汛工具箱功能，其中分为降雨量级，库容或流量，泄流量，产流量，纳雨能力和入库流量。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/c53ef218-cbb8-4c4f-ac73-7e94fc7af7b6)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/1a8b3948-91a4-4e89-bfa5-e93f594ce735)
+
 
 从第532行到第588行对应菜单栏中防汛知识库功能，其中分为河流水系，水利工程，洪涝灾害，洪水复盘，防汛手册，应急预案与调度规则，法律法规与值班制度和防汛常用水文术语。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/87f75e3d-4448-4347-a42c-a288706ed010)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/d3d553f2-825b-454c-9987-79178dcc15a9)
+
 
 第620行开始显示雨情信息。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/b77cf14c-b9b4-4147-83ff-a545952a6644)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/b60c8131-bf53-47bc-87b0-d45a8ea2da2f)
+
 
 第726行开始水情信息的页面。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/08065708-94af-40ee-a2f1-f2f0bbe182ff)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/caf4adf2-4971-4055-b8f8-e30a329d7acb)
+
 
 第827行开始三维巡河线路设置菜单。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/9590eaed-e8e6-437b-b6bd-8035b54b92ac)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/3ca46f86-d1dc-4544-80eb-1f3b71965f0b)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/9c2c218f-b5f2-44cf-a1d8-a7f18e2778a7)
 
 第1017行开始显示页面最下面一块区域的经纬度及视角高。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/137ad3c8-6fbf-4a97-9a7c-eaf5de59b04a)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/75824277-c840-4526-90bc-b70f07285e4c)
 
 第1031行开始飞行途径区域提示信息框。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/a49d6547-9290-46e0-ac3a-505bc433d3fc)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/b0476adb-bfba-4e8b-a27d-9d9f886fe195)
 
 绑定左侧菜单栏中每个小菜单的弹窗。
 
 弹窗首先在功能处加上标签，v-if或者v-for控制，再在vue下导入。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/b3757666-1f40-45cd-a3a4-92d233da5f77)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/68151bcf-f91d-42e6-9026-222aa7a88e07)
+
 
 从第1245行开始进行cesium的基础设置。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/69738b12-152f-477d-aa32-164ab2edac9e)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/98c71dec-84c3-4e0f-b349-2a40c7bde1fd)
+
 
 对数据进行切片并利用影像图层加载的方式放在图层上，如若需要地形切片方法相同。
 
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/7ce8e451-2da9-4972-a057-b4fc5568dce9)
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/da7aa16f-9039-4cf2-9f28-461e1465d10a)
 
 设置页面初始视角。
 #### （二）Src/assets/js
 菜单上用到的各个功能在 Src/assets/js 中
 1.	geomap.js
- ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/47bb539f-9473-40dd-9411-7cf651fa608f)
+
+ ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/27c552fc-7239-4904-8961-f1788f65f8e8)
+
 设置图层显示和图层隐藏切换的代码，与earth.vue中对应对象进行功能相绑定。earth.vue中引用的对应代码为import geomap from “../assets/js/geomap”
 十二种水利工程点击展示json或geojson格式的数据。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/1e9803af-08e4-4238-9b74-3de1c794f9d9)
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/8e13babc-439b-4eb6-876a-b016540fdb26)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/08a1b1ff-ac71-4317-8edc-729b5ff2a1ae)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/dcfa9130-66e6-4cfb-a153-6ba06ea82216)
+
  以水闸为例，点击图标展示区域内部所有水闸测站，再点击一次测站消失，点击后展示效果如上图，点击图标会显示当前测站数据。与earth.vue中对应功能相绑定。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/22d78221-a0e8-48ac-b72d-04f9f0c3735b)
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/1d0f2258-0ae8-4ff3-951a-cb6ab33631d6) 
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/5d4c39e8-a4ad-4dae-9db6-75dc09735e09)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/8de29b4c-dafd-42b9-9ab4-168a60a681f7)
+
 图层上三种地图形式转换，map-yx对应影像图层，map-sl对应矢量图层，map-dx对应地形图层，在主页面的右下角显示。与earth.vue中对应功能相绑定。
+
 2.	ground.js
 水库区域的蓝色河道多边形覆盖，并设置上下游及水面流动形式。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/cdd13b06-4cf7-4024-8b11-d7fa85259a8e)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/1704675a-3b0a-4075-9998-8f39ed9c471f)
+
+
 分上流和下流两块，利用Cesium.PolygonGeometry，收集经纬度形成多边形，并设置参数，透明度等。
+
 3.	Menu.js
+
 页面上层菜单栏对应功能展示。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/e14e1c7f-7c9c-47d6-bd91-ae516e803e6e)
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/e12d9307-441a-43a7-9f05-3ebf626a5f79)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/c1c8a620-7e56-4022-83da-4628d661cdd3)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/2b4fe077-6c29-4bfa-a95a-0814f5c1881a)
+
 第10行到第20行，控制上层菜单的显示和折叠，与earth.vue中对应功能相绑定。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/b2e3509f-2bbf-4c09-9f63-8fdbee253b6f)
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/353e0a37-b1d1-4b8f-987a-a6e95f378138)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/c53fdedb-73eb-4f71-9565-ba3eeadb2ce7)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/368530a8-89a1-4a77-95af-228960bf20f3)
+
 第22行到第30行，对应上层菜单的放大和缩小功能，与earth.vue中对应功能相绑定。
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/ed139002-9f1a-47fe-bf19-0ef8c10c083c)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/a482be4d-5b28-4d8e-9c5d-1a08183426de)
+
 第32行到第181行，对应上层菜单的测距功能，与earth.vue中对应功能相绑定。左击鼠标选择两个点，鼠标右键确定，测的距离贴地且单位是千米。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/1def5883-02b5-44ec-9be2-173e44abf0b7)
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/d9a77676-e801-43fa-bf66-4ba31b3fd7b0)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/217638b6-50a3-4c68-ae22-f1ca63197272)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/a98b1800-0785-4862-9740-bf97ca2c8fc0)
+
 第183行到第323行，对应上层菜单的测面功能，与earth.vue中对应功能相绑定。左击鼠标选择多个点，鼠标右键确定，形成一个多边形面，测的距离贴地且单位是平方公里。
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/31225e6f-4c5e-4f44-8f93-e91b2b6b7a86)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/1bbd7b43-5766-44b1-83ee-2a9f78eeeb44)
+
 第325行到第328行，对应上层菜单的清空功能，与earth.vue中对应功能相绑定。removeall所有实体。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/01ca076d-1fc7-4623-90a6-a529dd263372)
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/12bbeeb5-db8f-4623-87d7-280033720599)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/2103d7de-d477-4f1d-b221-43a8e586fe84)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/25765aa0-d80a-4205-8d07-0048ffa6f62f)
+
 第329行往后，对应上层菜单全屏和退出全屏功能，需要适配不同浏览器，与earth.vue中对应功能相绑定。
+
 4.	Anaresult.js
 配置echarts信息。
 5.	Cesium-vendor.js
@@ -136,7 +188,9 @@
 #### （三）Src/assets/css样式表
 该目录下给了各对象样式定义，如右下角地图选择按钮的样式设置，其样式定义在mneu1.css文件里，关键字为#mapType,并对其每个子对象的样式进行了定义，包括#mapType .vectorType、#mapType .imgType、#mapType .terType等子对象。
 menu1.css、menu.css、menu3.css等样式在earth.vue下的<script> import进行了导入，应用earth.vue的各层、各容器、各对象等。
- ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/8cb4de94-a15a-44e0-9e6e-89a13f242af8)
+
+ ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/2504c368-0835-4fc8-b2b7-42876fecb117)
+
 图 mapType对应的样式
 #### （四）Src/components
 1.	FLoodPreventionKit/echarts/riverinfoechart
