@@ -4,11 +4,10 @@
 ## 项目介绍
 ### 前端
 #### （一）前端主页面为App.vue
-   同其他vue项目一样，以main.js为启动文件，经该启动文件引入App.vue，以及router/index.js，在index.js中加入earth.Vue等组件。earth.Vue为本项目各功能菜单组织页。
+   同其他vue项目一样，以main.js为启动文件，经该启动文件引入App.vue，以及router/index.js，在index.js中加入earth.Vue等组件。earth.Vue为本项目各功能菜单组织页。 首先引入cesium。
    
    ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/73c3b03c-767a-40fd-9e51-473b7ca7e683)
    
-    首先引入cesium。 
     
 ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/d2b29eab-ab97-448a-a987-09363bec40d6)
 
