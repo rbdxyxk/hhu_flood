@@ -1,4 +1,4 @@
-# 石梁河水库洪水预报系统
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/1149984c-1c27-434e-8613-5b51490740e3)# 石梁河水库洪水预报系统
 本项目用于石梁河水库的洪水预报，通过读取数据库中参数，利用新安江水文模型，根据雨量数据计算径流量，从而预报洪水的发生；此外还包含自动定时，三维巡航等功能，集成了Cesium三位地图，便于展示。
 
 ## 项目介绍
@@ -200,91 +200,165 @@ echart图表代码，可自行编写echart结构。
 3.	FLoodPreventionKit/RainStChooser.vue
 水库和雨量站关系echart展示选择方法，对应在雨水情表单中。
 4.	waterInfoTable/RiverInfoTable.vue
-    对应以雨水情界面为例，显示在弹窗的右侧，可以展示图表数据或折线数据。
+对应以雨水情界面为例，显示在弹窗的右侧，可以展示图表数据或折线数据。
 5.	waterInfoTable/RiverInfoTable2.vue
 和上页面效果相同，还未修改，显示在弹窗的右侧，拟展示文字格式。
 6.	chooser.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/3c31a181-f7c2-4199-a5aa-49c51fc8a6c0)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/35302f54-6c13-4dba-a633-b60ae9afb778)
+
 以溃坝分析举例，提供提交和新增项目的选择。
+
 7.	emergencyplan.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/df9472ae-de8b-40f9-b383-a32d9c5489af)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/a360371f-d5b1-4cbf-92b5-27b6e417889d)
+
 对应防汛知识库中的应急预案与调度规则。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/39e4f662-67af-4801-8825-f4569ee7a19a)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/54c63b03-91b6-4c58-951a-1f528fffbe31)
+
 通过closechooser 来和earth.vue中的页面绑定。绑定为如下顺序：
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/b12ed139-ce40-4162-a4fc-c56c1f8660d9)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/a1a8def8-f963-4d02-9425-cbb9d773a428)
+
 先在earth中为指定区域绑定页面，设置为true。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/b6150c79-15b5-48cb-8cb8-aacac7c0dc2e)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/c06506a1-390b-4f1b-8814-5c6a1c701c45)
+
 设置绑定的参数，点击控制显隐。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/62293b0c-6208-4232-8fcd-4b424a4f228d)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/f5b95728-ebec-45b2-8751-45c1b9d09655)
+
 导入。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/4ff10069-6d9f-4582-8c17-41a77c7324ca)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/b6dc6ee7-515d-468a-9e97-10d277a1b237)
+
 设置完毕。
- ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/59114f75-f629-416b-b54a-673f0cdebca5)
+ 
+ ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/2b2a9a71-9ab9-4af0-ae7f-a69113b89d4c)
+
 页面上的关闭以及放大缩小等控制操作。
+
 8.	floodfang.vue
-   ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/622eb7d6-c49e-4024-8461-ff4d1e6d8d38)
+
+  	![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/9a1492ed-c1a1-4689-95e2-938f9b2662a2)
+
 对应防汛知识库中的防汛手册。页面上操作与其他防汛知识库页面相同，以7为例。
+
 9.	floodfu.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/0d9ea848-3480-4171-8d85-c2b4d68fd41b)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/95043bb7-5389-469e-971d-25c20d3c2388)
+
 对应防汛知识库中的洪水复盘。页面上操作与其他防汛知识库页面相同，以7为例。
+
 10.	Floods.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/4504eb2f-bf1a-462d-bcf9-e89933a75f49)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/aabc76f9-0b6b-4413-8a52-a8d7f02abaf0)
+
 对应防汛知识库中的洪涝灾害。页面上操作与其他防汛知识库页面相同，以7为例。
+
 11.	Hydterms.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/233458f7-31e3-4000-b551-4b3933b6449e)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/e33ea491-ae25-460f-a1fa-82dcba475ec6)
+
 对应防汛知识库中的防汛常用水文术语。页面上操作与其他防汛知识库页面相同，以7为例。
+
 12.	Laws.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/007b200e-71e8-4741-931f-3117acf97e22)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/db42ecac-6c68-4cc7-b095-f0ad6efccad3)
+
 对应防汛知识库中的法律法规与值班制度。页面上操作与其他防汛知识库页面相同，以7为例。
+
 13.	rainwater.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/ac74b922-d9de-48d7-8507-4c0151616381)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/0b3eb0fc-8b2f-4dc7-b9bd-d6bd990499bb)
+
 对应防汛知识库中的河流水系。页面上操作与其他防汛知识库页面相同，以7为例。
+
 14.	waterku.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/dbb39595-d5e2-4ff1-b539-964003308a0f)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/325cf684-a39c-447e-aac5-24e5e06c1a90)
+
 对应防汛知识库中的水利工程。页面上操作与其他防汛知识库页面相同，以7为例。
+
 15.	parameters.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/1be0d77f-8ee8-40a9-a0d0-13bf3790c963)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/45850dbd-2e0c-4529-a298-37c40e105927)
+
 控制溃坝分析里面的四个小窗口，绑定好Controlparameters.vue，Formatparameters.vue，Processparameters.vue，Timeparameters.vue四个页面。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/d71d3ee9-e849-4089-aee5-e5ed942edd7c)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/26f6c66e-1bd7-4744-b876-b4e266679263)
+
 16.	Controlparameters.vue
- ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/3ff14ffd-ffa1-46ca-ae1e-c29a9467af1b)
+ 
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/6d8e4c88-e288-47ba-a8a4-5c20b84ddbb7)
+
 对应溃坝分析里控制参数窗口，其中各个数值。
+
 17.	Formatparameters.vue
- ![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/2210e3a6-6ae9-41eb-821a-96c262758ea1)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/08cd37bb-e8f9-476a-b691-be78b62c7ac5)
+
 对应溃坝分析里公式及数据格式参数窗口，其中各个数值。
+
 18.	Processparameters.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/75db5d5e-30a2-4b8f-a269-166d485d6ce4)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/826aaedf-7764-4215-a625-96fc751af68f)
+
 对应溃坝分析里过程线参数窗口，其中各个数值。
+
 19.	Timeparameters.vue 
+
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/f56149cb-c203-4245-a13a-f62a09dc1e07)
+
 对应溃坝分析里时间及阈值参数窗口，其中各个数值。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/9ef63bdc-c1ee-4829-b8f5-bcc3b476e017)
+
 20.	RainInfo.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/4b68c7ca-7954-4714-8e5c-17bdb0988553)
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/68e4ce32-0c32-4780-b7c1-f393b9a9c0fd)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/df1d5d2b-dfcc-4ed8-95a9-75de55a2b5bf)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/849bc372-5691-4735-b5d1-b446dac4c231)
+
 在earth.vue上绑定好，对应左侧菜单雨水情中的雨情信息。
 选择雨情测站有对应的水库测站。选择起始时间和终止时间，点击查询可以看到图。下面划分了一个区域用echart表示雨量和库上水位及库下水位。可以单独点击雨量和库上水位及库下水位控制数据显隐，展示方式为折线和柱状图。可以导出也可以关闭页面。右上角按钮也可以全屏或者关闭页面。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/d8d5a53b-c73a-4248-96f8-7ea6fe301a5a)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/17d9433d-b86a-4420-99e1-23404b2a489b)
+
 控制页面窗口的移动，按住左键可拖动窗口，松开后无法拖动。
+
 21.	RiverInfo.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/30ed01d6-36fc-4c0d-81d2-d150ffe5cbe4)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/50476062-e5ca-4b02-a0b9-293916dccd4c)
+
 选择测站，选择起始时间和终止时间，点击查询可以看到图。下面划分了一个区域用echart表示测试站的数据，有流量和水位的对应信息。可以单独点击流量或者水位控制数据显隐，展示方式为折线和柱状图。可以导出也可以关闭页面。右上角按钮也可以全屏或者关闭页面。其余功能与20相似。
+
 22.	RsvrInfo.vue
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/8ca3ccd2-ac3e-4fb2-8cdd-ef8d06d09708)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/3bf9e64c-94c0-4c96-8f4d-a8549121d02b)
+
 选择测站，选择起始时间和终止时间，点击查询可以看到图。下面划分了一个区域用echart表示测试站的数据，有库上水位，入库流量，蓄水量，库下水位和出库流量的对应信息。可以单独点击库上水位，入库流量，蓄水量，库下水位和出库流量控制数据显隐，展示方式为折线和柱状图。可以导出也可以关闭页面。右上角按钮也可以全屏或者关闭页面。其余功能与20相似。
 #### （五）Static
 1.	image_tiles
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/1096d868-9925-41ee-a1b6-d9940f189258)
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/ef617704-2ea8-480f-9571-0b472a5ce2b6)
+
 利用cesiumlab处理的切片数据。可以看到地形的起伏，配置方式和加载形式见cesium的viewer.scene.imageryLayers.addImageryProvider。
+
 2.	Images
+
 所有图片数据。
+
 3.	sajiawan
 处理好的json和geojson数据文件，以及区域案例的shp等格式数据。
    
 #### （六）idea开发环境配置说明
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/bf72bf8f-9057-40b3-b002-13066811a105)
+
 前端页面需要node.js并使用webpack方式打包；从gitte仓库中下载Floodforecast项目，安装配置
 运行的端口、IP，起始页（或启动文件调用过程），见package.json，使用本地主机IP访问语句为host 0.0.0.0；访问端口设置于文件config\index.js
 在idea启动方式：在控制台（terminal）执行命令npm run dev
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/8b087230-9420-4bb5-9bf1-0c90d4c9801f)
 
 #### （七）系统环境配置
 java8,mysql8及以上
@@ -292,8 +366,10 @@ java8,mysql8及以上
 
 ### 后端
 #### （一）src/main/java/cn.hhu/Bean
+
+![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/9c2ac744-4555-415f-9d5b-a63887c5c8d2)
+
 bean包就是专门放置属性类的，比如说你在数据库中创建了一个表，那么你可以把这个表的各个字段，分别定义成属性放置在一个类里，并写明setter和getter方法和构造器等。
-![image](https://github.com/rbdxyxk/hhu_flood/assets/97138889/7836ea3c-3495-4e63-a150-0a3320dede0b)
 Bean下都是需要的实体类，有些类与数据库中一一对应。
 
 #### （二）src/main/java/cn.hhu/config
